@@ -8,7 +8,9 @@ const registrationSchema = new mongoose.Schema(
     },
     
     age: {
-        type: Number, index: true
+        type: Number,
+        index: true,
+        required: [true]
     },
     
     contactNumber: {
@@ -33,27 +35,35 @@ const registrationSchema = new mongoose.Schema(
     },
     
     parentContactNumber: {
-        type:Number
+        type:Number,
+        required: [true, "Please provide your parent\'s mobile Number"]
     },
     
     parentEmailId: {
-        type:String, required: [true, "Please enter email address."]
+        type:String,
+        required: [true, "Please enter email address."]
     },
     
     schoolName: {
-        type: String, default: 'School Name'
+        type: String,
+        default: 'School Name',
+        required: [true]
     },
     
     address: {
-        type: String, default: 'Address'
+        type: String,
+        default: 'Address',
+        required: [true]
     },
     
     pinCode: {
-        type:Number
+        type:Number,
+        required: [true]
     },
     
     schoolContactNumber: {
-        type:Number
+        type:Number,
+        required: [true, "Please provide your school's mobile Number"]
     },
     
     schoolEmailId: {
