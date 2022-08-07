@@ -1,0 +1,39 @@
+.mainNav{
+    display: flex;
+    padding: 0 3em;
+    width: calc(100%-6em);
+    height: max-content;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLogo{
+position: relative;
+width:15%;
+aspect-ratio: auto;
+}
+
+.navList {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-between;
+    column-gap: 1em;
+}
+
+a{
+    width: 69px;
+height: 29px;
+
+font-family: 'Jost';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 29px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 0.03em;
+}
