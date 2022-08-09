@@ -2,10 +2,13 @@ const mongoose = require("mongoose");
 
 const updateSchema = new mongoose.Schema({
     description:{
-        type:String,   
+        type:String,  
+        required: [true] 
     },
     timeDate:{
         type:Date,
+        required: [true] 
+
     }
 });
 
