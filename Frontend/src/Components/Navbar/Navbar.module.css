@@ -1,16 +1,20 @@
+
+
 .mainNav{
+    position: relative;
     display: flex;
-    padding: 0 3em;
+    padding: 0 6em;
     width: calc(100%-6em);
     height: max-content;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 12%;
 }
 
 .navLogo{
 position: relative;
-width:15%;
+width: 20%;
 aspect-ratio: auto;
 }
 
@@ -18,22 +22,37 @@ aspect-ratio: auto;
     display: flex;
     list-style: none;
     flex-direction: row;
-    width: 40%;
+    width: 40%; 
     justify-content: space-between;
+    align-items: center;
     column-gap: 1em;
 }
 
 a{
-    width: 69px;
-height: 29px;
+text-decoration: none;
+}
 
-font-family: 'Jost';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 29px;
-/* identical to box height */
+.rightNavItems{
+        color:#08528f ;
+        height: 29px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 29px;
+        text-align: center;
+        letter-spacing: 0.03em;
+}
 
-text-align: center;
-letter-spacing: 0.03em;
+.leftImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 10%;
+}
+.rightImg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 12%;
 }
