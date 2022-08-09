@@ -3,11 +3,11 @@ const mongoose = require("mongoose");
 const updateSchema = new mongoose.Schema({
     description:{
         type:String,  
-        required: [true] 
+        required: [true, 'Please provide description'],
     },
     timeDate:{
         type:Date,
-        required: [true] 
+        required: [true, 'Please provide date and time'],
 
     }
 });
