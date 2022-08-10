@@ -1,96 +1,95 @@
-
-
-.mainFooter{
-    width:100%;
-    background-color: #084B82;
+.mainFooter {
+  padding: 9em 10% 2em 10%;
+  max-width: 100%;
+  background-color: #084b82;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4em;
 }
 
-.footerContainer{
+.footerContainer {
+  width: 90%;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.leftSection {
+  width: 30%;
+}
+
+.row {
+  margin: auto;
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footerImg {
+  max-width: 9em;
+}
+
+.footPhone {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16.4029px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footMail {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16.4029px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.Col li a {
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.socialLinks {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.5em;
+}
+
+.socialImg {
+  margin-top: 0.75em;
+  height: 1.5em;
+}
+
+.copyRight {
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+
+@media (max-width: 850px) {
+  .footerContainer {
     display: flex;
-    flex-direction:row ;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    padding: 3% 10%;
-}
-
-.leftSection{
-    padding-left:5%;
-    padding-right: 0;
-}
-.row{
-    margin: auto;
-    width: fit-content;
-    display: flex;
-    flex-wrap: wrap;
-    padding-right: 6%
-}
-
-
-.footerImg{
-    width: 20%;
-}
-
-.footPhone{
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16.4029px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-}
-
-.footMail{
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16.4029px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-}
-
-.firstCol{
-    padding: 0 10px;
-}
-
-.secondCol{
-}
-
-.thirdCol{
-}
-
-ul{
-    list-style: none ;
-}
-
-.footerCol{
-    padding: 0 15px;
-}
-
-a{
-    font-size: 20px;
-    line-height: 29px;
-    letter-spacing: 0.03em;
-    color:#FFFFFF;
-    font-size: 20px;
-    line-height: 29px;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-}
-
-.socialLiks a{
-
-}
-
-.socialImg{
-    height: 0.9em;
-    padding:0.1em;
-}
-
-.copyRight{
-    color: rgba(255, 255, 255, 0.3);
+    row-gap: 1em;
+    justify-content: space-around;
     text-align: center;
-    padding-top: 4em;
-    padding-bottom: 3.5em;
+  }
 }
