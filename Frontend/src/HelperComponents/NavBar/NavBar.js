@@ -4,7 +4,7 @@ import navLogo from "./assets/navLogo.png";
 import topRightImg from "./assets/topRightImg.png";
 import topLeftImg from "./assets/topLeftImg.png";
 
-import RegButton from "../RegButton/RegButton";
+import RegButton from "../../Components/RegButton/RegButton";
 
 function Navbar() {
   return (
