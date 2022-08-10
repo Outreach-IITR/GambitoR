@@ -1,0 +1,81 @@
+h1{
+    width: 516px;
+    height: 126px;
+    top: 335px;
+    left: 120px;
+    font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 99px;
+  line-height: 99px;
+  letter-spacing: -0.065em;
+  position:relative;
+  color: #084B82;
+
+  }
+  
+p{
+    position: relative;
+width: 519px;
+height: 140px;
+left: 120px;
+top: 220px;
+
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 28px;
+line-height: 28px;
+text-align: justify;
+letter-spacing: 0.04em;
+color: #084B82;
+z-index: 2;
+
+
+}
+  
+.laptopImage{
+  position: absolute;
+  width: 36%;
+  top: 360px;
+  height: 50%;
+  aspect-ratio: auto;
+  display: flex;
+  right: 7.5em;
+  left: 55em;
+  
+
+}
+
+.leftMiddle{
+  display: flex;
+  flex-direction: column;
+}
+
+.mainMiddle{
+  display: flex;
+}
+
+
+
+.imgContainer{
+  display: flex;
+  justify-content: left;
+  position: absolute;
+  left: 0%;
+  right: 81.08%;
+  top: 75%;
+}
+
+@media screen and (max-width:1000px){
+  h1,p,.laptopImage,.leftMiddle,.mainMiddle,.imgContainer{
+    width: 100%;
+
+  }
+  h1{
+    width: fit-content;
+    height: fit-content;
+  }
+
+}
+
