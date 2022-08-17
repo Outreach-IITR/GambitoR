@@ -1,0 +1,17 @@
+.updateContainer {
+  position: relative;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.heading {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.5em;
+  line-height: 4.5em;
+  color: #18568a;
+}
