@@ -1,0 +1,48 @@
+.headingContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 1em;
+}
+
+.content {
+  width: 40%;
+}
+
+.headingTitle {
+  margin-bottom: 0.25em;
+  font-family: Josefin Sans;
+  font-size: 5.25em;
+  font-weight: 700;
+  line-height: 99px;
+  letter-spacing: -0.065em;
+  text-align: left;
+  color: #084b82;
+}
+
+.headingTitle > span {
+  font-size: 1.5em;
+}
+
+.description {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.25em;
+  line-height: 28px;
+  text-align: justify;
+  letter-spacing: 0.04em;
+  color: #084b82;
+  margin-bottom: 1em;
+}
+
+.headingImage {
+  width: 40%;
+}
+
+.headingImage > img {
+  position: relative;
+  width: 100%;
+}
