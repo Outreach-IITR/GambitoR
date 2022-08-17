@@ -1,0 +1,18 @@
+.button1{
+    background-color: #E7A800;
+    border-radius: 8px;
+    border: none;
+    padding: 0.4em 1.8em;
+    width: fit-content;
+    
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  /* identical to box height */
+  
+  text-align: center;
+  letter-spacing: 0.03em;
+  
+  color: #FFFFFF;
+  }
