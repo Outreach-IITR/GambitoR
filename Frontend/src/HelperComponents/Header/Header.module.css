@@ -1,0 +1,28 @@
+.headerContainer{
+    background-color: #084b82;
+}
+
+.text{
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 3em;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFBA01;
+padding: 2.2em 0 0.4em 0;
+}
+
+.textDescription{
+text-align: center;
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 30px;
+text-align: center;
+letter-spacing: 0.04em;
+color: #FFFFFF;
+padding: 0 30% 10% 30%;
+}
