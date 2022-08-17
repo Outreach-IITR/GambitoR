@@ -13,7 +13,9 @@ const Navbar = () => {
       <div className={styles.mainNav}>
         <img className={styles.leftImg} src={topLeftImg} alt="" />
 
-        <img className={styles.navLogo} alt="img" src={navLogo} />
+        <Link to="/">
+          <img className={styles.navLogo} alt="img" src={navLogo} />
+        </Link>
         <ul className={styles.navList}>
           <li>
             <Link class={styles.rightNavItems} to="/about">
