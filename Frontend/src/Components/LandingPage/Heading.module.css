@@ -4,17 +4,20 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin: 0 1em;
 }
 
 .content {
+  min-width: 200px;
   width: 40%;
+  margin-bottom: 4em;
 }
 
 .headingTitle {
   margin-bottom: 0.25em;
   font-family: Josefin Sans;
-  font-size: 5.25em;
+  font-size: 4em;
   font-weight: 700;
   line-height: 99px;
   letter-spacing: -0.065em;
@@ -39,6 +42,7 @@
 }
 
 .headingImage {
+  min-width: 300px;
   width: 40%;
 }
 
