@@ -16,22 +16,22 @@ const Navbar = () => {
         <img className={styles.navLogo} alt="img" src={navLogo} />
         <ul className={styles.navList}>
           <li>
-            <Link class={styles.rightNavItems} to="/about">
+            <Link className={styles.rightNavItems} to="/about">
               About
             </Link>
           </li>
           <li>
-            <Link class={styles.rightNavItems} to="/events">
+            <Link className={styles.rightNavItems} to="/events">
               Events
             </Link>
           </li>
           <li>
-            <Link class={styles.rightNavItems} to="/contacts">
+            <Link className={styles.rightNavItems} to="/contacts">
               Contacts
             </Link>
           </li>
           <li>
-            <Link class={styles.rightNavItems} to="/register">
+            <Link className={styles.rightNavItems} to="/register">
               <RegButton />
             </Link>
           </li>

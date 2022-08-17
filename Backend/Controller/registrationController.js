@@ -3,6 +3,7 @@ const AppError = require("../utils/appError");
 const catchAsync = require("../utils/catchAsync");
 
 exports.createRegistration = catchAsync(async (req, res, next) => {
+  console.log(req)
   if (!req.file) {
     next(new AppError("Please provide marksheet", 400));
   }

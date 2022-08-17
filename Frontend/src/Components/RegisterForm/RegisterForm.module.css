@@ -8,9 +8,10 @@
 }
 
 .cardStructure {
-  padding: 90px 120px;
+  padding: 90px 90px 0px 120px;
   align-items: center;
   display: flex;
+  width: 50%;
   flex-direction: column;
 }
 
@@ -37,10 +38,12 @@
 }
 
 .dots {
-  width: 100px;
+  width: 80px;
   align-items: center;
   display: flex;
   flex-direction: row;
+  margin-top: 36px;
+  margin: 24px;
   justify-content: space-between;
 }
 
@@ -49,4 +52,26 @@
   opacity: 0.2;
   width: 12px;
   height: 12px;
+  border-radius: 100%;
+}
+
+.btn {
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+}
+
+.flexRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.number{
+  margin-right: 12px;
 }

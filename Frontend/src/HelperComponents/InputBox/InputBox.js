@@ -7,13 +7,14 @@ const InputBox = ({
   className,
   label,
   value,
+  htmlFor,
   defaultValue,
   onChange,
   placeholder
 }) => {
   return (
     <div className={`${style.input} ${className}`}>
-      <label htmlFor="">{label}</label>
+      <label htmlFor={htmlFor}>{label}</label>
       <input
         placeholder={placeholder}
         type={type}
@@ -26,4 +27,4 @@ const InputBox = ({
   );
 };
 
-export default InputBox;
+export default React.memo(InputBox);

@@ -52,11 +52,11 @@ const registrationSchema = new mongoose.Schema({
     unique: [true, "This email is already registered"],
   },
 
-  class: {
-    type: Number,
-    enum: [9, 10, 11, 12],
-    required: [true, "Please enter your class."],
-  },
+  // class: {
+  //   type: Number,
+  //   enum: [9, 10, 11, 12],
+  //   required: [true, "Please enter your class."],
+  // },
   parent: infoSchema,
   school: infoSchema,
   // parentName: {
@@ -83,16 +83,16 @@ const registrationSchema = new mongoose.Schema({
   //   required: [true, 'Please provide school name.'],
   // },
 
-  address: {
-    type: String,
-    default: "Address",
-    required: [true, 'Please provide address.'],
-  },
+  // address: {
+  //   type: String,
+  //   default: "Address",
+  //   required: [true, 'Please provide address.'],
+  // },
 
-  pinCode: {
-    type: Number,
-    required: [true, 'Please provide pincode.'],
-  },
+  // pinCode: {
+  //   type: Number,
+  //   required: [true, 'Please provide pincode.'],
+  // },
 
   // schoolContactNumber: {
   //   type: Number,
