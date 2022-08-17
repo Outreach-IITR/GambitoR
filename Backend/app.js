@@ -5,12 +5,14 @@ const cors = require('cors');
 const globalErrorHandler = require('./Controller/errorController');
 const registrationRoutes = require('./Routes/registrationRoutes');
 const AppError = require('./utils/appError');
+const path = require('path')
 
-dotenv.config()
+dotenv.config();
 
 const app = express();
 
-const allowList = [process.env.ALLOWED_URL_1, process.env.ALLOWED_URL_2]
+const allowList = [process.env.ALLOWED_URL_1, process.env.ALLOWED_URL_2];
+
 
 var corsOptionsDelegate = function (req, callback) {
   var corsOptions = {
@@ -29,6 +31,8 @@ var corsOptionsDelegate = function (req, callback) {
 
 app.use(express.json());
 app.use(cors(corsOptionsDelegate));
+
+app.use("/public", express.static("uploads"));
 
 console.log(process.env.NODE_ENV)
 if (process.env.NODE_ENV === 'development') {
