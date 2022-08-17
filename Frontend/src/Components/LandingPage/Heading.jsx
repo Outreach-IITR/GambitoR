@@ -1,5 +1,5 @@
 import React from "react";
-import RegButton from "../RegButton/RegButton";
+import RegButton from "../../HelperComponents/RegButton/RegButton";
 
 import style from "./Heading.module.css";
 
