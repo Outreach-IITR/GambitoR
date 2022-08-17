@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import LandingPage from "./Components/LandingPage/LandingPage";
-import RoundComp from "./Components/RoundComp/RoundComp"
 import Footer from "./HelperComponents/Footer/Footer";
 import Navbar from "./HelperComponents/NavBar/NavBar";
 
@@ -12,10 +11,8 @@ function App() {
     <>
       <Router>
         <Routes>
-          {/* <Route path="/" element={<Navbar />}>
+          <Route path="/" element={<Navbar />}>
             <Route index element={<LandingPage />} />
-          </Route> */}
-          <Route path="/" element={<RoundComp/>}>
           </Route>
         </Routes>
       </Router>
