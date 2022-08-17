@@ -6,6 +6,7 @@ import yt from "./assets/youtube.png";
 import linki from "./assets/linkedin.png";
 import twitter from "./assets/twitter.png";
 import footerImg from "./assets/footerImg.png";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -13,64 +14,64 @@ function Footer() {
       <footer className={styles.mainFooter}>
         <div className={styles.footerContainer}>
           <div className={styles.leftSection}>
-            <img className={styles.footerImg} src={footerImg} />
+            <img className={styles.footerImg} src={footerImg} alt="" />
             <div className={styles.footPhone}>+91-9558780555</div>
             <div className={styles.footMail}>
-              <a href="mailto: gambitor@iitr.ac.in">gambitor@iitr.ac.in</a>
+              <Link to="mailto: gambitor@iitr.ac.in">gambitor@iitr.ac.in</Link>
             </div>
           </div>
 
           <div className={styles.Col}>
             <ul>
               <li>
-                <a href="#">ABOUT</a>
+                <Link to="#">ABOUT</Link>
               </li>
               <li>
-                <a href="#">EVENTS</a>
+                <Link to="#">EVENTS</Link>
               </li>
               <li>
-                <a href="#">CONTACTS</a>
-              </li>
-            </ul>
-          </div>
-          <div className={styles.Col}>
-            <ul>
-              <li>
-                <a href="#">RESOURCES</a>
-              </li>
-              <li>
-                <a href="#">SYLLABUS</a>
-              </li>
-              <li>
-                <a href="#">MOCK PAPERS</a>
-              </li>
-              <li>
-                <a href="#">FAQs</a>
+                <Link to="#">CONTACTS</Link>
               </li>
             </ul>
           </div>
           <div className={styles.Col}>
             <ul>
               <li>
-                <a href="#">FOLLOW US</a>
+                <Link to="#">RESOURCES</Link>
+              </li>
+              <li>
+                <Link to="#">SYLLABUS</Link>
+              </li>
+              <li>
+                <Link to="#">MOCK PAPERS</Link>
+              </li>
+              <li>
+                <Link to="#">FAQs</Link>
+              </li>
+            </ul>
+          </div>
+          <div className={styles.Col}>
+            <ul>
+              <li>
+                <Link to="#">FOLLOW US</Link>
               </li>
               <li>
                 <div className={styles.socialLinks}>
-                  <a href="#">
-                    <img className={styles.socialImg} src={fb} />
-                  </a>
-                  <a href="#">
-                    <img className={styles.socialImg} src={insta}></img>
-                  </a>
-                  <a href="#">
-                    <img className={styles.socialImg} src={twitter}></img>
-                  </a>
-                  <a href="#">
-                    <img className={styles.socialImg} src={yt}></img>
-                  </a>
-                  <a href="#">
-                    <img className={styles.socialImg} src={linki}></img>
-                  </a>
+                  <Link to="#">
+                    <img alt="" className={styles.socialImg} src={fb} />
+                  </Link>
+                  <Link to="#">
+                    <img alt="" className={styles.socialImg} src={insta}></img>
+                  </Link>
+                  <Link to="#">
+                    <img alt="" className={styles.socialImg} src={twitter}></img>
+                  </Link>
+                  <Link to="#">
+                    <img alt="" className={styles.socialImg} src={yt}></img>
+                  </Link>
+                  <Link to="#">
+                    <img alt="" className={styles.socialImg} src={linki}></img>
+                  </Link>
                 </div>
               </li>
             </ul>

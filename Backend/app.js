@@ -2,7 +2,9 @@ const express = require('express')
 const dotenv = require('dotenv');
 const morgan = require('morgan');
 const cors = require('cors');
-const globalErrorHandler = require('./Controller/errorController')
+const globalErrorHandler = require('./Controller/errorController');
+const registrationRoutes = require('./Routes/registrationRoutes');
+const AppError = require('./utils/appError');
 
 dotenv.config()
 
@@ -39,11 +41,12 @@ app.use('/test', (req, res) => {
 
 app.use(express.json({ limit: "8mb" }));
 
+//All the routes comes here
+app.use('/api/v1/registration', registrationRoutes)
+
 app.use('*', (req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404))
 });
-
-//All the routes comes here
 
 
 //This is the global error handler

@@ -1,9 +1,12 @@
 import React from 'react'
+// import Middle from '../Middle/Middle';
 import style from "./LandingPage.module.css"
 
 const LandingPage = () => {
   return (
-    <div>LandingPage</div>
+    <div>
+      {/* <Middle /> */}
+    </div>
   )
 }
 
