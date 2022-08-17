@@ -31,7 +31,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link class={styles.rightNavItems} to="">
+            <Link class={styles.rightNavItems} to="/register">
               <RegButton />
             </Link>
           </li>
