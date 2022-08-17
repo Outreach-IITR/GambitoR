@@ -3,7 +3,7 @@ import styles from "./NavBar.module.css";
 import navLogo from "./assets/navLogo.png";
 import topRightImg from "./assets/topRightImg.png";
 import topLeftImg from "./assets/topLeftImg.png";
-import RegButton from "../../Components/RegButton/RegButton";
+import RegButton from "../RegButton/RegButton";
 import { Link, Outlet } from "react-router-dom";
 import Footer from "../Footer/Footer";
 
@@ -16,7 +16,7 @@ const Navbar = () => {
         <img className={styles.navLogo} alt="img" src={navLogo} />
         <ul className={styles.navList}>
           <li>
-            <Link class={styles.rightNavItems} to="#">
+            <Link class={styles.rightNavItems} to="">
               About
             </Link>
           </li>
@@ -31,7 +31,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link class={styles.rightNavItems} to="#">
+            <Link class={styles.rightNavItems} to="">
               <RegButton />
             </Link>
           </li>
