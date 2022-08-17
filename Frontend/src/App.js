@@ -5,7 +5,7 @@ import Footer from "./HelperComponents/Footer/Footer";
 import Navbar from "./HelperComponents/NavBar/NavBar";
 
 import "./App.css";
-import RegisterForm from "./Components/RegisterForm/RegisterForm";
+import Events from "./Components/Events/Events";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Navbar />}>
             <Route index element={<LandingPage />} />
-            <Route path="register" element={<RegisterForm />} />
+            <Route element={<Events />} path="events" />
           </Route>
         </Routes>
       </Router>

@@ -16,17 +16,17 @@ const Navbar = () => {
         <img className={styles.navLogo} alt="img" src={navLogo} />
         <ul className={styles.navList}>
           <li>
-            <Link class={styles.rightNavItems} to="">
+            <Link class={styles.rightNavItems} to="/about">
               About
             </Link>
           </li>
           <li>
-            <Link class={styles.rightNavItems} to="#">
+            <Link class={styles.rightNavItems} to="/events">
               Events
             </Link>
           </li>
           <li>
-            <Link class={styles.rightNavItems} to="#">
+            <Link class={styles.rightNavItems} to="/contacts">
               Contacts
             </Link>
           </li>
@@ -42,6 +42,6 @@ const Navbar = () => {
       <Footer />
     </>
   );
-}
+};
 
 export default Navbar;
