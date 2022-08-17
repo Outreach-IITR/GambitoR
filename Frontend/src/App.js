@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import LandingPage from "./Components/LandingPage/LandingPage";
 import Footer from "./HelperComponents/Footer/Footer";
