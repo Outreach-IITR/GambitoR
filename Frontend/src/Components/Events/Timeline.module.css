@@ -16,5 +16,6 @@
 
 .timeline {
   position: relative;
+  max-width: 80%;
   width: 35em;
 }

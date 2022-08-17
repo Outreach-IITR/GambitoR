@@ -1,8 +1,7 @@
 import React from "react";
 import Updates from "../../HelperComponents/Updates/Updates";
+import updates from "../Events/updatesContent";
 import Heading from "./Heading";
-
-import updates from "./updatesContent";
 
 import style from "./LandingPage.module.css";
 

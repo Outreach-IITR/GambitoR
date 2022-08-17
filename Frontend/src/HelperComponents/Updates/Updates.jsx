@@ -9,7 +9,7 @@ const Updates = (props) => {
       <ul className={style.content}>
         {props.updates.map((update, idx) => {
           return (
-            <li>
+            <li key={idx}>
               <div className={style.description}>
                 <p className={style.body}>{update.description}</p>
                 <p className={style.time}>
