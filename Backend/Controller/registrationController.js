@@ -6,9 +6,9 @@ exports.createRegistration = catchAsync(async (req, res, next) => {
   if (!req.file) {
     next(new AppError("Please provide marksheet", 400));
   }
-
+  
   req.body.marksheet = process.env.URL + "public/" + req.file.filename;
-
+  
   await RegistrationModel.create({
     ...req.body,
   });
