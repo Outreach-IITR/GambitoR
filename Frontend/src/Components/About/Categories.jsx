@@ -46,7 +46,7 @@ const Categories = () => {
   };
 
   return (
-    <div>
+    <div className={style.categoriesMainContainer}>
       <h1 className={style.headingTitle}>CATEGORIES</h1>
       <h3 className={style.headingLine}>
         The competition will be conducted in{" "}
