@@ -8,6 +8,7 @@ import Navbar from "./HelperComponents/NavBar/NavBar";
 import "./App.css";
 import Events from "./Components/Events/Events";
 import RegisterForm from "./Components/RegisterForm/RegisterForm";
+import About from "./Components/About/About";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Navbar />}>
             <Route index element={<LandingPage />} />
             <Route element={<Events />} path="events" />
+            <Route element={<About />} path="about" />
             <Route element={<RegisterForm />} path="register" />
           </Route>
         </Routes>
