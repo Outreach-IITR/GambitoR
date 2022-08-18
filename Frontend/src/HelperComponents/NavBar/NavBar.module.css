@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   padding: 0 6em;
-  width: calc(100%-6em);
+  width: 100%;
   height: max-content;
   flex-direction: row;
   justify-content: space-between;
