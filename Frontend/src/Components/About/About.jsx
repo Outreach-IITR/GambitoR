@@ -4,6 +4,7 @@ import RoundComp from "./RoundComp";
 import style from "./About.module.css";
 import Header from "../../HelperComponents/Header/Header";
 import Categories from "./Categories";
+import DateNVenue from "./DateNVenue";
 
 const headDescription = (
   <>
@@ -26,6 +27,7 @@ const About = () => {
       <div className={style.AboutContainer}>
         <RoundComp />
         <Categories />
+        <DateNVenue />
       </div>
     </>
   );

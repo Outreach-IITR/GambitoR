@@ -1,3 +1,7 @@
+.categoriesMainContainer {
+  margin-bottom: 5em;
+}
+
 .headingTitle {
   font-family: "Jost";
   font-style: normal;
@@ -26,8 +30,8 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  height: 600px;
+  align-items: flex-end;
+  height: 500px;
 }
 
 .categoriesBox {
