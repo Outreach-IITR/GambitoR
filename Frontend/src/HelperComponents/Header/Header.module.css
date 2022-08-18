@@ -6,6 +6,11 @@
   padding: 4.5em 0;
 }
 
+.headerContainer > div {
+  max-width: 1544px;
+  margin: auto;
+}
+
 .text {
   font-family: "Josefin Sans";
   font-style: normal;
