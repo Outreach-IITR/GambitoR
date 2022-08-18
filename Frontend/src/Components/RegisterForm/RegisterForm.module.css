@@ -75,3 +75,8 @@
 .number{
   margin-right: 12px;
 }
+
+.inputError input {
+  border: red 1px solid !important;
+  background: rgba(255, 0, 0, 0.2) !important;
+}

@@ -11,13 +11,6 @@ import { get } from "loadsh";
 const RegisterForm = () => {
   const [index, setIndex] = useState(0);
   const [submitObj, setSubmitObj] = useState({});
-  const [selectedFile, setSelectedFile] = useState(null);
-
-  const handleFileUpload = (e) => {
-    setSelectedFile(e.target.files[0]);
-  };
-
-  console.log(selectedFile?.name);
 
   const formDetails = [
     {
@@ -31,20 +24,42 @@ const RegisterForm = () => {
     },
   ];
 
+  const handleValidate = (values) => {
+    const errors = {};
+    if (!values.name) {
+      errors.name = "Required";
+    }
+    if (!values.contactNumber) {
+      errors.contactNumber = "Required";
+    }
+    if (!values.email) {
+      errors.email = "Required";
+    }
+    return errors;
+  };
+
   const handleFormData = async (values) => {
-    console.log(values)
     try {
       const formData = new FormData();
-      formData.append("marksheet", selectedFile);
-      formData.append("name", submitObj.name);
-      formData.append("email", submitObj.email);
-      formData.append("contactNumber", submitObj.contactNumber.toString());
-      formData.append("parent.contactNumber", submitObj.parent.contactNumber.toString());
+      formData.append("marksheet", get(values, "file"));
+      formData.append("name", get(submitObj, "name"));
+      formData.append("email", get(submitObj, "email"));
+      formData.append(
+        "contactNumber",
+        get(submitObj, "contactNumber", "").toString()
+      );
+      formData.append(
+        "parent.contactNumber",
+        get(submitObj, "parent.contactNumber", "").toString()
+      );
       formData.append("parent.email", submitObj.parent.email);
       formData.append("parent.name", submitObj.parent.name);
       formData.append("school.name", values.name);
       formData.append("school.email", values.email);
-      formData.append("school.contactNumber", values.contactNumber.toString());
+      formData.append(
+        "school.contactNumber",
+        get(values, "contactNumber", "").toString()
+      );
       await api.post("/api/v1/registration", formData);
     } catch (err) {
       console.log(err);
@@ -63,6 +78,7 @@ const RegisterForm = () => {
           setSubmitObj({ ...values, ...submitObj });
           setIndex(1);
         }}
+        validate={handleValidate}
       >
         {({ values, errors, touched, handleChange, handleSubmit }) => (
           <form className={style.form} onSubmit={handleSubmit}>
@@ -71,6 +87,7 @@ const RegisterForm = () => {
               htmlFor={"name"}
               onChange={handleChange}
               name="name"
+              className={errors.name ? style.inputError : ""}
               type={"text"}
               value={values.name}
             />
@@ -80,12 +97,14 @@ const RegisterForm = () => {
               onChange={handleChange}
               value={values.contactNumber}
               type="number"
+              className={errors.contactNumber ? style.inputError : ""}
             />
             <InputBox
               onChange={handleChange}
               label={"Email Address"}
               name="email"
               type={"email"}
+              className={errors.email ? style.inputError : ""}
               value={values.email}
             />
             <SharedButton
@@ -113,6 +132,7 @@ const RegisterForm = () => {
           setSubmitObj({ parent: values, ...submitObj });
           setIndex(2);
         }}
+        validate={handleValidate}
       >
         {({ values, errors, touched, handleChange, handleSubmit }) => (
           <form className={style.form} onSubmit={handleSubmit}>
@@ -122,6 +142,7 @@ const RegisterForm = () => {
               onChange={handleChange}
               name="name"
               type={"text"}
+              className={errors.name ? style.inputError : ""}
               value={values.name}
             />
             <InputBox
@@ -129,6 +150,7 @@ const RegisterForm = () => {
               name="contactNumber"
               onChange={handleChange}
               value={values.contactNumber}
+              className={errors.contactNumber ? style.inputError : ""}
               type="number"
             />
             <InputBox
@@ -136,6 +158,7 @@ const RegisterForm = () => {
               label={"Email Address"}
               name="email"
               type={"email"}
+              className={errors.email ? style.inputError : ""}
               value={values.email}
             />
             <SharedButton
@@ -161,8 +184,16 @@ const RegisterForm = () => {
           marksheet: null,
         }}
         onSubmit={handleFormData}
+        validate={handleValidate}
       >
-        {({ values, errors, touched, handleChange, handleSubmit, setFieldValue }) => (
+        {({
+          values,
+          errors,
+          touched,
+          handleChange,
+          handleSubmit,
+          setFieldValue,
+        }) => (
           <form className={style.form} onSubmit={handleSubmit}>
             <InputBox
               label={"Name"}
@@ -170,6 +201,7 @@ const RegisterForm = () => {
               onChange={handleChange}
               name="name"
               type={"text"}
+              className={errors.name ? style.inputError : ""}
               value={values.name}
             />
             <div className={style.flexRow}>
@@ -179,12 +211,15 @@ const RegisterForm = () => {
                 onChange={handleChange}
                 value={values.contactNumber}
                 type="number"
-                className={style.number}
+                className={`${style.number} ${
+                  errors.contactNumber ? style.inputError : ""
+                }`}
               />
               <InputBox
                 onChange={handleChange}
                 label={"Email Address"}
                 name="email"
+                className={errors.email ? style.inputError : ""}
                 type={"email"}
                 value={values.email}
               />
@@ -193,7 +228,7 @@ const RegisterForm = () => {
               type="file"
               name="marksheet"
               onChange={(event) => {
-                setFieldValue("file", event.currentTarget.files[0])
+                setFieldValue("file", event.currentTarget.files[0]);
               }}
               value={values.marksheet}
             />
