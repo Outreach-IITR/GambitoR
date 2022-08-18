@@ -14,13 +14,13 @@ const infoSchema = new mongoose.Schema({
       /^(\+\d{1,3}[- ]?)?\d{10}$/,
       "The value of path {PATH} ({VALUE}) is not a valid mobile number.",
     ],
-    unique: [true, "This number is already registered"],
+    // unique: [true, "This number is already registered"],
   },
   email: {
     type: String,
     validate: [validator.isEmail, "Please enter a valid e-mail"],
     required: [true, "Please enter email address."],
-    unique: [true, 'Email id already registered.']
+    // unique: [true, 'Email id already registered.']
   },
 });
 
@@ -30,11 +30,11 @@ const registrationSchema = new mongoose.Schema({
     default: "Name",
     required: [true, "Please enter name"],
   },
-  age: {
-    type: Number,
-    index: true,
-    required: [true, "Please Provide age."],
-  },
+  // age: {
+  //   type: Number,
+  //   index: true,
+  //   required: [true, "Please Provide age."],
+  // },
   contactNumber: {
     type: Number,
     required: [true, "Please provide your mobile Number"],
@@ -52,11 +52,11 @@ const registrationSchema = new mongoose.Schema({
     unique: [true, "This email is already registered"],
   },
 
-  class: {
-    type: Number,
-    enum: [9, 10, 11, 12],
-    required: [true, "Please enter your class."],
-  },
+  // class: {
+  //   type: Number,
+  //   enum: [9, 10, 11, 12],
+  //   required: [true, "Please enter your class."],
+  // },
   parent: infoSchema,
   school: infoSchema,
   // parentName: {
@@ -83,16 +83,16 @@ const registrationSchema = new mongoose.Schema({
   //   required: [true, 'Please provide school name.'],
   // },
 
-  address: {
-    type: String,
-    default: "Address",
-    required: [true, 'Please provide address.'],
-  },
+  // address: {
+  //   type: String,
+  //   default: "Address",
+  //   required: [true, 'Please provide address.'],
+  // },
 
-  pinCode: {
-    type: Number,
-    required: [true, 'Please provide pincode.'],
-  },
+  // pinCode: {
+  //   type: Number,
+  //   required: [true, 'Please provide pincode.'],
+  // },
 
   // schoolContactNumber: {
   //   type: Number,
