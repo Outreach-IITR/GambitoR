@@ -34,24 +34,10 @@ exports.createRegistration = catchAsync(async (req, res, next) => {
 });
 
 exports.getAllRegistrations = catchAsync(async (req, res, next) => {
-  const mailOptions = {
-    from: process.env.EMAIL_USER,
-    to: req.body.email,
-    subject: "Registration Completed successfully.",
-    text: "Hey! Your registration is completed successfully.",
-  };
+  const registrations = await RegistrationModel.find();
 
-  mailService.sendMail(mailOptions, function (error, info) {
-    if (error) {
-      res.status(500).json({
-        data: error,
-      });
-      console.log(error);
-    } else {
-      res.status(200).json({
-        data: info.response,
-      });
-      console.log("Email sent: " + info.response);
-    }
+  res.status(200).json({
+    status: "success",
+    data: registrations,
   });
 });
