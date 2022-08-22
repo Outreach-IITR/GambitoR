@@ -10,18 +10,6 @@ var dbUser = process.env.DB_USERNAME;
 var dbPass = process.env.DB_PASSWORD;
 var dbPort = process.env.DB_PORT || "27017";
 
-console.log(
-  "mongodb://" +
-  dbUser +
-  ":" +
-  dbPass +
-  "@" +
-  dbHost +
-  ":" +
-  dbPort +
-  "/" +
-  dbName
-)
 mongoose.connect("mongodb://" +
   dbUser +
   ":" +
