@@ -35,8 +35,15 @@
 }
 
 .content > li::before {
-  padding-top: 0.25em;
-  content: url(./Assets/BulletPoints.png);
+  margin-top: 0.5em;
+  background-image: url(./Assets/BulletPoints.png);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
+  display: flex;
+  flex-direction: column;
+  width: 5em;
 }
 
 .description {
@@ -78,4 +85,10 @@
 .content::-webkit-scrollbar-thumb {
   background: #084b82;
   border-radius: 1em;
+}
+
+@media (max-width: 756px) {
+  .content {
+    max-height: 30vh;
+  }
 }

@@ -58,7 +58,7 @@ const Categories = () => {
             <div
               key={idx}
               className={style.categoriesBox}
-              onClick={() => onClickActiveHandler(idx)}
+              onMouseEnter={() => onClickActiveHandler(idx)}
             >
               <div
                 className={`${style.categoriesUnactiveContent} ${
@@ -66,7 +66,6 @@ const Categories = () => {
                 }`}
               >
                 <h4>{obj.name}</h4>
-                <p>{obj.description}</p>
               </div>
               <div
                 className={`${style.categoriesActiveContent} ${

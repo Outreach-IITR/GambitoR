@@ -31,12 +31,13 @@
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
-  height: 500px;
+  aspect-ratio: 3/1;
+  margin-top: 2em;
 }
 
 .categoriesBox {
   position: relative;
-  width: 20%;
+  width: 22%;
   max-width: 300px;
   aspect-ratio: 1/1;
   background-color: #084b82;
@@ -54,8 +55,8 @@
   font-family: "Jost";
   font-style: normal;
   font-weight: 600;
-  font-size: 2em;
-  line-height: 2.5em;
+  font-size: 1.75em;
+  line-height: 1.25em;
   text-align: ce nter;
   letter-spacing: 0.04em;
   color: #e7a800;
@@ -132,4 +133,37 @@
 
 .activeBar.active {
   background-color: #ff5d02;
+}
+
+@media (max-width: 756px) {
+  .headingTitle {
+    font-size: 3.5em;
+  }
+
+  .headingLine {
+    font-size: 1.5em;
+    line-height: 149%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #084b82;
+  }
+  .categoriesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2/1;
+  }
+  .categoriesBox {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: #084b82;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

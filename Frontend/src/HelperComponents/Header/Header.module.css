@@ -28,11 +28,17 @@
   font-style: normal;
   font-weight: 400;
   font-size: 1.25em;
-  line-height: 30px;
+  line-height: 2em;
   text-align: center;
   letter-spacing: 0.04em;
   color: #ffffff;
   width: 60%;
   margin: auto;
   padding-top: 0.5em;
+}
+
+@media (max-width: 756px) {
+  .textDescription {
+    text-align: justify;
+  }
 }

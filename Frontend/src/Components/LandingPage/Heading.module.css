@@ -4,8 +4,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 0 1em;
 }
 
 .content {
@@ -49,4 +47,10 @@
 .headingImage > img {
   position: relative;
   width: 100%;
+}
+
+@media (max-width: 756px) {
+  .headingContainer {
+    flex-direction: column;
+  }
 }
