@@ -37,9 +37,6 @@ function Footer() {
           <div className={styles.Col}>
             <ul>
               <li>
-                <Link to="#">RESOURCES</Link>
-              </li>
-              <li>
                 <Link to="#">SYLLABUS</Link>
               </li>
               <li>
@@ -64,7 +61,11 @@ function Footer() {
                     <img alt="" className={styles.socialImg} src={insta}></img>
                   </Link>
                   <Link to="#">
-                    <img alt="" className={styles.socialImg} src={twitter}></img>
+                    <img
+                      alt=""
+                      className={styles.socialImg}
+                      src={twitter}
+                    ></img>
                   </Link>
                   <Link to="#">
                     <img alt="" className={styles.socialImg} src={yt}></img>

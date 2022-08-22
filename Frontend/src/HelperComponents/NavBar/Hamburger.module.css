@@ -1,0 +1,43 @@
+.hamburger__ham {
+  width: 1.8rem;
+  height: 1.8rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  z-index: 1080;
+  margin-left: auto;
+}
+
+.hamburger__burger {
+  width: 1.8rem;
+  height: 0.23rem;
+  border-radius: 10px;
+  background-color: #084b82;
+  transform-origin: 0;
+  transition: all 0.3s linear;
+}
+
+.hamburger__ham.ham_active .hamburger__burger {
+  transform-origin: 1px;
+  background-color: #084b82;
+  opacity: 0.8;
+}
+
+.hamburger__ham.ham_active .hamburger__burger1 {
+  transform: rotate(45deg);
+}
+
+.hamburger__ham.ham_active .hamburger__burger2 {
+  transform: translate(100px);
+}
+
+.hamburger__ham.ham_active .hamburger__burger3 {
+  transform: rotate(-45deg);
+}
+
+@media (min-width: 800px) {
+  .hamburger__ham {
+    display: none;
+  }
+}
