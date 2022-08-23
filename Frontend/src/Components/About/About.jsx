@@ -6,6 +6,7 @@ import Header from "../../HelperComponents/Header/Header";
 import Categories from "./Categories";
 import DateNVenue from "./DateNVenue";
 import Syllabus from "./Syllabus";
+import Prize from "./Prize";
 
 const headDescription = (
   <>
@@ -31,6 +32,7 @@ const About = () => {
         <DateNVenue />
         <Syllabus />
       </div>
+        <Prize />
     </>
   );
 };
