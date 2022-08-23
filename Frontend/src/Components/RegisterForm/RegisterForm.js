@@ -7,10 +7,12 @@ import InputBox from "../../HelperComponents/InputBox/InputBox";
 import SharedButton from "../../HelperComponents/SharedButton/SharedButton";
 import api from "../../https/api";
 import { get } from "loadsh";
+import { useNavigate } from "react-router-dom";
 
 const RegisterForm = () => {
   const [index, setIndex] = useState(0);
   const [submitObj, setSubmitObj] = useState({});
+  const navigate = useNavigate();
   const options = [
     {
       label: "METIOX (For 9 & 10)",
@@ -76,6 +78,7 @@ const RegisterForm = () => {
         get(values, "contactNumber", "").toString()
       );
       await api.post("/api/v1/registration", formData);
+      navigate("/verify");
     } catch (err) {
       console.log(err);
     }
@@ -291,12 +294,7 @@ const RegisterForm = () => {
 
   return (
     <div className={style.structure}>
-      <Card
-        cardStyle={{
-          background: window.innerWidth <= 758 ? "none" : "",
-        }}
-        className={style.cardStructure}
-      >
+      <Card className={style.cardStructure}>
         <h1>{formDetails[index].heading}</h1>
         {index === 0 ? (
           <StudentForm />
