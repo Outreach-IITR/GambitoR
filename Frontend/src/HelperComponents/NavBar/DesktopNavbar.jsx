@@ -22,7 +22,7 @@ const DesktopNavbar = () => {
             Contacts
           </Link>
         </li>
-        <li>
+        <li className="cursor">
           <Link className={styles.rightNavItems} to="/register">
             <RegButton />
           </Link>

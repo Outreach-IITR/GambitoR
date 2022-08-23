@@ -22,10 +22,21 @@
   color: #084b82;
 }
 
-.input input:focus{
+.input input:focus {
   outline: none;
 }
 
-.input input:active{
+.input input:active {
   outline: none;
+}
+
+@media (max-width: 758px) {
+  .input label {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+  .input input {
+    height: 31px;
+    padding: 4px;
+  }
 }

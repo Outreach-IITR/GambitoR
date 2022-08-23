@@ -9,6 +9,7 @@ import Events from "./Components/Events/Events";
 import RegisterForm from "./Components/RegisterForm/RegisterForm";
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
+import Verification from "./Components/Verification/Verification";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route element={<About />} path="about" />
             <Route element={<RegisterForm />} path="register" />
             <Route element={<Contact />} path="contacts" />
+            <Route element={<Verification />} path="verify" />
           </Route>
         </Routes>
       </Router>

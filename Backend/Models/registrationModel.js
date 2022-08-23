@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-var validator = require('validator');
+var validator = require("validator");
 
 const infoSchema = new mongoose.Schema({
   name: {
@@ -51,12 +51,11 @@ const registrationSchema = new mongoose.Schema({
     required: [true, "Please enter email address."],
     unique: [true, "This email is already registered"],
   },
-
-  // class: {
-  //   type: Number,
-  //   enum: [9, 10, 11, 12],
-  //   required: [true, "Please enter your class."],
-  // },
+  class: {
+    type: String,
+    enum: ["metiox", "apollox", "athenox"],
+    required: [true, "Please enter your class."],
+  },
   parent: infoSchema,
   school: infoSchema,
   // parentName: {
@@ -106,12 +105,11 @@ const registrationSchema = new mongoose.Schema({
   // },
   marksheet: {
     type: String,
-    required: [true, 'Please provide marksheet.']
+    required: [true, "Please provide marksheet."],
   },
   mailVerified: {
     type: Boolean,
     default: false,
-    select: false,
   },
 });
 
