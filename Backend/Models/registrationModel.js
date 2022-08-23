@@ -110,7 +110,6 @@ const registrationSchema = new mongoose.Schema({
   mailVerified: {
     type: Boolean,
     default: false,
-    select: false,
   },
 });
 

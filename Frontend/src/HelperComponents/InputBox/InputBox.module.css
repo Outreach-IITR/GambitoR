@@ -22,10 +22,10 @@
   color: #084b82;
 }
 
-.input input:focus{
+.input input:focus {
   outline: none;
 }
 
-.input input:active{
+.input input:active {
   outline: none;
 }

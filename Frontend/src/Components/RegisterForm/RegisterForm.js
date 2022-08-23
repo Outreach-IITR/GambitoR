@@ -11,6 +11,20 @@ import { get } from "loadsh";
 const RegisterForm = () => {
   const [index, setIndex] = useState(0);
   const [submitObj, setSubmitObj] = useState({});
+  const options = [
+    {
+      label: "METIOX (For 9 & 10)",
+      value: "metiox",
+    },
+    {
+      label: "APOLLOX (For 11)",
+      value: "apollox",
+    },
+    {
+      label: "ATHENOX (For 12)",
+      value: "athenox",
+    },
+  ];
 
   const formDetails = [
     {
@@ -44,6 +58,7 @@ const RegisterForm = () => {
       formData.append("marksheet", get(values, "file"));
       formData.append("name", get(submitObj, "name"));
       formData.append("email", get(submitObj, "email"));
+      formData.append("class", get(submitObj, "class"));
       formData.append(
         "contactNumber",
         get(submitObj, "contactNumber", "").toString()
@@ -73,6 +88,7 @@ const RegisterForm = () => {
           name: null,
           contactNumber: null,
           email: null,
+          class: options[0].value,
         }}
         onSubmit={(values) => {
           setSubmitObj({ ...values, ...submitObj });
@@ -80,33 +96,61 @@ const RegisterForm = () => {
         }}
         validate={handleValidate}
       >
-        {({ values, errors, touched, handleChange, handleSubmit }) => (
+        {({
+          values,
+          errors,
+          touched,
+          handleChange,
+          handleSubmit,
+          setFieldValue,
+        }) => (
           <form className={style.form} onSubmit={handleSubmit}>
-            <InputBox
-              label={"Name"}
-              htmlFor={"name"}
-              onChange={handleChange}
-              name="name"
-              className={errors.name ? style.inputError : ""}
-              type={"text"}
-              value={values.name}
-            />
-            <InputBox
-              label={"Contact Number"}
-              name="contactNumber"
-              onChange={handleChange}
-              value={values.contactNumber}
-              type="number"
-              className={errors.contactNumber ? style.inputError : ""}
-            />
-            <InputBox
-              onChange={handleChange}
-              label={"Email Address"}
-              name="email"
-              type={"email"}
-              className={errors.email ? style.inputError : ""}
-              value={values.email}
-            />
+            <div className={style.container}>
+              <InputBox
+                label={"Name"}
+                htmlFor={"name"}
+                onChange={handleChange}
+                name="name"
+                className={errors.name ? style.inputError : ""}
+                type={"text"}
+                value={values.name}
+              />
+              <div className={style.select}>
+                <select
+                  name="class"
+                  id=""
+                  value={values.class}
+                  onChange={(e) => setFieldValue("class", e.target.value)}
+                >
+                  {options.map((data, idx) => {
+                    return <option value={data.value}>{data.label}</option>;
+                  })}
+                </select>
+              </div>
+            </div>
+            <div className={style.container}>
+              <InputBox
+                label={"Contact Number"}
+                name="contactNumber"
+                onChange={handleChange}
+                value={values.contactNumber}
+                type="number"
+                className={errors.contactNumber ? style.inputError : ""}
+              />
+            </div>
+            <div className={style.container}>
+              <InputBox
+                onChange={handleChange}
+                label={"Email Address"}
+                name="email"
+                type={"email"}
+                className={errors.email ? style.inputError : ""}
+                value={values.email}
+              />
+              {/* <SharedButton className={style.btn} onClick={handleSubmit}>
+                Verify
+              </SharedButton> */}
+            </div>
             <SharedButton
               type={"submit"}
               className={style.btn}
@@ -247,7 +291,12 @@ const RegisterForm = () => {
 
   return (
     <div className={style.structure}>
-      <Card className={style.cardStructure}>
+      <Card
+        cardStyle={{
+          background: window.innerWidth <= 758 ? "none" : "",
+        }}
+        className={style.cardStructure}
+      >
         <h1>{formDetails[index].heading}</h1>
         {index === 0 ? (
           <StudentForm />

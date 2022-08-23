@@ -18,7 +18,6 @@ const Navbar = () => {
           <img alt="img" src={navLogo} />
         </Link>
         {window.innerWidth > 756 ? <DesktopNavbar /> : <MobileNavbar />}
-
         <div className={styles.rightImg}>
           <img alt="" src={topRightImg} />
         </div>

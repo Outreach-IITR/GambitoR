@@ -65,18 +65,46 @@
   color: #ffffff;
 }
 
-.flexRow{
+.flexRow {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
 }
 
-.number{
+.number {
   margin-right: 12px;
 }
 
 .inputError input {
   border: red 1px solid !important;
   background: rgba(255, 0, 0, 0.2) !important;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container button {
+  margin-left: 20px;
+  height: 48px;
+  font-weight: 400;
+  width: 140px;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.04em;
+  margin-bottom: 12px;
+}
+
+.container select {
+  height: 45px;
+  width: 140px;
+  margin-left: 12px;
+  margin-bottom: 11px;
+  background: #ffffff;
+  border: 2px solid #084b82 !important;
+  border-radius: 3.00999px !important;
 }
