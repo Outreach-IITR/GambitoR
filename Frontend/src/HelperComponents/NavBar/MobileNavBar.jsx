@@ -1,28 +1,31 @@
 import React from "react";
 import styles from "./NavBar.module.css";
-import RegButton from "../RegButton/RegButton";
 import { Link, NavLink } from "react-router-dom";
 import Hamburger from "./Hamburger";
 import { useState } from "react";
 
 const MobileNavbar = () => {
-  const [isOpen, setisOpen] = useState(0);
+  const [isOpen, setisOpen] = useState(false);
   const onClickHandler = () => {
-    console.log(isOpen);
     setisOpen((prevState) => !prevState);
   };
+
   return (
     <>
       <ul className={styles.navList}>
         <li>
           <Link className={styles.rightNavItems} to="/register">
-            <RegButton />
+            <button className={styles.button1}>Register</button>
           </Link>
         </li>
         <li>
           <Hamburger onClick={onClickHandler} />
         </li>
       </ul>
+      <div
+        className={`${styles.backdropDiv} ${isOpen ? styles.isActive : ""}`}
+        onClick={() => setisOpen(1)}
+      />
       <ul className={`${styles.mobileNav} ${isOpen ? styles.isActive : ""}`}>
         <li>
           <NavLink

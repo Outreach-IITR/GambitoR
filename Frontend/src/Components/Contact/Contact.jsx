@@ -14,7 +14,7 @@ const Contact = () => {
         <div className={style.conveyorGrid}>
           {Conveyor.map((obj, id) => {
             return (
-              <div className={style.memberCard}>
+              <div key={id} className={style.memberCard}>
                 <ContactCard member={obj} />
               </div>
             );
@@ -23,7 +23,7 @@ const Contact = () => {
         <div className={style.coordinatorGrid}>
           {Coordinator.map((obj, id) => {
             return (
-              <div className={style.memberCard}>
+              <div key={id} className={style.memberCard}>
                 <ContactCard member={obj} />
               </div>
             );

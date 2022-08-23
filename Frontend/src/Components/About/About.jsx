@@ -5,6 +5,7 @@ import style from "./About.module.css";
 import Header from "../../HelperComponents/Header/Header";
 import Categories from "./Categories";
 import DateNVenue from "./DateNVenue";
+import Syllabus from "./Syllabus";
 
 const headDescription = (
   <>
@@ -28,6 +29,7 @@ const About = () => {
         <RoundComp />
         <Categories />
         <DateNVenue />
+        <Syllabus />
       </div>
     </>
   );

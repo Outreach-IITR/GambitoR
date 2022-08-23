@@ -24,13 +24,13 @@ function Footer() {
           <div className={styles.Col}>
             <ul>
               <li>
-                <Link to="#">ABOUT</Link>
+                <Link to="/about">ABOUT</Link>
               </li>
               <li>
-                <Link to="#">EVENTS</Link>
+                <Link to="/events">EVENTS</Link>
               </li>
               <li>
-                <Link to="#">CONTACTS</Link>
+                <Link to="/contacts">CONTACTS</Link>
               </li>
             </ul>
           </div>

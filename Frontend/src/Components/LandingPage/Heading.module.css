@@ -42,6 +42,7 @@
 .headingImage {
   min-width: 300px;
   width: 40%;
+  z-index: -1;
 }
 
 .headingImage > img {
