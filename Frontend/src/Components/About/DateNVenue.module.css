@@ -25,12 +25,19 @@
 }
 
 .content > li::before {
-  position: relative;
-  padding-top: 0.5em;
-  content: url(./Assets/BulletPoints.png);
+  margin-top: 0.5em;
+  background-image: url(./Assets/BulletPoints.png);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
+  display: flex;
+  flex-direction: column;
+  width: 5em;
 }
 
 .description {
+  width: 100%;
   font-family: "Jost";
   font-style: normal;
   font-weight: 400;

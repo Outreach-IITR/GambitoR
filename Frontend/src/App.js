@@ -2,13 +2,13 @@ import React from "react";
 
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import LandingPage from "./Components/LandingPage/LandingPage";
-import Footer from "./HelperComponents/Footer/Footer";
 import Navbar from "./HelperComponents/NavBar/NavBar";
 
 import "./App.css";
 import Events from "./Components/Events/Events";
 import RegisterForm from "./Components/RegisterForm/RegisterForm";
 import About from "./Components/About/About";
+import Contact from "./Components/Contact/Contact";
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
             <Route element={<Events />} path="events" />
             <Route element={<About />} path="about" />
             <Route element={<RegisterForm />} path="register" />
+            <Route element={<Contact />} path="contacts" />
           </Route>
         </Routes>
       </Router>
