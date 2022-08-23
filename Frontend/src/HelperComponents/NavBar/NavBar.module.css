@@ -80,7 +80,7 @@ a {
 @media (max-width: 1000px) {
   .navLogo {
     position: relative;
-    width: 20%;
+    width: 10%;
     max-width: 14em;
   }
   .navList {
@@ -89,9 +89,29 @@ a {
 }
 
 @media (max-width: 756px) {
+  .mainNav {
+    position: relative;
+    display: flex;
+    padding: 0 3.25em;
+    padding-top: 1em;
+    width: 100%;
+    height: max-content;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+  .navLogo {
+    width: 10%;
+  }
+
+  .navList {
+    width: 80%;
+  }
+
   .mobileNav.isActive {
     top: 10%;
-    left: -40%;
+    left: -45%;
   }
 
   .mobileNav {

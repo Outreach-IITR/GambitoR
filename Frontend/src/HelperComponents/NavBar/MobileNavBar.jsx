@@ -5,7 +5,7 @@ import Hamburger from "./Hamburger";
 import { useState } from "react";
 
 const MobileNavbar = () => {
-  const [isOpen, setisOpen] = useState(false);
+  const [isOpen, setisOpen] = useState(1);
   const onClickHandler = () => {
     setisOpen((prevState) => !prevState);
   };

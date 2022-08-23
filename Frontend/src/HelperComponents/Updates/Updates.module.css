@@ -91,4 +91,14 @@
   .content {
     max-height: 30vh;
   }
+  .description > .body {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5em;
+    text-align: justify;
+    letter-spacing: 0.04em;
+    color: #084b82;
+    padding: 0.25em 0;
+  }
 }
