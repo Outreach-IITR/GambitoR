@@ -45,18 +45,6 @@
   color: #7fb5e1;
 }
 
-.content > li::before {
-  margin-top: 0.5em;
-  background-image: url(./Assets/BulletPoints.png);
-  background-position: top;
-  background-size: contain;
-  background-repeat: no-repeat;
-  content: "";
-  display: flex;
-  flex-direction: column;
-  width: 5em;
-}
-
 .structure p {
   font-weight: 400;
   font-size: 23px;
@@ -79,6 +67,7 @@
 @media (max-width: 758px) {
   .doodle {
     display: none;
+    width: 50%;
   }
 
   .structure h1 {
@@ -87,7 +76,7 @@
 
   .doodle img {
     width: 50%;
-    margin-top: 56px;
+    margin-top: 3em;
   }
 
   .mobile {
@@ -107,7 +96,7 @@
     line-height: 17px;
     text-align: center;
     letter-spacing: 0.04em;
-    padding: 50px 12px;
+    /* padding: 50px 12px; */
     gap: 0;
     list-style: none !important;
   }

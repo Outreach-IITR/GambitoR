@@ -90,28 +90,13 @@ a {
 
 @media (max-width: 756px) {
   .mainNav {
-    position: relative;
-    display: flex;
     padding: 0 3.25em;
     padding-top: 1em;
-    width: 100%;
-    height: max-content;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2em;
-  }
-  .navLogo {
-    width: 10%;
-  }
-
-  .navList {
-    width: 80%;
   }
 
   .mobileNav.isActive {
     top: 10%;
-    left: -45%;
+    right: -45%;
   }
 
   .mobileNav {
@@ -119,7 +104,8 @@ a {
     background-color: #ffffff;
     padding: 3em;
     top: 10%;
-    left: 0%;
+    right: 0%;
+    list-style: none;
     display: flex;
     flex-direction: column;
     row-gap: 4em;

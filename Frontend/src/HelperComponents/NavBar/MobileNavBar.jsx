@@ -26,7 +26,10 @@ const MobileNavbar = () => {
         className={`${styles.backdropDiv} ${isOpen ? styles.isActive : ""}`}
         onClick={() => setisOpen(1)}
       />
-      <ul className={`${styles.mobileNav} ${isOpen ? styles.isActive : ""}`}>
+      <ul
+        className={`${styles.mobileNav} ${isOpen ? styles.isActive : ""}`}
+        onClick={() => setisOpen(1)}
+      >
         <li>
           <NavLink
             to="/about"

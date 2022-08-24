@@ -51,3 +51,12 @@
 .description > span {
   color: #ffb900;
 }
+
+@media (max-width: 476px) {
+  .content {
+    width: 90%;
+  }
+  .content > li::before {
+    width: 3em;
+  }
+}

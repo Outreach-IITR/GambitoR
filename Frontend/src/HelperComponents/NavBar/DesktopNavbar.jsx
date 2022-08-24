@@ -24,7 +24,7 @@ const DesktopNavbar = () => {
         </li>
         <li className="cursor">
           <Link className={styles.rightNavItems} to="/register">
-            <RegButton />
+            <RegButton to="/register" />
           </Link>
         </li>
       </ul>

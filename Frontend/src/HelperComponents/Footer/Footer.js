@@ -3,87 +3,60 @@ import styles from "./Footer.module.css";
 import fb from "./assets/facebook.png";
 import insta from "./assets/instagram.png";
 import yt from "./assets/youtube.png";
-import linki from "./assets/linkedin.png";
+import linkedin from "./assets/linkedin.png";
 import twitter from "./assets/twitter.png";
-import footerImg from "./assets/footerImg.png";
+import logo from "./assets/footerImg.png";
 import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div>
-      <footer className={styles.mainFooter}>
-        <div className={styles.footerContainer}>
-          <div className={styles.leftSection}>
-            <img className={styles.footerImg} src={footerImg} alt="" />
-            <div className={styles.footPhone}>+91-9558780555</div>
-            <div className={styles.footMail}>
-              <Link to="mailto: gambitor@iitr.ac.in">gambitor@iitr.ac.in</Link>
-            </div>
+    <footer className={styles.footerContainer}>
+      <div className={styles.mainDiv}>
+        <div className={styles.logoDiv}>
+          <img className={styles.logo} src={logo} alt="Gambtor Logo" />
+          <p className={styles.contactNo}>+91-9999999999</p>
+          <p className={styles.emailId}>gambitor@iitr.ac.in</p>
+        </div>
+        <div className={styles.linkDiv}>
+          {/* column 1 */}
+          <div className={styles.column}>
+            <Link to="/about">ABOUT</Link>
+            <Link to="/events">EVENTS</Link>
+            <Link to="/contacts">CONTACTS</Link>
           </div>
 
-          <div className={styles.Col}>
-            <ul>
-              <li>
-                <Link to="/about">ABOUT</Link>
-              </li>
-              <li>
-                <Link to="/events">EVENTS</Link>
-              </li>
-              <li>
-                <Link to="/contacts">CONTACTS</Link>
-              </li>
-            </ul>
+          {/* column 2 */}
+          <div className={styles.column}>
+            <Link to="/about">SYLLABUS</Link>
+            <Link to="/about">MOCK PAPERS</Link>
+            <Link to="/about">FAQs</Link>
           </div>
-          <div className={styles.Col}>
-            <ul>
-              <li>
-                <Link to="#">SYLLABUS</Link>
-              </li>
-              <li>
-                <Link to="#">MOCK PAPERS</Link>
-              </li>
-              <li>
-                <Link to="#">FAQs</Link>
-              </li>
-            </ul>
-          </div>
-          <div className={styles.Col}>
-            <ul>
-              <li>
-                <Link to="#">FOLLOW US</Link>
-              </li>
-              <li>
-                <div className={styles.socialLinks}>
-                  <Link to="#">
-                    <img alt="" className={styles.socialImg} src={fb} />
-                  </Link>
-                  <Link to="#">
-                    <img alt="" className={styles.socialImg} src={insta}></img>
-                  </Link>
-                  <Link to="#">
-                    <img
-                      alt=""
-                      className={styles.socialImg}
-                      src={twitter}
-                    ></img>
-                  </Link>
-                  <Link to="#">
-                    <img alt="" className={styles.socialImg} src={yt}></img>
-                  </Link>
-                  <Link to="#">
-                    <img alt="" className={styles.socialImg} src={linki}></img>
-                  </Link>
-                </div>
-              </li>
-            </ul>
+
+          {/* column 3 */}
+          <div className={styles.column}>
+            <p>FOLLOW US</p>
+            <div className={styles.socailMedia}>
+              <a href="/about">
+                <img src={fb} alt="facebook" />
+              </a>
+              <a href="/about">
+                <img src={insta} alt="instagram" />
+              </a>
+              <a href="/about">
+                <img src={twitter} alt="twitter" />
+              </a>
+              <a href="/about">
+                <img src={yt} alt="youtube" />
+              </a>
+              <a href="/about">
+                <img src={linkedin} alt="linkedin" />
+              </a>
+            </div>
           </div>
         </div>
-        <p className={styles.copyRight}>
-          <br />
-          PRIVACY POLICY | COPYRIGHT | TERMS
-        </p>
-      </footer>
-    </div>
+      </div>
+      <p className={styles.TNC}>PRIVACY POLICY | COPYRIGHT | TERMS</p>
+    </footer>
   );
 }
 

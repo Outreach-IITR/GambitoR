@@ -17,7 +17,7 @@ const Heading = () => {
           non neque tellus sagittis nam orci enim. Ac suspendisse aliquam
           pulvinar vulputate sagittis auctor et morbi sollicitudin.
         </p>
-        <RegButton />
+        <RegButton to="/register" />
       </div>
       <div className={style.headingImage}>
         <img src={headingImage} alt="" />
