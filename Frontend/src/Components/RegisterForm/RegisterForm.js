@@ -48,7 +48,16 @@ const RegisterForm = () => {
     if (!values.contactNumber) {
       errors.contactNumber = "Required";
     }
+    if (
+      values.contactNumber < 999999999 ||
+      values.contactNumber > 10000000000
+    ) {
+      errors.contactNumber = "Required";
+    }
     if (!values.email) {
+      errors.email = "Required";
+    }
+    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(values.email)) {
       errors.email = "Required";
     }
     return errors;
