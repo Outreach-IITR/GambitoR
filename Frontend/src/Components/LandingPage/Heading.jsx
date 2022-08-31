@@ -14,7 +14,8 @@ const Heading = () => {
         </h1>
         <p className={style.description}>
           A nationwide exam designed for the students of classes 9th to 12th, to
-          challenge their mental abilities and make brainpower reach pinnacle.
+          challenge thier mental abilities and make their brainpower reach
+          pinnacle.
         </p>
         <RegButton to="/register" />
       </div>
