@@ -17,7 +17,7 @@ const RoundComp = () => {
             <div className={style.infoDescription}>
               <p>
                 For the first round of the GambitoR, battle it out with your
-                peers online. Wrestle a 2 hours question paper consisting of
+                peers online. Wrestle a 2 hour long question paper consisting of
                 math, puzzles, code crunchers etc, and put your logical and
                 thinking skills up for a challenge.
               </p>{" "}

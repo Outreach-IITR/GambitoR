@@ -13,7 +13,7 @@ const Heading = () => {
           GAMBITO<span>R</span>
         </h1>
         <p className={style.description}>
-          A nationwide exam designed for the students of classes 9th to 12th,
+          A nationwide exam designed for the students of classes 9th to 12th, to
           challenge their mental abilities and make brainpower reach pinnacle.
         </p>
         <RegButton to="/register" />

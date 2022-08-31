@@ -19,7 +19,7 @@ const DesktopNavbar = () => {
         </li>
         <li>
           <Link className={styles.rightNavItems} to="/contacts">
-            Contacts
+            Contact US
           </Link>
         </li>
         <li className="cursor">

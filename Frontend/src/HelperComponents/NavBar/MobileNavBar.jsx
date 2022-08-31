@@ -57,7 +57,7 @@ const MobileNavbar = () => {
               `${styles.rightNavItems} ${isActive ? styles.currentPage : ""}`
             }
           >
-            Contacts
+            Contact US
           </NavLink>
         </li>
       </ul>
