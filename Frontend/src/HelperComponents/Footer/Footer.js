@@ -14,8 +14,12 @@ function Footer() {
       <div className={styles.mainDiv}>
         <div className={styles.logoDiv}>
           <img className={styles.logo} src={logo} alt="Gambtor Logo" />
-          <p className={styles.contactNo}>+91-9999999999</p>
-          <p className={styles.emailId}>gambitor@iitr.ac.in</p>
+          <a href="Tel: 91-9558780555" className={styles.contactNo}>
+            +91-9558780555
+          </a>
+          <a href="mailto: gambitor@iitr.ac.in" className={styles.emailId}>
+            gambitor@iitr.ac.in
+          </a>
         </div>
         <div className={styles.linkDiv}>
           {/* column 1 */}

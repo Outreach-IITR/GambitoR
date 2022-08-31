@@ -13,9 +13,8 @@ const Heading = () => {
           GAMBITO<span>R</span>
         </h1>
         <p className={style.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum cursus
-          non neque tellus sagittis nam orci enim. Ac suspendisse aliquam
-          pulvinar vulputate sagittis auctor et morbi sollicitudin.
+          A nationwide exam designed for the students of classes 9th to 12th,
+          challenging their mental abilities and make brainpower reach pinnacle.
         </p>
         <RegButton to="/register" />
       </div>

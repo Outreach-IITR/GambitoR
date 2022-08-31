@@ -12,9 +12,9 @@ const Updates = (props) => {
             <li key={idx}>
               <div className={style.description}>
                 <p className={style.body}>{update.description}</p>
-                <p className={style.time}>
-                  {update.time + " | " + update.date}
-                </p>
+                {/* <p className={style.time}>
+                  { update.time + " | " + update.date}
+                </p> */}
               </div>
             </li>
           );

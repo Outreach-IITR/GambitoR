@@ -17,7 +17,7 @@ const dateContent = [
     content: (
       <>
         The <span>Inception round</span> will be conducted through online mode
-        nationwide on _________.
+        nationwide on 25th Sept 2022.
       </>
     ),
   },
