@@ -12,7 +12,9 @@ import { useNavigate } from "react-router-dom";
 const RegisterForm = () => {
   const [index, setIndex] = useState(0);
   const [submitObj, setSubmitObj] = useState({});
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+
   const options = [
     {
       label: "METIOX (For 9 & 10)",
@@ -64,6 +66,7 @@ const RegisterForm = () => {
   };
 
   const handleFormData = async (values) => {
+    setLoading(true);
     try {
       const formData = new FormData();
       formData.append("marksheet", get(values, "file"));
@@ -91,6 +94,7 @@ const RegisterForm = () => {
     } catch (err) {
       console.log(err);
     }
+    setLoading(false);
   };
 
   const StudentForm = () => {
@@ -289,6 +293,7 @@ const RegisterForm = () => {
               value={values.marksheet}
             />
             <SharedButton
+              disabled={loading}
               type={"submit"}
               className={style.btn}
               onClick={handleSubmit}

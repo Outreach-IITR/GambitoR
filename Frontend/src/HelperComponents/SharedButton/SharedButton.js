@@ -7,9 +7,11 @@ const SharedButton = ({
   className,
   btnStyle = {},
   type,
+  disabled
 }) => {
   return (
     <button
+      disabled={disabled}
       style={btnStyle}
       className={`${style.button1} ${className} cursor`}
       onClick={onClick}
