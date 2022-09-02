@@ -18,7 +18,21 @@ exports.createRegistration = catchAsync(async (req, res, next) => {
     from: process.env.EMAIL_USER,
     to: req.body.email,
     subject: "Registration Completed successfully.",
-    text: "Hey! Your registration is completed successfully.",
+    text: `Hello ${req.body.name}, \n
+    Team GambitoR is delighted to inform you that you have successfully registered for the first edition of GambitoR! \n
+    \n    
+    These are the credentials you have entered. \n
+    Email: ${req.body.email} \n
+    Mobile Number: ${req.body.contactNumber} \n
+    \n
+    The first round of GambitoR will be on 25th September 2022. \n
+    \n
+    Follow us on our social media handles to stay connected! \n
+    Further updates will be sent to your registered email address. \n
+    \n
+    With regards, \n
+    Team GambitoR.
+    `,
   };
 
   mailService.sendMail(mailOptions, function (err) {
