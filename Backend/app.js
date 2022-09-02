@@ -32,7 +32,7 @@ var corsOptionsDelegate = function (req, callback) {
 app.use(express.json());
 app.use(cors(corsOptionsDelegate));
 
-app.use("/public", express.static("uploads"));
+app.use("/api/public", express.static("uploads"));
 
 console.log(process.env.NODE_ENV)
 if (process.env.NODE_ENV === 'development') {
