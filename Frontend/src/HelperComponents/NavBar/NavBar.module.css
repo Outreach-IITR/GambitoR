@@ -96,7 +96,7 @@ a {
 
   .mobileNav.isActive {
     top: 10%;
-    right: -45%;
+    right: -100%;
   }
 
   .mobileNav {
@@ -109,7 +109,7 @@ a {
     display: flex;
     flex-direction: column;
     row-gap: 4em;
-    box-shadow: 0px 4px 19px 14px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 19px 14px rgba(0, 0, 0, 0.10);
     border-radius: 1.25em;
     z-index: 10;
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
