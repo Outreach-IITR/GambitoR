@@ -8,6 +8,8 @@ import SharedButton from "../../HelperComponents/SharedButton/SharedButton";
 import api from "../../https/api";
 import { get } from "loadsh";
 import { useNavigate } from "react-router-dom";
+import "antd/dist/antd.css";
+import { notification } from "antd";
 
 const RegisterForm = () => {
   const [index, setIndex] = useState(0);
@@ -87,11 +89,14 @@ const RegisterForm = () => {
       formData.append("school.email", values.email);
       formData.append(
         "school.contactNumber",
-        (get(values, "contactNumber") || '').toString()
+        (get(values, "contactNumber") || "").toString()
       );
       await api.post("/api/v1/registration", formData);
       navigate("/verify");
     } catch (err) {
+      notification.warn({
+        message: get(err, "response.data.message", "Error"),
+      });
       console.log(err);
     }
     setLoading(false);
@@ -256,7 +261,7 @@ const RegisterForm = () => {
           } else {
             errors.marksheet = "Required.";
           }
-          console.log(errors)
+          console.log(errors);
           return errors;
         }}
       >
