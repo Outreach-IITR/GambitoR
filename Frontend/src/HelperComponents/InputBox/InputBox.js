@@ -10,7 +10,8 @@ const InputBox = ({
   htmlFor,
   defaultValue,
   onChange,
-  placeholder
+  placeholder,
+  accept
 }) => {
   return (
     <div className={`${style.input} ${className}`}>
@@ -18,6 +19,7 @@ const InputBox = ({
       <input
         placeholder={placeholder}
         type={type}
+        accept={accept}
         value={value}
         name={name}
         onChange={onChange}

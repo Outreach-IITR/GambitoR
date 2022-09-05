@@ -62,6 +62,14 @@ const RegisterForm = () => {
     if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(values.email)) {
       errors.email = "Required";
     }
+    if (values.file) {
+      if (values.file.type !== "application/pdf") {
+        errors.marksheet = "Required.";
+      }
+      if (values.file.size > 1024 * 1024) {
+        errors.marksheet = "Required.";
+      }
+    }
     return errors;
   };
 
@@ -285,8 +293,11 @@ const RegisterForm = () => {
               />
             </div>
             <InputBox
+              accept={"application/pdf"}
               type="file"
+              label={"Marksheet (PDF) upto 1MB"}
               name="marksheet"
+              className={errors.marksheet ? style.inputError : ""}
               onChange={(event) => {
                 setFieldValue("file", event.currentTarget.files[0]);
               }}
