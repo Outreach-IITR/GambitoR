@@ -62,14 +62,6 @@ const RegisterForm = () => {
     if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(values.email)) {
       errors.email = "Required";
     }
-    if (values.file) {
-      if (values.file.type !== "application/pdf") {
-        errors.marksheet = "Required.";
-      }
-      if (values.file.size > 1024 * 1024) {
-        errors.marksheet = "Required.";
-      }
-    }
     return errors;
   };
 
@@ -252,7 +244,20 @@ const RegisterForm = () => {
           marksheet: null,
         }}
         onSubmit={handleFormData}
-        validate={handleValidate}
+        validate={(values) => {
+          const errors = {};
+          if (values.file) {
+            if (values.file.type !== "application/pdf") {
+              errors.marksheet = "Required.";
+            }
+            if (values.file.size > 1024 * 1024) {
+              errors.marksheet = "Required.";
+            }
+          } else {
+            errors.marksheet = "Required.";
+          }
+          return errors;
+        }}
       >
         {({
           values,
