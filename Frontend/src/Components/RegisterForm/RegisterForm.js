@@ -87,7 +87,7 @@ const RegisterForm = () => {
       formData.append("school.email", values.email);
       formData.append(
         "school.contactNumber",
-        get(values, "contactNumber", "").toString()
+        (get(values, "contactNumber") || '').toString()
       );
       await api.post("/api/v1/registration", formData);
       navigate("/verify");
@@ -256,6 +256,7 @@ const RegisterForm = () => {
           } else {
             errors.marksheet = "Required.";
           }
+          console.log(errors)
           return errors;
         }}
       >

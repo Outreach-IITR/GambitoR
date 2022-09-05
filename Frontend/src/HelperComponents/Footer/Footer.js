@@ -38,7 +38,7 @@ function Footer() {
 
           {/* column 3 */}
           <div className={styles.column}>
-            <p>FOLLOW US</p>
+            <Link to="/about">FOLLOW US</Link>
             <div className={styles.socailMedia}>
               <a href="/about">
                 <img src={fb} alt="facebook" />

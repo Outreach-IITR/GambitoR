@@ -71,6 +71,11 @@
   width: 100%;
 }
 
+a:hover{
+  transform: translateY(-0.1em);
+  color: rgb(79, 132, 190);
+}
+
 .TNC {
   font-family: "Jost";
   font-style: normal;

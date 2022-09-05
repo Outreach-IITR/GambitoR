@@ -13,3 +13,10 @@
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+
+.button1:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.1em);
+  background-color:#ffbb00;
+  cursor:pointer
+}
