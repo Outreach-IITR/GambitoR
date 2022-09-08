@@ -1,20 +1,19 @@
 const updates = [
   {
     id: 1,
-    description:
-      "Registration portal for GambitoR starts soon! Stay Connected!",
+    description: "Hurry! The Registrations for GambitoR have already started.",
     // time: "TIME",
     // date: "DATE",
   },
   {
-    id: 1,
+    id: 2,
     description:
       "The sample paper of the inception round of GambitoR will be availible shortly.",
     // time: "TIME",
     // date: "DATE",
   },
   {
-    id: 1,
+    id: 3,
     description:
       "The inception round of GambitoR will be held on 25th Sept 2022.",
     // time: "TIME",
