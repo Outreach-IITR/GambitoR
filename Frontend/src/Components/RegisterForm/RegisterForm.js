@@ -8,6 +8,7 @@ import SharedButton from "../../HelperComponents/SharedButton/SharedButton";
 import api from "../../https/api";
 import { get } from "loadsh";
 import { useNavigate } from "react-router-dom";
+import Loader from "../../HelperComponents/Loader/Loader";
 
 const RegisterForm = () => {
   const [index, setIndex] = useState(0);
@@ -87,11 +88,12 @@ const RegisterForm = () => {
       formData.append("school.email", values.email);
       formData.append(
         "school.contactNumber",
-        (get(values, "contactNumber") || '').toString()
+        (get(values, "contactNumber") || "").toString()
       );
       await api.post("/api/v1/registration", formData);
       navigate("/verify");
     } catch (err) {
+      window.alert(get(err, "response.data.message", "Error"));
       console.log(err);
     }
     setLoading(false);
@@ -256,7 +258,7 @@ const RegisterForm = () => {
           } else {
             errors.marksheet = "Required.";
           }
-          console.log(errors)
+          console.log(errors);
           return errors;
         }}
       >
@@ -285,9 +287,8 @@ const RegisterForm = () => {
                 onChange={handleChange}
                 value={values.contactNumber}
                 type="number"
-                className={`${style.number} ${
-                  errors.contactNumber ? style.inputError : ""
-                }`}
+                className={`${style.number} ${errors.contactNumber ? style.inputError : ""
+                  }`}
               />
               <InputBox
                 onChange={handleChange}
@@ -326,28 +327,36 @@ const RegisterForm = () => {
   return (
     <div className={style.structure}>
       <Card className={style.cardStructure}>
-        <h1>{formDetails[index].heading}</h1>
-        {index === 0 ? (
-          <StudentForm />
-        ) : index === 1 ? (
-          <ParentForm />
+        {loading ? (
+          <div className={style.loader}>
+            <Loader />
+          </div>
         ) : (
-          <SchoolDetails />
+          <>
+            <h1>{formDetails[index].heading}</h1>
+            {index === 0 ? (
+              <StudentForm />
+            ) : index === 1 ? (
+              <ParentForm />
+            ) : (
+              <SchoolDetails />
+            )}
+            <div className={style.dots}>
+              <div
+                className={style.dot}
+                style={{ opacity: `${index >= 0 ? 1 : 0.2}` }}
+              ></div>
+              <div
+                className={style.dot}
+                style={{ opacity: `${index >= 1 ? 1 : 0.2}` }}
+              ></div>
+              <div
+                className={style.dot}
+                style={{ opacity: `${index >= 2 ? 1 : 0.2}` }}
+              ></div>
+            </div>
+          </>
         )}
-        <div className={style.dots}>
-          <div
-            className={style.dot}
-            style={{ opacity: `${index >= 0 ? 1 : 0.2}` }}
-          ></div>
-          <div
-            className={style.dot}
-            style={{ opacity: `${index >= 1 ? 1 : 0.2}` }}
-          ></div>
-          <div
-            className={style.dot}
-            style={{ opacity: `${index >= 2 ? 1 : 0.2}` }}
-          ></div>
-        </div>
       </Card>
     </div>
   );

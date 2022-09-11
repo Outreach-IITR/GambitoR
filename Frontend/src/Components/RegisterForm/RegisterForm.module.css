@@ -141,3 +141,12 @@
     height: 31px;
   }
 }
+
+.loader{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 120px;
+}
