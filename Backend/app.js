@@ -5,7 +5,9 @@ const cors = require('cors');
 const globalErrorHandler = require('./Controller/errorController');
 const registrationRoutes = require('./Routes/registrationRoutes');
 const AppError = require('./utils/appError');
-const path = require('path')
+const path = require('path');
+const { protect } = require('./Controller/authController');
+const userRoutes = require('./Routes/userRoutes');
 
 dotenv.config();
 
@@ -32,7 +34,7 @@ var corsOptionsDelegate = function (req, callback) {
 app.use(express.json());
 app.use(cors(corsOptionsDelegate));
 
-app.use("/api/public", express.static("uploads"));
+app.use("/api/public", protect, express.static("uploads"));
 
 console.log(process.env.NODE_ENV)
 if (process.env.NODE_ENV === 'development') {
@@ -47,6 +49,7 @@ app.use(express.json({ limit: "8mb" }));
 
 //All the routes comes here
 app.use('/api/v1/registration', registrationRoutes)
+app.use('/api/v1/user', userRoutes);
 
 app.use('*', (req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404))
