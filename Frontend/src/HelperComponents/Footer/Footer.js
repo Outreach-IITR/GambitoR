@@ -40,19 +40,16 @@ function Footer() {
           <div className={styles.column}>
             <Link to="/about">FOLLOW US</Link>
             <div className={styles.socailMedia}>
-              <a href="/about">
+              <a href="https://www.facebook.com/Outreach-Cell-IIT-Roorkee-102873668810173" target={'_blank'}>
                 <img src={fb} alt="facebook" />
               </a>
-              <a href="/about">
+              <a href="https://www.instagram.com/outreachiitr/" target={'_blank'}>
                 <img src={insta} alt="instagram" />
               </a>
-              <a href="/about">
+              {/* <a href="/about">
                 <img src={twitter} alt="twitter" />
-              </a>
-              <a href="/about">
-                <img src={yt} alt="youtube" />
-              </a>
-              <a href="/about">
+              </a> */}
+              <a href="https://in.linkedin.com/company/outreach-cell-iit-roorkee" target={'_blank'}>
                 <img src={linkedin} alt="linkedin" />
               </a>
             </div>
