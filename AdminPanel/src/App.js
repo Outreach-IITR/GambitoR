@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "./App.css";
-import Dashboard from "./Components/Dashboard/Dashboard";
 import Login from "./Components/Login/Login";
 import Navbar from "./Components/Navbar/Navbar";
+import Dashboard from './Components/Dashboard/table';
 
 function App() {
-  const [login, setLogin] = useState(false);
+  const [login, setLogin] = useState(true);
 
   return (
     <div className="App">
