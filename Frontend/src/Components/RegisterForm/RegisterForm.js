@@ -92,6 +92,7 @@ const RegisterForm = () => {
       await api.post("/api/v1/registration", formData);
       navigate("/verify");
     } catch (err) {
+      window.alert(get(err, "response.data.message", "Error"));
       console.log(err);
     }
     setLoading(false);
