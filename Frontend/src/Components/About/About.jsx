@@ -14,11 +14,9 @@ const headDescription = (
     School Championship where only creative thinking and quick wit can guide you
     to victory.`}
     <br />
-    {`Test yourselves against a comprehensive exam designed by our
-    studentcommunity, that will call into question your logical and analytical
-    skills.Compete with the best minds of the nation and win a chance to visit a
-    major scientific & technical institute and a free pass to Thomso’22 (for
-    subsequent rounds).`}
+    {`Compete with the best minds of the nation and
+win a chance to visit a major scientific & technical
+institute and a free pass to the subsequent round which will be held in the premises of IIT Roorkee.`}
   </>
 );
 
@@ -32,7 +30,7 @@ const About = () => {
         <DateNVenue />
         <Syllabus />
       </div>
-        <Prize />
+      <Prize />
     </>
   );
 };
