@@ -56,53 +56,12 @@ const registrationSchema = new mongoose.Schema({
     enum: ["metiox", "apollox", "athenox"],
     required: [true, "Please enter your class."],
   },
+  referralCode: {
+    type: String,
+    enum: ["VIM001", ""],
+  },
   parent: infoSchema,
   school: infoSchema,
-  // parentName: {
-  //   type: String,
-  //   default: "Parent's Name",
-  //   required: [true, "Please enter parent's name"],
-  // },
-
-  // parentContactNumber: {
-  //   type: Number,
-  //   required: [true, "Please provide your parent's mobile Number"],
-  //   unique: [true, 'Please provide new mobile number.']
-  // },
-
-  // parentEmailId: {
-  //   type: String,
-  //   required: [true, "Please enter email address."],
-  //   validate: [validator.isEmail, "Please enter a valid parent e-mail"],
-  // },
-
-  // schoolName: {
-  //   type: String,
-  //   default: "School Name",
-  //   required: [true, 'Please provide school name.'],
-  // },
-
-  // address: {
-  //   type: String,
-  //   default: "Address",
-  //   required: [true, 'Please provide address.'],
-  // },
-
-  // pinCode: {
-  //   type: Number,
-  //   required: [true, 'Please provide pincode.'],
-  // },
-
-  // schoolContactNumber: {
-  //   type: Number,
-  //   required: [true, "Please provide your school's mobile Number"],
-  // },
-
-  // schoolEmailId: {
-  //   validate: [validator.isEmail, "Please enter a valid school e-mail"],
-  //   type: String,
-  //   required: [true, "Please enter email address."],
-  // },
   marksheet: {
     type: String,
     required: [true, "Please provide marksheet."],
