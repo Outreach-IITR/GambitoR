@@ -17,7 +17,7 @@ const dateContent = [
     content: (
       <>
         The <span>Inception round</span> will be conducted through online mode
-        nationwide on 25th Sept 2022.
+        nationwide on 9th October 2022.
       </>
     ),
   },
@@ -26,7 +26,7 @@ const dateContent = [
     content: (
       <>
         The top performers in the Inception round will be invited to the campus
-        of IIT Roorkee in the <span>2nd week of October</span> for the Pinnacle
+        of IIT Roorkee in the <span>end of October</span> for the Pinnacle
         round.
       </>
     ),
@@ -35,9 +35,8 @@ const dateContent = [
     id: 4,
     content: (
       <>
-        They will get to participate in various competitions as well as to
-        experience one of the most magical nights in IITR during the cultural
-        extravaganza, popularly known as <span>Thomso</span>.
+        They will get to participate in various competitions as well as
+        experience the beauty, charm and historical significance that crowns the campus of <span>IIT Roorkee</span>.
       </>
     ),
   },

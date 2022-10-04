@@ -11,7 +11,8 @@ const InputBox = ({
   defaultValue,
   onChange,
   placeholder,
-  accept
+  accept,
+  inputStyle
 }) => {
   return (
     <div className={`${style.input} ${className}`}>
@@ -19,6 +20,7 @@ const InputBox = ({
       <input
         placeholder={placeholder}
         type={type}
+        style={inputStyle}
         accept={accept}
         value={value}
         name={name}

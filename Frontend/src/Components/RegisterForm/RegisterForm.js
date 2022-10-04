@@ -72,6 +72,10 @@ const RegisterForm = () => {
       const formData = new FormData();
       formData.append("marksheet", get(values, "file"));
       formData.append("name", get(submitObj, "name"));
+      formData.append(
+        "referralCode",
+        get(submitObj, "referralCode", "").toUpperCase()
+      );
       formData.append("email", get(submitObj, "email"));
       formData.append("class", get(submitObj, "class"));
       formData.append(
@@ -94,6 +98,7 @@ const RegisterForm = () => {
       navigate("/verify");
     } catch (err) {
       window.alert(get(err, "response.data.message", "Error"));
+      setIndex(0);
       console.log(err);
     }
     setLoading(false);
@@ -107,6 +112,7 @@ const RegisterForm = () => {
           contactNumber: null,
           email: null,
           class: options[0].value,
+          referralCode: undefined,
         }}
         onSubmit={(values) => {
           setSubmitObj({ ...values, ...submitObj });
@@ -164,6 +170,22 @@ const RegisterForm = () => {
                 type={"email"}
                 className={errors.email ? style.inputError : ""}
                 value={values.email}
+              />
+              {/* <SharedButton className={style.btn} onClick={handleSubmit}>
+                Verify
+              </SharedButton> */}
+            </div>
+            <div className={style.container}>
+              <InputBox
+                onChange={handleChange}
+                label={"Referral Code (if any)"}
+                name="referralCode"
+                type={"text"}
+                inputStyle={{
+                  textTransform: "uppercase",
+                }}
+                // className={errors.referralCode ? style.inputError : ""}
+                value={values.referralCode}
               />
               {/* <SharedButton className={style.btn} onClick={handleSubmit}>
                 Verify
@@ -287,8 +309,9 @@ const RegisterForm = () => {
                 onChange={handleChange}
                 value={values.contactNumber}
                 type="number"
-                className={`${style.number} ${errors.contactNumber ? style.inputError : ""
-                  }`}
+                className={`${style.number} ${
+                  errors.contactNumber ? style.inputError : ""
+                }`}
               />
               <InputBox
                 onChange={handleChange}

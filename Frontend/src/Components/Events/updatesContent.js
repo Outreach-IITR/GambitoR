@@ -15,7 +15,7 @@ const updates = [
   {
     id: 3,
     description:
-      "The inception round of GambitoR will be held on 25th Sept 2022.",
+      "The inception round of GambitoR will be held on 9th October 2022.",
     // time: "TIME",
     // date: "DATE",
   },

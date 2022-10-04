@@ -23,11 +23,10 @@ const RoundComp = () => {
               </p>{" "}
               <br />
               <p>
-                The top 25 students each from the{" "}
-                <span>9th & 10th and 11th grade category</span> and top 35
-                students from <span>12th grade category</span> will get to visit
-                IIT Roorkee for the second round, ‘Pinnacle’ during Thomso’22
-                and win exciting gifts and certificates.
+                The top 25 students each from the 9th & 10th and 11th grade
+                category and top 35 students from 12th grade category will get
+                to visit IIT Roorkee for the second round, ‘Pinnacle’ and win
+                exciting gifts and certificates.
               </p>
             </div>
           </div>
@@ -41,9 +40,8 @@ const RoundComp = () => {
             <div className={style.infoDescription}>
               <p>
                 Once you’ve made it through, an exciting visit to the IITR
-                campus awaits you. Thomso in itself is a glamorous extravaganza.
-                Add to that the excitement of the various technical events for
-                the second round.
+                campus awaits you. Add to that the excitement of the various
+                technical events for the second round.
               </p>
               <p>
                 Push your limits, gauge your potential and have fun while

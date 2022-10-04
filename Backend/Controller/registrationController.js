@@ -25,7 +25,7 @@ exports.createRegistration = catchAsync(async (req, res, next) => {
     Email: ${req.body.email} \n
     Mobile Number: ${req.body.contactNumber} \n
     \n
-    The first round of GambitoR will be on 25th September 2022. \n
+    The first round of GambitoR will be on 9th October 2022. \n
     \n
     Follow us on our social media handles to stay connected! \n
     Further updates will be sent to your registered email address. \n
