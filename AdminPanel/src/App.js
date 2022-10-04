@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import Login from "./Components/Login/Login";
+import Login from "./Components/Login/Login.jsx";
 import Navbar from "./Components/Navbar/Navbar";
 import Dashboard from "./Components/Dashboard/table";
 
 function App() {
-  const [login, setLogin] = useState(false);
+  const [login, setLogin] = useState(true);
 
   const handleLogin = (value) => {
     setLogin(value);
