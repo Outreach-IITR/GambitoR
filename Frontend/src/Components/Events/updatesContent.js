@@ -19,6 +19,14 @@ const updates = [
     // time: "TIME",
     // date: "DATE",
   },
+  {
+    id: 4,
+    description: "Registration deadline has been extended to 7th Oct",
+  },
+  {
+    id: 5,
+    description: "Mock questions have been released",
+  },
   // {
   //   id: 1,
   //   description:

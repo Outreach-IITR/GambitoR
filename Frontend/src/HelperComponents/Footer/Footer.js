@@ -7,6 +7,7 @@ import linkedin from "./assets/linkedin.png";
 import twitter from "./assets/twitter.png";
 import logo from "./assets/footerImg.png";
 import { Link } from "react-router-dom";
+import mockPaper from "./assets/MOCKTEST.pdf";
 
 function Footer() {
   return (
@@ -32,7 +33,9 @@ function Footer() {
           {/* column 2 */}
           <div className={styles.column}>
             <Link to="/about">SYLLABUS</Link>
-            <Link to="/about">MOCK PAPERS</Link>
+            <a href={mockPaper} target="_blank">
+              MOCK PAPERS
+            </a>
             <Link to="/about">FAQs</Link>
           </div>
 
@@ -40,16 +43,25 @@ function Footer() {
           <div className={styles.column}>
             <Link to="/about">FOLLOW US</Link>
             <div className={styles.socailMedia}>
-              <a href="https://www.facebook.com/Outreach-Cell-IIT-Roorkee-102873668810173" target={'_blank'}>
+              <a
+                href="https://www.facebook.com/Outreach-Cell-IIT-Roorkee-102873668810173"
+                target={"_blank"}
+              >
                 <img src={fb} alt="facebook" />
               </a>
-              <a href="https://www.instagram.com/outreachiitr/" target={'_blank'}>
+              <a
+                href="https://www.instagram.com/outreachiitr/"
+                target={"_blank"}
+              >
                 <img src={insta} alt="instagram" />
               </a>
               {/* <a href="/about">
                 <img src={twitter} alt="twitter" />
               </a> */}
-              <a href="https://in.linkedin.com/company/outreach-cell-iit-roorkee" target={'_blank'}>
+              <a
+                href="https://in.linkedin.com/company/outreach-cell-iit-roorkee"
+                target={"_blank"}
+              >
                 <img src={linkedin} alt="linkedin" />
               </a>
             </div>
