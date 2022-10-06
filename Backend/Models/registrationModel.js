@@ -9,7 +9,7 @@ const infoSchema = new mongoose.Schema({
   },
   contactNumber: {
     type: Number,
-    required: [true, "Please provide your mobile Number"],
+    // required: [true, "Please provide your mobile Number"],
     match: [
       /^(\+\d{1,3}[- ]?)?\d{10}$/,
       "The value of path {PATH} ({VALUE}) is not a valid mobile number.",
@@ -42,7 +42,7 @@ const registrationSchema = new mongoose.Schema({
       /^(\+\d{1,3}[- ]?)?\d{10}$/,
       "The value of path {PATH} ({VALUE}) is not a valid mobile number.",
     ],
-    unique: [true, "This number is already registered"],
+    // unique: [true, "This number is already registered"],
   },
 
   email: {
