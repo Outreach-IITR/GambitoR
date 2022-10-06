@@ -381,7 +381,7 @@ const RegisterForm = () => {
           </>
         )}
         <p>
-          Facing any issue registering Contact: <b>7877553148</b>{" "}
+          {/* Facing any issue registering Contact: <b>7877553148</b>{" "} */}
         </p>
       </Card>
     </div>
