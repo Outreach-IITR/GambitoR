@@ -380,6 +380,9 @@ const RegisterForm = () => {
             </div>
           </>
         )}
+        <p>
+          Facing any issue registering Contact: <b>7877553148</b>{" "}
+        </p>
       </Card>
     </div>
   );
