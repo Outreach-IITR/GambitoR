@@ -9,18 +9,15 @@ const infoSchema = new mongoose.Schema({
   },
   contactNumber: {
     type: Number,
-    // required: [true, "Please provide your mobile Number"],
     match: [
       /^(\+\d{1,3}[- ]?)?\d{10}$/,
       "The value of path {PATH} ({VALUE}) is not a valid mobile number.",
     ],
-    // unique: [true, "This number is already registered"],
   },
   email: {
     type: String,
     validate: [validator.isEmail, "Please enter a valid e-mail"],
     required: [true, "Please enter email address."],
-    // unique: [true, 'Email id already registered.']
   },
 });
 
@@ -30,11 +27,6 @@ const registrationSchema = new mongoose.Schema({
     default: "Name",
     required: [true, "Please enter name"],
   },
-  // age: {
-  //   type: Number,
-  //   index: true,
-  //   required: [true, "Please Provide age."],
-  // },
   contactNumber: {
     type: Number,
     required: [true, "Please provide your mobile Number"],
@@ -42,7 +34,6 @@ const registrationSchema = new mongoose.Schema({
       /^(\+\d{1,3}[- ]?)?\d{10}$/,
       "The value of path {PATH} ({VALUE}) is not a valid mobile number.",
     ],
-    // unique: [true, "This number is already registered"],
   },
 
   email: {
