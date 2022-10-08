@@ -387,7 +387,10 @@ const RegisterForm = () => {
           </>
         )}
         <p>
-          {/* Facing any issue registering Contact: <b>7877553148</b>{" "} */}
+          Facing any issue registering Contact:{" "}
+          <a href="mailto:gambitor@iitr.ac.in" style={{ color: "blue" }}>
+            gambitor@iitr.ac.in
+          </a>{" "}
         </p>
       </Card>
     </div>
