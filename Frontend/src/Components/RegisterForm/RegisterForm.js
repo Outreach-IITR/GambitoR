@@ -103,9 +103,10 @@ const RegisterForm = () => {
       await api.post("/api/v1/registration", formData);
       navigate("/verify");
     } catch (err) {
-      window.alert(get(err, "response.data.message", "Error"));
+      window.alert(
+        get(err, "response.data.message", get(err, "message", "Error"))
+      );
       setIndex(0);
-      console.log(err);
     }
     setLoading(false);
   };
@@ -286,7 +287,6 @@ const RegisterForm = () => {
           } else {
             errors.marksheet = "Required.";
           }
-          console.log(errors);
           return errors;
         }}
       >
@@ -315,8 +315,9 @@ const RegisterForm = () => {
                 onChange={handleChange}
                 value={values.contactNumber}
                 type="number"
-                className={`${style.number} ${errors.contactNumber ? style.inputError : ""
-                  }`}
+                className={`${style.number} ${
+                  errors.contactNumber ? style.inputError : ""
+                }`}
               />
               <InputBox
                 onChange={handleChange}
