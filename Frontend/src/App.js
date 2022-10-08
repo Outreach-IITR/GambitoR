@@ -20,7 +20,7 @@ function App() {
             <Route index element={<LandingPage />} />
             <Route element={<Events />} path="events" />
             <Route element={<About />} path="about" />
-            <Route element={<RegisterForm />} path="register" />
+            {/* <Route element={<RegisterForm />} path="register" /> */}
             <Route element={<Contact />} path="contacts" />
             <Route element={<Verification />} path="verify" />
           </Route>
