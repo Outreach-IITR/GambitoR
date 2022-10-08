@@ -67,10 +67,10 @@ const RegisterForm = () => {
     return errors;
   };
 
-  useEffect(() => {
-    window.alert("Registrations are closed!");
-    navigate("/");
-  }, [])
+  // useEffect(() => {
+  //   window.alert("Registrations are closed!");
+  //   navigate("/");
+  // }, [])
 
   const handleFormData = async (values) => {
     setLoading(true);
