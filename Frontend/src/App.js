@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import LandingPage from "./Components/LandingPage/LandingPage";
@@ -20,7 +20,7 @@ function App() {
             <Route index element={<LandingPage />} />
             <Route element={<Events />} path="events" />
             <Route element={<About />} path="about" />
-            {/* <Route element={<RegisterForm />} path="register" /> */}
+            <Route element={<RegisterForm />} path="register" />
             <Route element={<Contact />} path="contacts" />
             <Route element={<Verification />} path="verify" />
           </Route>

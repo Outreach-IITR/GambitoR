@@ -9,6 +9,7 @@ import api from "../../https/api";
 import { get } from "loadsh";
 import { useNavigate } from "react-router-dom";
 import Loader from "../../HelperComponents/Loader/Loader";
+import { useEffect } from "react";
 
 const RegisterForm = () => {
   const [index, setIndex] = useState(0);
@@ -65,6 +66,11 @@ const RegisterForm = () => {
     }
     return errors;
   };
+
+  useEffect(() => {
+    window.alert("Registrations are closed!");
+    navigate("/");
+  }, [])
 
   const handleFormData = async (values) => {
     setLoading(true);
@@ -309,9 +315,8 @@ const RegisterForm = () => {
                 onChange={handleChange}
                 value={values.contactNumber}
                 type="number"
-                className={`${style.number} ${
-                  errors.contactNumber ? style.inputError : ""
-                }`}
+                className={`${style.number} ${errors.contactNumber ? style.inputError : ""
+                  }`}
               />
               <InputBox
                 onChange={handleChange}
