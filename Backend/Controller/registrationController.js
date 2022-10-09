@@ -134,7 +134,8 @@ IIT Roorkee
   });
   res.status(200).json({
     status: "success",
-    data,
-    emails: emails.join(","),
+    data: {
+      message: "Mail sent successfully."
+    }
   });
 });
