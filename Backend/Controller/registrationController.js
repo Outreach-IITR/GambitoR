@@ -92,3 +92,49 @@ exports.verifyEmail = catchAsync(async (req, res, next) => {
     data: "Email verified successfully!",
   });
 });
+
+exports.bulkMail = catchAsync(async (req, res, next) => {
+  const data = await RegistrationModel.find().select("email");
+  let emails = [];
+  data.map((d, idx) => emails.push(d.email));
+  const mailOptions = {
+    from: process.env.EMAIL_USER,
+    to: emails,
+    subject: "Regarding Gambitor 1st Round.",
+    text: `Dear Applicant
+Greetings of the day!
+
+On account of multiple requests received from schools and students all over the country, we have decided to postpone Gambitor-  A national-level school championship for students of classes IX-XII until further notice.
+
+Clarification regarding syllabus:
+Class IX-X (Metiox): Aptitude and Logical Reasoning
+Class- XII (Apollox): Aptitude, Logical Reasoning, and General Mathematics
+Class XII (Athenox): Aptitude, Logical Reasoning, Maths, Physics, Chemistry.
+
+Tentative exam dates: January
+
+Please note that the first round will be entirely online, details of which will be informed through your email.
+For more information, visit: http://gambitor.iitr.ac.in/ and follow us on our social media handles to stay updated. In case of any query, feel free to reach us at the same.
+
+Thanks and Regards
+Outreach Cell
+IIT Roorkee
+    `,
+  };
+
+  mailService.sendMail(mailOptions, function (err) {
+    if (err) {
+      next(new AppError(err.message, err.statusCode));
+    } else {
+      res.status(201).json({
+        status: "success",
+        data: "Registration Completed Successfully!",
+      });
+    }
+  });
+  res.status(200).json({
+    status: "success",
+    data,
+    emails: emails.join(","),
+  });
+});
