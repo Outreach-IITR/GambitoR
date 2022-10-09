@@ -17,7 +17,7 @@ const dateContent = [
     content: (
       <>
         The <span>Inception round</span> will be conducted through online mode
-        nationwide on 9th October 2022.
+        nationwide in the month of January 2023.
       </>
     ),
   },
@@ -26,8 +26,8 @@ const dateContent = [
     content: (
       <>
         The top performers in the Inception round will be invited to the campus
-        of IIT Roorkee in the <span>end of October</span> for the Pinnacle
-        round.
+        of <span>IIT Roorkee</span> for the Pinnacle round. Details would be
+        available shortly.
       </>
     ),
   },
@@ -36,7 +36,8 @@ const dateContent = [
     content: (
       <>
         They will get to participate in various competitions as well as
-        experience the beauty, charm and historical significance that crowns the campus of <span>IIT Roorkee</span>.
+        experience the beauty, charm and historical significance that crowns the
+        campus of <span>IIT Roorkee</span>.
       </>
     ),
   },
