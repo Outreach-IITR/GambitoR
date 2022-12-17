@@ -104,16 +104,18 @@ exports.bulkMail = catchAsync(async (req, res, next) => {
     text: `Dear Applicant
 Greetings of the day!
 
-On account of multiple requests received from schools and students all over the country, we have decided to postpone Gambitor-  A national-level school championship for students of classes IX-XII until further notice.
+Thanks for applying to Gambitor-  A national-level school championship for students of classes IX-XII and for your patience through this application process.
+Our Inception round is scheduled on February 5th, 2023. The exam will be held online, and details regarding your login credentials and platform would be circulated once the registration deadline is passed.
+
+The last registration date for Gambitor is 1st February'2023; we encourage you to assist your friends who wish to apply, through the process.
 
 Clarification regarding syllabus:
 Class IX-X (Metiox): Aptitude and Logical Reasoning
 Class- XII (Apollox): Aptitude, Logical Reasoning, and General Mathematics
 Class XII (Athenox): Aptitude, Logical Reasoning, Maths, Physics, Chemistry.
 
-Tentative exam dates: January
+Further, the mock questions are available on our website, and a few more mock papers would be added in the upcoming days for your practice.
 
-Please note that the first round will be entirely online, details of which will be informed through your email.
 For more information, visit: http://gambitor.iitr.ac.in/ and follow us on our social media handles to stay updated. In case of any query, feel free to reach us at the same.
 
 Thanks and Regards
@@ -135,7 +137,7 @@ IIT Roorkee
   res.status(200).json({
     status: "success",
     data: {
-      message: "Mail sent successfully."
-    }
+      message: "Mail sent successfully.",
+    },
   });
 });
