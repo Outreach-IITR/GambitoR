@@ -2,13 +2,13 @@ const updates = [
   {
     id: 1,
     description:
-      "The inception round of GambitoR has been postponed and would be held in January.",
+      "The inception round of GambitoR is scheduled on 5th February 2023.",
     // time: "TIME",
     // date: "DATE",
   },
   {
     id: 2,
-    description: "Registration deadline: 31st December 2022.",
+    description: "Registration deadline: 1st February 2023.",
     // time: "TIME",
     // date: "DATE",
   },

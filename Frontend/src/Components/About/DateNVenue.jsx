@@ -17,7 +17,7 @@ const dateContent = [
     content: (
       <>
         The <span>Inception round</span> will be conducted through online mode
-        nationwide in the month of January 2023.
+        nationwide on February 5th 2023.
       </>
     ),
   },

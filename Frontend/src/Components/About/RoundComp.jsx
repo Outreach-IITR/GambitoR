@@ -23,8 +23,8 @@ const RoundComp = () => {
               </p>{" "}
               <br />
               <p>
-                The top 25 students each from the 9th & 10th and 11th grade
-                category and top 35 students from 12th grade category will get
+                The top 15 students each from the 9th & 10th and 11th grade
+                category and top 20 students from 12th grade category will get
                 to visit IIT Roorkee for the second round, ‘Pinnacle’ and win
                 exciting gifts and certificates.
               </p>
