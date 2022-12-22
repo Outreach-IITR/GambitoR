@@ -8,7 +8,7 @@ const updates = [
   },
   {
     id: 2,
-    description: "Registration deadline: 1st February 2023.",
+    description: "Registration deadline: 2nd February 2023.",
     // time: "TIME",
     // date: "DATE",
   },
