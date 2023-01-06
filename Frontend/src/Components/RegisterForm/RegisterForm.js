@@ -9,7 +9,6 @@ import api from "../../https/api";
 import { get } from "loadsh";
 import { useNavigate } from "react-router-dom";
 import Loader from "../../HelperComponents/Loader/Loader";
-import { useEffect } from "react";
 
 const RegisterForm = () => {
   const [index, setIndex] = useState(0);
@@ -278,10 +277,15 @@ const RegisterForm = () => {
         validate={(values) => {
           const errors = {};
           if (values.file) {
-            if (values.file.type !== "application/pdf") {
+            if (
+              !(
+                values.file.type === "application/pdf" ||
+                values.file.type.substring(0, 6) === "image/"
+              )
+            ) {
               errors.marksheet = "Required.";
             }
-            if (values.file.size > 1024 * 1024) {
+            if (values.file.size > 2 * 1024 * 1024) {
               errors.marksheet = "Required.";
             }
           } else {
@@ -329,9 +333,9 @@ const RegisterForm = () => {
               />
             </div>
             <InputBox
-              accept={"application/pdf"}
+              accept={"application/pdf, image/*"}
               type="file"
-              label={"Marksheet (PDF) upto 1MB"}
+              label={"Marksheet (PDF & Image) upto 2MB"}
               name="marksheet"
               className={errors.marksheet ? style.inputError : ""}
               onChange={(event) => {
