@@ -10,7 +10,7 @@ import { get } from "loadsh";
 import { useNavigate } from "react-router-dom";
 import Loader from "../../HelperComponents/Loader/Loader";
 
-const RegisterForm = () => {
+const RegisterForm = (props) => {
   const [index, setIndex] = useState(0);
   const [submitObj, setSubmitObj] = useState({});
   const [loading, setLoading] = useState(false);
@@ -102,6 +102,7 @@ const RegisterForm = () => {
       await api.post("/api/v1/registration", formData);
       navigate("/verify");
     } catch (err) {
+      console.log(err);
       window.alert(
         get(err, "response.data.message", get(err, "message", "Error"))
       );
@@ -118,7 +119,7 @@ const RegisterForm = () => {
           contactNumber: null,
           email: null,
           class: options[0].value,
-          referralCode: undefined,
+          referralCode: props.referralCode,
         }}
         onSubmit={(values) => {
           setSubmitObj({ ...values, ...submitObj });
@@ -181,7 +182,7 @@ const RegisterForm = () => {
                 Verify
               </SharedButton> */}
             </div>
-            <div className={style.container}>
+            {/* <div className={style.container}>
               <InputBox
                 onChange={handleChange}
                 label={"Referral Code (if any)"}
@@ -195,8 +196,8 @@ const RegisterForm = () => {
               />
               {/* <SharedButton className={style.btn} onClick={handleSubmit}>
                 Verify
-              </SharedButton> */}
-            </div>
+              </SharedButton>}
+            </div> */}
             <SharedButton
               type={"submit"}
               className={style.btn}

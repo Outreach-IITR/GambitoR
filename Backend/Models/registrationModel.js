@@ -49,7 +49,7 @@ const registrationSchema = new mongoose.Schema({
   },
   referralCode: {
     type: String,
-    enum: ["VIM001", ""],
+    default: "",
   },
   parent: infoSchema,
   school: infoSchema,
