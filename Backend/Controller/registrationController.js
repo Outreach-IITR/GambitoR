@@ -6,7 +6,7 @@ const mailService = require("../utils/emailService");
 const sendInstituteMail = (req, next) => {
   const mailOptions = {
     from: process.env.EMAIL_USER,
-    to: "rahulkd2508@gmail.com",
+    to: "bilaspur@takshilainstitute.in",
     subject: "Registration Completed successfully.",
     text: `Hello Sir, \n
     Team GambitoR is delighted to inform you that this student have registered for the first edition of GambitoR! \n

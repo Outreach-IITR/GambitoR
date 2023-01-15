@@ -106,7 +106,7 @@ const RegisterForm = (props) => {
       window.alert(
         get(err, "response.data.message", get(err, "message", "Error"))
       );
-      setIndex(0);
+      navigate("/register" + props.referralCode);
     }
     setLoading(false);
   };
