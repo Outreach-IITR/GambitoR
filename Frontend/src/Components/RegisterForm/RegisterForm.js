@@ -106,7 +106,6 @@ const RegisterForm = (props) => {
       window.alert(
         get(err, "response.data.message", get(err, "message", "Error"))
       );
-      setSubmitObj({});
     }
     setLoading(false);
   };
