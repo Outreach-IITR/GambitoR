@@ -3,6 +3,32 @@ const AppError = require("../utils/appError");
 const catchAsync = require("../utils/catchAsync");
 const mailService = require("../utils/emailService");
 
+const sendInstituteMail = (req, next) => {
+  const mailOptions = {
+    from: process.env.EMAIL_USER,
+    to: "bilaspur@takshilainstitute.in",
+    subject: "Registration Completed successfully.",
+    text: `Hello Sir, \n
+    Team GambitoR is delighted to inform you that this student have registered for the first edition of GambitoR! \n
+    Name: ${req.body.name} \n
+    Email: ${req.body.email} \n
+    Mobile Number: ${req.body.contactNumber} \n
+    School Name: ${req.body["school.name"]} \n
+    School Email: ${req.body["school.email"]} \n
+    School Contact Number: ${req.body["school.contactNumber"]} \n
+    \n
+    With regards, \n
+    Team GambitoR.
+    `,
+  };
+
+  mailService.sendMail(mailOptions, function (err) {
+    if (err) {
+      next(new AppError(err.message, err.statusCode));
+    }
+  });
+};
+
 exports.createRegistration = catchAsync(async (req, res, next) => {
   if (!req.file) {
     next(new AppError("Please provide marksheet", 400));
@@ -19,8 +45,7 @@ exports.createRegistration = catchAsync(async (req, res, next) => {
     to: req.body.email,
     subject: "Registration Completed successfully.",
     text: `Hello ${req.body.name}, \n
-    Team GambitoR is delighted to inform you that you have successfully registered for the first edition of GambitoR! \n
-    \n    
+    Team GambitoR is delighted to inform you that you have successfully registered for the first edition of GambitoR! \n  
     These are the credentials you have entered. \n
     Email: ${req.body.email} \n
     Mobile Number: ${req.body.contactNumber} \n
@@ -34,6 +59,10 @@ exports.createRegistration = catchAsync(async (req, res, next) => {
     Team GambitoR.
     `,
   };
+
+  if (req.body.referralCode === "AV01") {
+    sendInstituteMail(req, next);
+  }
 
   mailService.sendMail(mailOptions, function (err) {
     if (err) {
