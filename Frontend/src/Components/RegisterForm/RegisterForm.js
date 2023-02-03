@@ -340,7 +340,7 @@ const RegisterForm = (props) => {
             <InputBox
               accept={"application/pdf, image/*"}
               type="file"
-              label={"Marksheet (PDF & Image) upto 2MB"}
+              label={"Marksheet / School Id (PDF & Image) upto 2MB"}
               name="marksheet"
               className={errors.marksheet ? style.inputError : ""}
               onChange={(event) => {
