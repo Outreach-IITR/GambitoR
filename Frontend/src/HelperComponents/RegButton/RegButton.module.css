@@ -17,6 +17,11 @@
 .button1:hover {
   box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
   transform: translateY(-0.1em);
-  background-color:#ffbb00;
-  cursor:pointer
+  background-color: #ffbb00;
+  cursor: pointer;
+}
+
+.disabledButton {
+  cursor: not-allowed;
+  opacity: 0.5;
 }

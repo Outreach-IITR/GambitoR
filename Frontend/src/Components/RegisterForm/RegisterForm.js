@@ -197,7 +197,11 @@ const RegisterForm = (props) => {
                 Verify
               </SharedButton>}
             </div> */}
+            <div className={style.notAccepting}>
+              Sorry! We are no longer accepting response.
+            </div>
             <SharedButton
+              disabled={true}
               type={"submit"}
               className={style.btn}
               onClick={handleSubmit}
@@ -252,6 +256,7 @@ const RegisterForm = (props) => {
               value={values.email}
             />
             <SharedButton
+              disabled={true}
               type={"submit"}
               className={style.btn}
               onClick={handleSubmit}
@@ -344,7 +349,7 @@ const RegisterForm = (props) => {
               value={values.marksheet}
             />
             <SharedButton
-              disabled={loading}
+              disabled={true}
               type={"submit"}
               className={style.btn}
               onClick={handleSubmit}
