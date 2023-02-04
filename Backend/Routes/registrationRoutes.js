@@ -7,6 +7,6 @@ const router = express.Router();
 router.route('/').post(uploadStorage.single("marksheet"), createRegistration).get(protect, getAllRegistrations);
 // router.route('/verifyEmail').post(sendVerificationMail);
 // router.route("/verifyEmail/:id").get(verifyEmail);
-router.route('/bulkmail').get(protect, bulkMail)
+router.route('/bulkmail').get(protect, bulkMail);
 
 module.exports = router;

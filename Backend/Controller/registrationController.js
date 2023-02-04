@@ -123,33 +123,35 @@ exports.verifyEmail = catchAsync(async (req, res, next) => {
 });
 
 exports.bulkMail = catchAsync(async (req, res, next) => {
-  const data = await RegistrationModel.find().select("email");
+  const data = await RegistrationModel.find({
+    class: req.body.class
+  }).select("email");
   let emails = [];
   data.map((d, idx) => emails.push(d.email));
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: emails,
-    subject: "Regarding Gambitor 1st Round.",
-    text: `Dear Applicant
-Greetings of the day!
+    subject: "GambitoR Inception round.",
+    text: `Greetings from Gambitor, IIT Roorkee!
 
-Thanks for applying to Gambitor-  A national-level school championship for students of classes IX-XII and for your patience through this application process.
-Our Inception round is scheduled on February 5th, 2023. The exam will be held online, and details regarding your login credentials and platform would be circulated once the registration deadline is passed.
+We congratulate you on registering for the first ever edition of GambitoR by IIT Roorkee. 
 
-The last registration date for Gambitor is 1st February'2023; we encourage you to assist your friends who wish to apply, through the process.
+The time to storm your brains out, is just around the corner. 
 
-Clarification regarding syllabus:
-Class IX-X (Metiox): Aptitude and Logical Reasoning
-Class- XII (Apollox): Aptitude, Logical Reasoning, and General Mathematics
-Class XII (Athenox): Aptitude, Logical Reasoning, Maths, Physics, Chemistry.
+The first stage of the exam, Inception Round is on 5th February. So get ready to compete with the best minds of the nation. 
 
-Further, the mock questions are available on our website, and a few more mock papers would be added in the upcoming days for your practice.
+Link to the platform: http://gambitoriitr.thinkexam.com
 
-For more information, visit: http://gambitor.iitr.ac.in/ and follow us on our social media handles to stay updated. In case of any query, feel free to reach us at the same.
+You can also give the exam through your mobile, the application link is 
+Android: https://play.google.com/store/apps/details?id=com.ginger.thinkexam
+iOS: https://itunes.apple.com/us/app/think-exam/id1294105606?ls=1&mt=8
 
-Thanks and Regards
-Outreach Cell
-IIT Roorkee
+(For the mobile application, the institute id is ‘gambitoriitr.thinkexam.com’.)
+
+Your registered category is Metiox and the test duration would be for 60 minutes, timings for the same are: 10:00 AM-11:00 AM
+
+Best wishes 
+Team Gambitor
     `,
   };
 
