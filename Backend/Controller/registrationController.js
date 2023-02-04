@@ -148,7 +148,7 @@ iOS: https://itunes.apple.com/us/app/think-exam/id1294105606?ls=1&mt=8
 
 (For the mobile application, the institute id is ‘gambitoriitr.thinkexam.com’
 
-Your registered category is Apollox and the test duration would be for 60 minutes, timings for the same are: 11:00 AM-12:00 PM
+Your registered category is Athenox and the test duration would be for 60 minutes, timings for the same are: 11:00 AM-12:30 PM
 
 Best wishes 
 Team Gambitor
