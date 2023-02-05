@@ -10,16 +10,8 @@ var dbUser = process.env.DB_USERNAME;
 var dbPass = process.env.DB_PASSWORD;
 var dbPort = process.env.DB_PORT || "27017";
 
-mongoose.connect("mongodb://" +
-  dbUser +
-  ":" +
-  dbPass +
-  "@" +
-  dbHost +
-  ":" +
-  dbPort +
-  "/" +
-  dbName, {
+mongoose.connect(
+  "mongodb://mongodb0.example.com:27017", {
   useNewUrlParser: true, useUnifiedTopology: true
 }).then(() => {
   console.log('Database Connected')
