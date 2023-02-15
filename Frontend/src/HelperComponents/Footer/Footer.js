@@ -63,6 +63,7 @@ function Footer() {
                   "GambitoR - Apollox"
                 )
               }
+              to="/"
             >
               Apollox
             </Link>
@@ -73,6 +74,7 @@ function Footer() {
                   "GambitoR - Athenox"
                 )
               }
+              to="/"
             >
               Athenox
             </Link>
@@ -83,6 +85,7 @@ function Footer() {
                   "GambitoR - Metiox"
                 )
               }
+              to="/"
             >
               Metiox
             </Link>
