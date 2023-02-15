@@ -10,6 +10,20 @@ import { Link } from "react-router-dom";
 import mockPaper from "./assets/MOCKTEST.pdf";
 
 function Footer() {
+  const downloadPDF = (data, fileName) => {
+    fetch(data).then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = fileName;
+        alink.click();
+      });
+    });
+  };
+
   return (
     <footer className={styles.footerContainer}>
       <div className={styles.mainDiv}>
@@ -37,6 +51,46 @@ function Footer() {
               MOCK PAPERS
             </a>
             <Link to="/about">FAQs</Link>
+          </div>
+
+          {/* column 2 */}
+          <div className={styles.column}>
+            Download Paper:
+            <Link
+              onClick={() =>
+                downloadPDF(
+                  "GambitoR - Apollox (1).pdf",
+                  "GambitoR - Apollox"
+                )
+              }
+            >
+              Apollox
+            </Link>
+            <Link
+              onClick={() =>
+                downloadPDF(
+                  "GambitoR - Athenox(1).pdf",
+                  "GambitoR - Athenox"
+                )
+              }
+            >
+              Athenox
+            </Link>
+            <Link
+              onClick={() =>
+                downloadPDF(
+                  "GambitoR - Metiox(1).pdf",
+                  "GambitoR - Metiox"
+                )
+              }
+            >
+              Metiox
+            </Link>
+            {/* <Link to="/about">SYLLABUS</Link>
+            <a href={mockPaper} target="_blank">
+              MOCK PAPERS
+            </a>
+            <Link to="/about">FAQs</Link> */}
           </div>
 
           {/* column 3 */}

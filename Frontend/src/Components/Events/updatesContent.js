@@ -7,7 +7,7 @@ const updates = [
   {
     id: 2,
     description:
-      "Answer key of inception round will be released on 7th February 2023.",
+      "Answer key of inception round released.",
   },
   {
     id: 3,
