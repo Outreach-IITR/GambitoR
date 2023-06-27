@@ -1,0 +1,132 @@
+body{
+    background-image: url("images/background.png");
+    font-family: 'Jost', sans-serif;
+}
+
+.navbar button{
+    color: white;
+    outline: 1px solid #EE7349;
+    border-radius: 6px;
+    margin: 2rem 4rem 0 0;
+    font-size: 18px;
+}
+
+.navbar .img1{
+    margin: 1.6rem 0 0 4rem;
+    width: 2.8%;
+}
+
+.navbar .img2{
+    display: block;
+    width: 10%;
+    position: relative;
+    right: 31.4rem;
+    top: 1.2rem;
+}
+
+.navbar button:hover{
+    background-color: #EE7349;
+    color: white;
+   
+}
+
+
+/* Footer-section */
+.footer{
+    position: relative;
+    bottom: 2rem;
+}
+.footer p{
+    color: white;
+    margin: 0 0 0 83rem;
+}
+
+span{
+    color: #EE7349;
+}
+
+.icons{
+    margin: 0.7rem 0 0 82rem;
+    
+}
+
+.footer img{
+   width: 15%;
+   margin: 0 1rem 0 0;
+}
+
+/* Main-Section */
+
+
+.main{
+    display: flex;
+    margin: 1rem 0 0 2rem;
+}
+
+.right img{
+    
+    margin: 2rem 0 0 16rem ;
+    width: 53%;
+ }
+
+.left h1{
+   color: white;
+   margin: 3rem 0 0 3rem;
+   font-size: 50px;
+
+
+}
+
+.left p{
+    color: white;
+    margin: 2rem 0 0 3rem;
+    font-size: 22px;
+    width: 30rem;
+}
+
+.left button{
+    margin: 1rem 0 0 3rem;
+    width: 10rem;
+    color: white;
+    outline: 1px solid #EE7349;
+    border-radius: 6px;
+    font-size: 22px;
+
+
+}
+
+.left button:hover{
+    background-color: #EE7349;
+    color: white;
+}
+
+.left h3{
+    color: white;
+    margin: 4rem 0 0 3rem;
+    font-size: 20px;
+
+}
+
+.left .box{
+    display: flex;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    outline: 1px solid #5E5E5E;
+    width: 15rem;
+    height: 7.1rem;
+    border-radius: 8px;
+}
+
+.box h4{
+   color: white;
+   font-size: 16px;
+   margin: 2.5rem 0 0 25px;
+   width: 6rem;
+   
+}
+
+.box img{
+    height: 6rem;
+    width: 6rem;
+    margin: 10px 20px 0 10px;
+}
