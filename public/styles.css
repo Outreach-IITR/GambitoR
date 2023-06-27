@@ -3,25 +3,25 @@ body{
     font-family: 'Jost', sans-serif;
 }
 
+.navbar{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+/* 
+.logo{
+    padding-right: 2%;
+} */
+
+.img1{
+    margin-right: 13px;
+}
+
 .navbar button{
     color: white;
     outline: 1px solid #EE7349;
     border-radius: 6px;
-    margin: 2rem 4rem 0 0;
+    /* margin: 2rem 4rem 0 0; */
     font-size: 18px;
-}
-
-.navbar .img1{
-    margin: 1.6rem 0 0 4rem;
-    width: 2.8%;
-}
-
-.navbar .img2{
-    display: block;
-    width: 10%;
-    position: relative;
-    right: 31.4rem;
-    top: 1.2rem;
 }
 
 .navbar button:hover{
