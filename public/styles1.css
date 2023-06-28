@@ -4,7 +4,6 @@ body{
 }
 
 .navbar{
-    margin-top: 2.5%;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -61,18 +60,18 @@ span{
 
 .main{
     display: flex;
-    margin: 1rem 0 0 5%;
+    margin: 1rem 0 0 2rem;
 }
 
 .right img{
     
-    margin: 8% 0 0 63% ;
-    width: 80%;
+    margin: 2rem 0 0 16rem ;
+    width: 53%;
  }
 
 .left h1{
    color: white;
-   margin: 3rem 0 0 0;
+   margin: 3rem 0 0 3rem;
    font-size: 50px;
 
 
@@ -80,13 +79,13 @@ span{
 
 .left p{
     color: white;
-    margin: 2rem 0 0 0;
+    margin: 2rem 0 0 3rem;
     font-size: 22px;
     width: 30rem;
 }
 
 .left button{
-    margin: 1rem 0 0 0;
+    margin: 1rem 0 0 3rem;
     width: 10rem;
     color: white;
     outline: 1px solid #EE7349;
@@ -103,19 +102,9 @@ span{
 
 .left h3{
     color: white;
-    margin: 4rem 0 0 0;
+    margin: 4rem 0 0 3rem;
     font-size: 20px;
 
-}
-
-.left .box{
-    display: flex;
-    margin-left: 0;
-    margin-top: 1rem;
-    outline: 1px solid #5E5E5E;
-    width: 15rem;
-    height: 7.1rem;
-    border-radius: 8px;
 }
 
 .box h4{
@@ -127,11 +116,10 @@ span{
 }
 
 .box img{
-    height: 6em;
+    height: 6rem;
     width: 6rem;
     margin: 10px 20px 0 10px;
 }
-
 
 @media (max-width:480px) {
     
