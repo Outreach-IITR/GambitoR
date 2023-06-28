@@ -6,8 +6,8 @@ function Left() {
             <div className="left">
                 <h1>Website is under <span>construction</span>!</h1>
                 <p>Secure your spot and be the first to
-                    experience our exciting things by pre-registering through the following link!  </p>
-                <button className="btn btn-outline">REGISTER</button>
+                    experience our exciting things by <span>pre-register</span> through the following link!  </p>
+                <a className="btn btn-outline" href="https://forms.gle/vvTt2P1WAA2qgTb79">REGISTER</a>
 
                 <h3>Or scan the following QR to Pre-Register.</h3>
                 <div className="box">
