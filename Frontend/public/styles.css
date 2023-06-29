@@ -205,11 +205,12 @@ span{
     .left a{
         margin : 4% auto 5% auto;
          font-size: 1rem;
+         
     } 
 
     .left .box {
         margin-left: auto;
         margin-right: auto;
-        
+
     }
 }
