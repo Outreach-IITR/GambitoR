@@ -5,9 +5,15 @@ function Footer(){
         <div className="footer">
         <p>CONTACT US:</p>
         <div className="icons">
-        <img src="images/LinkedIn logo.png" />
-        <img src="images/Instagram logo.png" />
-        <img src="images/Facebook logo.png" />
+         <a href="https://www.linkedin.com/company/gambitor-iit-roorkee/" target="_blank">
+         <img src="images/LinkedIn logo.png" />
+         </a>
+         <a href="https://www.instagram.com/gambitor.iitr/?igshid=MzRlODBiNWFlZA" target="_blank">
+         <img src="images/Instagram logo.png" />
+         </a>
+         <a href="https://m.facebook.com/profile.php?id=100094215150920&mibextid=ZbWKwL" target="_blank">
+         <img src="images/Facebook logo.png" />
+         </a>
         
         </div>
 
