@@ -54,20 +54,16 @@ exports.createRegistration = catchAsync(async (req, res, next) => {
     `,
   };
 
-  if (req.body.referralCode === "AV01") {
-    sendInstituteMail(req, next);
-  }
-
-  mailService.sendMail(mailOptions, function (err) {
-    if (err) {
-      next(new AppError(err.message, err.statusCode));
-    } else {
-      res.status(201).json({
-        status: "success",
-        data: "Registration Completed Successfully!",
-      });
-    }
+  res.status(201).json({
+    status: "success",
+    data: "Registration Completed Successfully!",
   });
+  // mailService.sendMail(mailOptions, function (err) {
+  //   if (err) {
+  //     next(new AppError(err.message, err.statusCode));
+  //   } else {
+  //   }
+  // });
 });
 
 exports.getAllRegistrations = catchAsync(async (req, res, next) => {
