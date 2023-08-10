@@ -56,14 +56,15 @@ exports.createRegistration = catchAsync(async (req, res, next) => {
 
   mailService.sendMail(mailOptions, function (err) {
     if (err) {
+      next(new AppError(err.message, err.statusCode));
+    } else {
       res.status(201).json({
         status: "success",
         data: "Registration Completed Successfully!",
       });
-      next(new AppError(err.message, err.statusCode));
-    } else {
     }
   });
+
 });
 
 exports.getAllRegistrations = catchAsync(async (req, res, next) => {
