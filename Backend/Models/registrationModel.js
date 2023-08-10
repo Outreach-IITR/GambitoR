@@ -1,45 +1,6 @@
 const mongoose = require("mongoose");
 var validator = require("validator");
 
-const infoSchema = new mongoose.Schema({
-  name: {
-    type: String,
-    default: "Name",
-    required: [true, "Please enter name"],
-  },
-  contactNumber: {
-    type: Number,
-    match: [
-      /^(\+\d{1,3}[- ]?)?\d{10}$/,
-      "The value of path {PATH} ({VALUE}) is not a valid mobile number.",
-    ],
-  },
-  email: {
-    type: String,
-    validate: [validator.isEmail, "Please enter a valid e-mail"],
-    required: [true, "Please enter email address."],
-  },
-});
-
-const schoolSchema = new mongoose.Schema({
-  name: {
-    type: String,
-    default: "Name",
-    required: [true, "Please enter name"],
-  },
-  contactNumber: {
-    type: Number,
-    match: [
-      /^(\+\d{1,3}[- ]?)?\d{10}$/,
-      "The value of path {PATH} ({VALUE}) is not a valid mobile number.",
-    ],
-  },
-  email: {
-    type: String,
-    validate: [validator.isEmail, "Please enter a valid e-mail"],
-  },
-})
-
 const registrationSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -54,7 +15,6 @@ const registrationSchema = new mongoose.Schema({
       "The value of path {PATH} ({VALUE}) is not a valid mobile number.",
     ],
   },
-
   email: {
     type: String,
     validate: [validator.isEmail, "Please enter a valid e-mail"],
@@ -70,16 +30,10 @@ const registrationSchema = new mongoose.Schema({
     type: String,
     default: "",
   },
-  parent: infoSchema,
-  school: schoolSchema,
-  marksheet: {
-    type: String,
-    required: [true, "Please provide marksheet."],
-  },
-  mailVerified: {
-    type: Boolean,
-    default: false,
-  },
+  schoolName: {
+    type:String,
+    required: [true, "Please enter school name."]
+  }
 });
 
 const RegistrationModel = mongoose.model("Registration", registrationSchema);
