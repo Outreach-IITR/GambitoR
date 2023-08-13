@@ -1,0 +1,363 @@
+.containerP {
+  background-image: url("../images/Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+/* h5 {
+  text-align: center;
+} */
+
+/* .paperimg {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1295px;
+  height: 200px;
+  margin-top: 103px;
+}
+
+.papercontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+} */
+
+/* .shiftbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .papercontent h6 {
+  color: #FFB400;
+  font-family: Goldman;
+  font-size: 65px;
+} */
+
+.mainContainer {
+  margin-top: 7%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.paperImg {
+  width: 40vw;
+  margin-top: 15vh;
+}
+
+.papercontent {
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+}
+
+.shiftbox {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* .paperHeading{
+    width:60%;
+    text-align: center;
+  } */
+/* .mainContainer h2{
+    color:#FFB400;
+    font-family: Goldman;
+  font-size: 5vw;
+  text-align: center;
+  font-weight: 600;
+  padding: 5vw 0;
+  line-height: 1vw;
+  letter-spacing: 0.05em;
+  border: 0.07em solid #FFB400;
+  border-radius: 0.28em;
+  background-color: #1B256AD9;
+  } */
+.papercontent h6 {
+  color: #FFB400;
+  font-family: Goldman;
+  font-size: 2vw;
+  text-align: center;
+  font-weight: 600;
+  padding: 2vw 0;
+  line-height: 1vw;
+  letter-spacing: 0.05em;
+  border: 0.08em solid #FFB400;
+  border-radius: 0.23em;
+  background-color: #1B256AD9;
+}
+
+.roundHeading {
+  width: 25vw;
+  margin-top: 4.5%;
+}
+
+.listimg {
+  padding: 20px;
+  width: 25%;
+  height: 22.5%;
+  text-align: start;
+}
+
+.papercontent ul {
+  padding-left: 0%;
+}
+
+.papercontent li {
+  padding: 7% 0 7% 0;
+  list-style: none;
+}
+
+.papercontent li a {
+  text-decoration: none;
+  font-family: Goldman;
+  font-size: 2vw;
+  font-weight: 600;
+  line-height: 2vw;
+  letter-spacing: 0.05em;
+  color: #FFB400;
+}
+
+.papercontent li a:hover {
+  color: navy;
+  background-color: none;
+}
+
+.papercontent li a:checked {
+  color: gray;
+  background-color: none;
+}
+
+.papercontent ul {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+@media screen and (max-width:1400px) and (min-width:1000px) {
+  .paperimg {
+    width: 1200px;
+    height: 180px;
+  }
+
+  .papercontent li a:hover {
+    color: white;
+    background-color: none;
+  }
+
+  .box {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width:1000px) and (min-width:770px) {
+  .paperimg {
+    width: 750px;
+    height: 150px;
+  }}
+
+  /* CSS OF HEADER */
+
+  /* .navh {
+    height: 80px;
+    width: 100%;
+    margin-top: 70px;
+    margin-left: 21px;
+  }
+
+  label.logo {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  .navh ul {
+    float: right;
+    margin-right: 20px;
+  }
+
+  .navh ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 20px;
+  }
+
+  .navh ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: Goldman;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+
+  .navh a.active {
+    background: #FFB400;
+    transition: .5s;
+  }
+
+  .navh a:hover {
+    color: #FFB400;
+  }
+
+  .checkbtn {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+
+  #check {
+    display: none;
+  }
+
+  .logoh {
+    width: 40px;
+  }
+
+  .gambitorh {
+    width: 200px;
+  } */
+
+
+  /* Media Query for body of paper.js */
+
+  @media screen and (max-width:770px) and (min-width:320px) {
+    .papercontent li img{
+      padding: 10px;
+      
+      
+    }
+
+  }
+
+
+  /* Media Query of Header */
+
+  /* @media screen and (max-width:397px) {
+    label.logo {
+      padding-left: 0px;
+      margin-left: -10px;
+    }
+
+    .logoh {
+      width: 20px;
+    }
+
+    .gambitorh {
+      width: 120px;
+    }
+  }
+
+  @media screen and (max-width: 1085px) and (min-width:875px) {
+    .navh {
+      margin-top: 50px;
+    }
+
+    label.logo {
+      font-size: 20px;
+      padding-left: 10px;
+    }
+
+    .navh ul li a {
+      font-size: 13px;
+    }
+
+    .gambitorh {
+      width: 80px;
+    }
+
+    .navh ul {
+      margin-right: 5px;
+    }
+
+    .navh ul li {
+      margin: 0 5px;
+    }
+  }
+
+  @media screen and (max-width: 1305px) and (min-width:1085px) {
+    .navh {
+      margin-left: -10px;
+      width: 1300px;
+    }
+
+    .navh ul {
+      margin-right: 10px;
+    }
+
+    .navh ul li {
+      margin: 0 10px;
+    }
+
+    .navh ul li a {
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 875px) {
+    .navh {
+      margin-top: 50px;
+    }
+
+    label.logo {
+      font-size: 15px;
+      padding-left: 20px;
+    }
+
+    .logoh {
+      width: 30px;
+    }
+
+    .gambitorh {
+      width: 180px;
+    }
+
+    .checkbtn {
+      display: block;
+    }
+
+    .headerlist {
+      width: 100%;
+      position: fixed;
+      top: -40px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.1ms;
+    }
+
+    .navh ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+      color: #fff;
+    }
+
+    .navh ul li a {
+      font-size: 20px;
+      color: #fff;
+    }
+
+    .navh a:hover,
+    .navh a.active {
+      background: none;
+      color: #FFB400;
+    }
+
+    #check:checked~ul {
+      left: 0;
+      position: relative;
+    }
+  } */

@@ -1,55 +1,59 @@
-// import React, { useEffect } from "react";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import './App.css';
 
-// import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
-// import LandingPage from "./Components/LandingPage/LandingPage";
-// import Navbar from "./HelperComponents/NavBar/NavBar";
+// RegistrationForm,RegistrationSuccessful and AboutUs page
 
-// import "./App.css";
-// import Events from "./Components/Events/Events";
-// import RegisterForm from "./Components/RegisterForm/RegisterForm";
-// import About from "./Components/About/About";
-// import Contact from "./Components/Contact/Contact";
-// import Verification from "./Components/Verification/Verification";
+// import RegistrationSuccessful from "./components/RegistrationSuccessful/RegistrationSuccesfull.jsx";
+import RegistrationForm from "./components/RegistrationForm/RegistrationForm.jsx";
+import RegistrationSuccesfull from "./components/RegistrationSuccessful/RegistrationSuccesfull";
+import AboutUs from "./components/AboutUs/AboutUs.jsx";
+// import './App.css';
+// import img1 from "./components/RegistrationSuccessful/image (1).png";
+// import img2 from "./components/RegistrationSuccessful/image (2).png";
+// import img3 from "./components/RegistrationSuccessful/image (3).png";
+// import img4 from "./components/RegistrationSuccessful/image (4).png";
 
-// function App() {
-//   return (
-//     <>
-//       <Router>
-//         <Routes>
-//           <Route path="/" element={<Navbar />}>
-//             <Route index element={<LandingPage />} />
-//             <Route element={<Events />} path="events" />
-//             <Route element={<About />} path="about" />
-//             <Route element={<RegisterForm referralCode="" />} path="register" />
-//             <Route
-//               element={<RegisterForm referralCode="AV01" />}
-//               path="/registerAV01"
-//             />
-//             <Route element={<Contact />} path="contacts" />
-//             <Route element={<Verification />} path="verify" />
-//           </Route>
-//         </Routes>
-//       </Router>
-//     </>
-//   );
-// }
+// ContactUs Page
+// import Header from "./components/ContactUs/Header";
+import ContactUs from "./components/ContactUs/ContactUs";
+// import Footer from "./components/ContactUs/Footer";
 
-// export default App;
+//Papers page
+import Papers from "./components/PapersPage/Papers";
 
-import Navbar from "./Components/construction-site/navbar";
-import Footer from "./Components/construction-site/footer";
-import Left from "./Components/construction-site/left-section";
+
+
+//EventPages
+import Events from "./components/Events/Events";
+
+
+
+//MainPage
+import Home from "./components/Home/Home.jsx";
+
 
 function App() {
   return (
-    <div className="App">
-     <Navbar />
-     <Left />
-     
-     <Footer />
-    </div>
+      
+      <div className="App">
+        {/* <Header /> */}
+        <Routes>
+          <Route path="/" className='section' id="section1" element={<Home />} />
+          <Route path="/about" className='section' id="section2" element={<AboutUs />} />
+          <Route path="/event"className='section' id="section3" element={<Events />} />
+          <Route path="/contact" className='section' id="section4" element={<ContactUs />} />
+          <Route path="/practicepaper" className='section' id="section5" element={<Papers />} />
+          <Route path="/register" className='section' id="section6" element={<RegistrationForm />} />
+          <Route path="/registerSucessful" className='section' id="section6" element={<RegistrationSuccesfull />} />
+        </Routes>
+        
+        
+        {/* <Footer /> */}
+      </div>
+      
+    
   );
 }
 
 export default App;
-

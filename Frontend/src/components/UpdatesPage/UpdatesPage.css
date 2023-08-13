@@ -1,0 +1,623 @@
+.updates {
+  margin-top: 10vw;
+  text-align: center;
+}
+
+.cardd {
+  
+  width: 100vw;
+  margin: 0 auto;
+  background-color: none;
+  border: 4px solid #FFB400;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2vw;
+}
+
+.scrollable-content::-webkit-scrollbar {
+  width: 1.2vw;
+
+
+}
+.updateImg{
+  width:40%;
+  margin-left: 5vw;
+  margin-bottom: 8vh;
+
+  /* text-align:center; */
+  /* margin: 0 auto; */
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+  background-color: rgba(8, 75, 130, 0.2);
+  border: 4px solid rgba(255, 180, 0, 0.2);
+  border-radius: 1rem;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background-color: #084B82;
+  border: 4px solid #FFB400;
+  border-radius: 10px;
+}
+
+.scrollable-content::-webkit-scrollbar-button {
+  display: none;
+}
+
+
+
+.pcard {
+  margin-top: 1vw;
+  font-family: Goldman;
+  font-size: 1.8vw;
+  font-weight: 400;
+  line-height: 2vw;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #FFFFFF;
+
+}
+
+.card-text {
+  font-family: Goldman;
+  font-size: 1.8vw;
+  font-weight: 700;
+  line-height: 2vw;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #FFB400;
+}
+
+h5 {
+  text-align: center;
+}
+
+.cspace {
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.updateitem {
+  display: flex;
+  flex-direction: row;
+  /* margin-bottom: 3pc; */
+  width: 60%;
+  margin: 0 auto;
+}
+
+.scrollable-content {
+  height: 35rem;
+  overflow: auto;
+
+}
+
+.scrollable-container {
+  text-align: center;
+  margin-right: 10pc;
+  margin-left: 10pc;
+  margin-top: 4pc;
+  /* width: auto;
+  height: auto; */
+}
+
+.poko {
+  
+  /* display: block; */
+  margin-top: auto;
+  margin-bottom: auto;
+  /* width: 5vw; */
+  margin-right: 2vw;
+}
+
+.pokoimg {
+  width: 140%;
+}
+
+.title1 {
+  font-family: Goldman;
+  font-size: 4vw;
+  font-weight: 700;
+  line-height: 5vw;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #FFB400;
+  
+}
+
+/*------------------------------- content section------------------------- */
+
+.containerContent {
+  /* margin-top: 5vw; */
+  width: 100vw;
+  margin-left: 6rem;
+  margin-top: 30vh;
+  /* margin-left: 141px; */
+ 
+}
+
+.text {
+  
+  /* margin-left: 6.5vw; */
+
+  display: flex;
+  flex-direction: column;
+  /* justify-items: center; */
+}
+
+.ptext {
+  font-family: Goldman;
+  font-size: 1.6vw;
+  font-weight: 200;
+  line-height: 2vw;
+  letter-spacing: 0.05em;
+  text-align: left;
+  padding: 0.02vw;
+  margin-top: 0;
+  color: #FFFFFF;
+  width: 35vw;
+}
+
+.title-content {
+  font-family: Josefin Sans;
+  font-size: 4vw;
+  font-weight: 700;
+  line-height: 8vw;
+  letter-spacing: -0.05em;
+  text-align: left;
+  margin-bottom: 0;
+  padding: 0;
+  color: #FFB400;
+
+}
+
+.customhead {
+  font-family: Josefin Sans;
+  font-size: 5.2vw;
+  font-weight: 700;
+  line-height: 7vw;
+  letter-spacing: -0.05em;
+  text-align: left;
+}
+
+.btns {
+  width: 18%;
+  height: 3.4vw;
+  background-color: #FFB400;
+  text-align: center;
+  color: white;
+  font-family: Goldman;
+  font-size: 1.5vw;
+  font-weight: 200;
+  line-height: 31px;
+  letter-spacing: 0.05em;
+  /* border: 2px solid white; */
+  border-radius: 5px;
+
+}
+
+.btns:hover{
+   /* background-color: white; */
+   color: #084B82;
+}
+
+
+
+
+
+
+@media screen and (max-width:1300px) and (min-width:990px) {
+
+
+  .updates {
+    margin-top: 20vh;
+  }
+
+  .containerContent {
+    margin-left: 5vw;
+    margin-top: 24vh;
+  }
+
+  .scrollable-content::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  .scrollable-content::-webkit-scrollbar-track {
+    border: 2px solid rgba(255, 180, 0, 0.2);
+    border-radius: 6px;
+  }
+
+  .scrollable-content::-webkit-scrollbar-thumb {
+    border: 2px solid #FFB400;
+    border-radius: 6px;
+  }
+
+  .pcard {
+    font-size: 18px;
+    line-height: 20px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .scrollable-content {
+    height: 450px;
+    width: 100%;
+  }
+
+  .scrollable-container{
+    margin: 0 60px;
+  }
+
+  .updateImg{
+     width: 32%;
+     margin-bottom: 3vh;
+  }
+
+  .updateitem{
+    height: 7%;
+    width: 70%;
+  }
+
+  .cardd {
+  
+    width: 80vw;
+    margin: 0 auto;
+    background-color: none;
+    border: 4px solid #FFB400;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2vw;
+  }
+
+ 
+  .pokoimg {
+    height: 6vh;
+    width: 4.2vw;
+    /* margin-right: 5vw; */
+    /* margin-left: 15vw; */
+    
+  }
+}
+
+@media screen and (max-width:990px) and (min-width:700px) {
+  .updates {
+    margin-top: 10vh;
+  }
+
+  .containerContent {
+    margin-left: 7vw;
+    margin-top: 20vh;
+  }
+
+  
+  .container {
+    margin-left: 35px;
+    margin-top: 100px;
+  }
+
+  .title-content {
+
+    font-size: 35px;
+    line-height: 20px;
+    margin-bottom: 1.5vh;
+
+  }
+
+  .customhead {
+    font-size: 45px;
+    line-height: 20px;
+  }
+
+  .ptext {
+    font-size: 13.5px;
+    line-height: 20px;
+    width: 42.5%;
+  }
+
+  .btns {
+    font-size: 15px;
+    width: 20%;
+    height: 5%;
+  }
+
+  .pcard {
+    font-size: 15px;
+    line-height: 18px;
+    width: 80%;
+    margin-left:  auto;
+    margin-right: auto;
+  }
+
+  .cardd{
+    height: 95%;
+    width: 75vw;
+  }
+
+  .card-text {
+    font-size: 13px;
+    line-height: 14px;
+  }
+/* 
+  .title1 {
+    font-size: 30px;
+    line-height: 35px;
+  } */
+
+  .scrollable-content {
+    height: 39vh;
+    width: 100%;
+  }
+   
+  .updateImg{
+    width: 30%;
+    margin-bottom: 0;
+  }
+  .updateitem{
+    height: 10%;
+    width: 70%;
+  }
+
+  .poko {
+    width: 10%;
+  }
+
+  .pokoimg {
+    height: 40px;
+    width: 40px;
+    /* margin-right: 2vw; */
+  }
+
+  .scrollable-content::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .scrollable-content::-webkit-scrollbar-track {
+    border: 1px solid rgba(255, 180, 0, 0.2);
+    border-radius: 4px;
+  }
+
+  .scrollable-content::-webkit-scrollbar-thumb {
+    border: 1px solid #FFB400;
+    border-radius: 4px;
+  }
+
+  .scrollable-container {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width:700px) and (min-width:500px) {
+  .updates {
+    /* margin-top: 10px; */
+    margin-bottom: -10vh;
+  }
+
+  .containerContent {
+    margin-left: 6vw;
+    margin-top: 25vw;
+  }
+  .ptext{
+    width: 45%;
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .pcard {
+    font-size: 12px;
+    line-height: 15px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title-content{
+    font-size: 5vh;
+  }
+
+  .customhead{
+    font-size: 7vh;
+  }
+
+  .card-text {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .btns {
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.03em;
+    height: 25px;
+    width: 20%;
+  }
+
+  .scrollable-content {
+    height: 30vh;
+    width: 100%;
+  }
+
+  .updateitem{
+    width: 75%;
+  }
+
+  .updateImg{
+    width: 32%;
+    margin-left: 3vw;
+    margin-bottom: 2vh;
+  }
+
+  .title1 {
+    border: 3.79px solid #FFB400;
+    width: 300px;
+    background-color: #084B82;
+    border-radius: 4px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+
+  .poko {
+    width: 2px;
+  }
+
+  .pokoimg {
+    height: 35px;
+    width: 35px;
+  }
+
+  .scrollable-content::-webkit-scrollbar {
+    width: 7.35px;
+  }
+
+  .scrollable-content::-webkit-scrollbar-track {
+    border: 1px solid rgba(255, 180, 0, 0.2);
+    border-radius: 4px;
+  }
+
+  .scrollable-content::-webkit-scrollbar-thumb {
+    border: 1px solid #FFB400;
+    border-radius: 4px;
+  }
+
+  .scrollable-container {
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 12px;
+
+  }
+
+  .cardd {
+    width: 80%;
+    border: 2px solid #FFB400;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 8px;
+  }
+
+}
+
+@media screen and (max-width:500px) {
+  .updates {
+    margin-top: -30px;
+    /* margin-bottom: -10px; */
+    margin-bottom: -10vh;
+  }
+
+  .containerContent {
+    margin-left: 6vw;
+    margin-top: 22vh;
+  }
+  .ptext{
+    font-size: 2.2vw;
+    font-weight: 100;
+    line-height: 1.8vh;
+    width: 47%;
+  }
+  
+  .title-content{
+    font-size: 4vh;
+  }
+
+  .customhead{
+    font-size: 6vh;
+  }
+
+  .pcard {
+    font-size: 10px;
+    line-height: 13px;
+    margin-bottom: 10px;
+  }
+
+  .card-text {
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .btns {
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 0.03em;
+    width: 20%;
+    height: 25px;
+  }
+
+  .scrollable-content {
+    height: 150px;
+  }
+
+  
+
+  .updateitem{
+    width: 90%;
+    height: 20%;
+  }
+
+  .updateImg{
+    width: 30%;
+    margin-left: 3vw;
+    margin-bottom: 1vw;
+  }
+
+  .title1 {
+    font-size: 18px;
+    line-height: 20px;
+    border: 2px solid #FFB400;
+    width: 150px;
+    border-radius: 2px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+
+  .poko {
+    width: 1%;
+  }
+
+  .pokoimg {
+    height: 24px;
+    width: 24px;
+    /* align-items: center; */
+    margin-left: 2vw;
+  }
+
+  .scrollable-content::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .scrollable-content::-webkit-scrollbar-track {
+    border: 1px solid rgba(255, 180, 0, 0.2);
+    border-radius: 3px;
+  }
+
+  .scrollable-content::-webkit-scrollbar-thumb {
+    border: 1px solid #FFB400;
+    border-radius: 3px;
+  }
+
+  .scrollable-container {
+    margin-right: 1pc;
+    margin-left: 1pc;
+
+  }
+
+  .cardd {
+    width: 70%;
+    border: 2px solid #FFB400;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    /* height: 10%; */
+  }
+
+
+}

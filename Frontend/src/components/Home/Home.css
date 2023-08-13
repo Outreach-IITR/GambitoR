@@ -1,0 +1,14 @@
+.home{
+    background-image: url('../images/Main\ Page\ Background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    
+    
+  }
+
+  

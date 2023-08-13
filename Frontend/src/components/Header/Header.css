@@ -1,0 +1,369 @@
+/*---------------------------- Header-CSS------------------------------ */
+
+.navh {
+    height: 16%;
+    width: 100%;
+    padding-top: 3vh;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+   
+   
+  }
+
+  .navh.scrolled {
+    background-color: #150E4E;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .logoL {
+  margin-left: 6vw;
+  }
+  
+  .navh ul {
+    float: right;
+    margin-right: 5rem;
+
+  }
+  
+  .navh ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 20px;
+  }
+  
+  .navh ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: Goldman;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  
+  .navh a.active {
+    background: #FFB400;
+    transition: .5s;
+  }
+  
+  .activate {
+    color: #FFB400;
+    border-bottom: solid 5px #FFB400;
+  }
+
+  .headerlist a:hover {
+    color: #FFB400;
+  }
+  
+  .headerlist a.active:hover {
+    color: #040c52;
+  }
+  
+  .checkbtn {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  .logoh {
+    width: 60px;
+    margin-bottom: 12px;
+  }
+  
+  .gambitorh {
+    width: 220px;
+  }
+
+  /*--------------------------- CSS of Side-bar--------------------------- */
+
+  /* @media screen and (max-width: 875px) {
+    .navh {
+      margin-top: 50px;
+    }
+  
+    label.logoL {
+      font-size: 15px;
+      padding-left: 20px;
+      margin-left: 40px;
+      margin-top: 15px;
+    }
+  
+    .logoh {
+      width: 35px;
+    }
+  
+    .gambitorh {
+      width: 110px;
+    }
+  
+    .checkbtn {
+      display: block;
+      height: 100%;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-right: 60px;
+    }
+  
+    .headerlist {
+      width: 100%;
+      position: fixed;
+      top: -40px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.1ms;
+    }
+  
+    .navh ul{
+      padding: 0%;
+    }
+
+    .navh ul li {
+      display: block;
+      margin: 0;
+      margin: 50px 0;
+      line-height: 30px;
+      color: #fff;
+    }
+  
+    .navh ul li a {
+      font-size: 3vw;
+      color: #fff;
+      line-height: 2vh;
+    }
+  
+    .navh a:hover,
+    .navh a.active {
+      background: none;
+      color: #FFB400;
+    }
+  
+    #check:checked~ul {
+      left: 0;
+      position: relative;
+    }
+
+    .headerlist.active {
+      transform: translateY(100%);
+      margin-right: -10vw;
+      width: 40%;
+      margin-top: -40vh;
+    }
+  }
+   */
+  
+   .sidebar {
+    display: none; /* Hide the sidebar by default */
+    font-size: 2vh;
+  }
+
+  
+  
+  
+  
+  /* Sidebar Styles */
+  /* Sidebar Styles */
+.headerlist.active {
+  margin-right:-10vw; /* Position it on the right side of the screen */
+  position: fixed;
+  text-align: right;
+  background-color: #040c52e6;
+  width: 25%;
+  z-index: 1001;
+  transform: translateY(0);
+  margin-top: -28vh;
+}
+
+  
+  
+  @media screen and (max-width: 1405px) and (min-width:1205px) {
+    .navh {
+      /* margin-left: -10px; */
+      width: 100%;
+    }
+
+    label .logoL{
+      /* margin-left: 40px; */
+      margin-top: 20px;
+    }
+  
+    .navh ul {
+      margin-right: 4rem;
+    }
+  
+    .navh ul li {
+      margin: 0 10px;
+    }
+    .navh ul li a{
+      font-size: 15px;
+    }
+    .logoh {
+      width: 40px;
+    }
+  
+    .gambitorh {
+      width: 150px;
+    }
+  }
+
+  @media screen and (max-width: 1205px) and (min-width:875px) {
+   
+  
+    label.logoL {
+      font-size: 20px;
+      /* margin-left: 110px; */
+      /* padding-left: 10px; */
+    }
+
+    
+  
+    .navh ul li a {
+      font-size: 13px;
+    }
+    .logoh{
+      width: 40px;
+    }
+    .gambitorh {
+      width: 120px;
+    }
+  
+    .navh ul {
+      margin-right: 4rem;
+    }
+  
+    .navh ul li {
+      margin: 0 2px;
+    }
+  }
+  
+  @media screen and (max-width: 875px) {
+
+    .activeClicked{
+      color: #FFB400;
+    }
+
+    .sidebar{
+      display: block; /* Show the sidebar only when screen width is 800px or less */
+    }
+
+    .navh {
+      /* margin-top: 50px; */
+    }
+  
+    label.logoL {
+      /* font-size: 15px;
+      padding-left: 20px;
+      margin-left: 40px; */
+      margin-top: 15px;
+    }
+  
+    .logoh {
+      width: 35px;
+    }
+  
+    .gambitorh {
+      width: 110px;
+    }
+  
+    .checkbtn {
+      display: block;
+      /* height: 100%; */
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-right: 60px;
+    }
+  
+    .headerlist {
+      width: 100%;
+      position: fixed;
+      top: -40px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.1ms;
+    }
+  
+    .navh ul{
+      padding: 0%;
+    }
+
+    .navh ul li {
+      display: block;
+      margin: 0;
+      /* margin: 50px 0; */
+      /* line-height: 30px; */
+      color: #fff;
+    }
+  
+    .navh ul li a {
+      font-size: 3vw;
+      color: #fff;
+      line-height: 2vh;
+    }
+  
+    .navh a:hover,
+    .navh a.active {
+      background: none;
+      color: #FFB400;
+    }
+  
+    #check:checked~ul {
+      left: 0;
+      position: relative;
+    }
+
+    .fas{
+      font-size: 3.2vh;
+      margin-bottom: -5vh;
+    }
+    .headerlist.active {
+      transform: translateY(100%);
+    }
+
+    .headerlist.active {
+      margin-right: -24vw;
+      width: 40%;
+      margin-top: -45vh;
+    }
+
+  }
+  
+
+  
+  @media screen and (max-width:397px) {
+
+    .sidebar {
+      display: block; /* Show the sidebar only when screen width is 800px or less */
+    }
+   
+    .fas{
+      font-size: 2.7vh;
+      /* margin-bottom: -5vh; */
+    }
+    .checkbtn{
+      height: 70%;
+    }
+    
+  
+    .logoh {
+      width: 22px;
+      margin-top: 5px;
+      /* height: 15px; */
+    }
+  
+    .gambitorh {
+      width: 80px;
+    }
+  }
+
+  
