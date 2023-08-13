@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './RegistrationForm.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import img3 from '../RegistrationSuccessful/image (3).png';
 import heading from '../RegistrationForm/Student regis.png';
 import axios from 'axios';
 import { redirect } from 'react-router-dom';
@@ -48,7 +49,7 @@ const RegistrationForm = () => {
           window.location.href = '/registerSucessful';
         })
         .catch((error) => {
-          setErrorMessage(error.message);
+          setErrorMessage(error.response.data.message);
           setIsSubmitting(false);
         });
     }, 2000);
@@ -137,7 +138,7 @@ const RegistrationForm = () => {
             </button>
 
             {submissionMessage && <div>{submissionMessage}</div>}
-            {errorMessage && <div>{errorMessage}</div>}
+            {errorMessage && <div style={{color:'#FFB400'}}>{errorMessage}</div>}
           </div>
         </div>
       </div>

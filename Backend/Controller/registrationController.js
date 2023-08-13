@@ -29,7 +29,17 @@ const sendInstituteMail = (req, next) => {
   });
 };
 
-exports.createRegistration = catchAsync(async (req, res, next) => {
+exports.  createRegistration = catchAsync(async (req, res, next) => {
+  const existingEmailRegistration = await RegistrationModel.findOne({ email: req.body.email });
+  if (existingEmailRegistration) {
+    return next(new AppError("This email is already registered.", 400));
+  }
+
+  const existingPhoneNumberRegistration = await RegistrationModel.findOne({ contactNumber: req.body.contactNumber });
+  if (existingPhoneNumberRegistration) {
+    return next(new AppError("This phone number is already registered.", 400));
+  }
+  
   await RegistrationModel.create({
     ...req.body,
   });
@@ -44,7 +54,7 @@ exports.createRegistration = catchAsync(async (req, res, next) => {
     Email: ${req.body.email} \n
     Mobile Number: ${req.body.contactNumber} \n
     \n
-    The first round of GambitoR will be on 9th October 2022. \n
+    The first round of GambitoR will be on 29th October 2023. \n
     \n
     Follow us on our social media handles to stay connected! \n
     Further updates will be sent to your registered email address. \n
