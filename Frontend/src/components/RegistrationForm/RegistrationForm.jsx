@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './RegistrationForm.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import img3 from '../RegistrationSuccessful/image (3).png';
 import heading from '../RegistrationForm/Student regis.png';
 import axios from 'axios';
 import { redirect } from 'react-router-dom';
@@ -30,7 +29,10 @@ const RegistrationForm = () => {
     e.preventDefault();
 
     setIsSubmitting(true);
-      axios.post('http://localhost:5000/api/v1/registration', formData)
+
+    // Simulate the database submission with a 2-second delay
+    setTimeout(() => {
+      axios.post('https://gambitor.iitr.ac.in/api/v1/registration', formData)
         .then((response) => {
           setSubmissionMessage('Registration successful!');
           setIsSubmitting(false);
@@ -49,8 +51,8 @@ const RegistrationForm = () => {
           setErrorMessage(error.message);
           setIsSubmitting(false);
         });
+    }, 2000);
   };
- 
 
   return (
     <div className='form'>
@@ -124,7 +126,7 @@ const RegistrationForm = () => {
               />
 
             </div>
-            <div className='buttonStyle'>
+
             <button
               className="submit-button"
               type="submit"
@@ -133,9 +135,9 @@ const RegistrationForm = () => {
             >
               {isSubmitting ? 'Submitting...' : 'CONFIRM'}
             </button>
-            </div>
+
             {submissionMessage && <div>{submissionMessage}</div>}
-            {errorMessage && <div className='styleError'>{errorMessage}</div>}
+            {errorMessage && <div>{errorMessage}</div>}
           </div>
         </div>
       </div>
