@@ -3,12 +3,6 @@ import "./Papers.css";
 import img from "../images/PaperImg.png"
 import listimg from "../images/pokeball (1) 1.png"
 import { BrowserRouter , Link } from 'react-router-dom';
-import inceptionmetiox from "../PracticePapers/9th 10th COMPLETE.pdf";
-import inceptionappolox from "../PracticePapers/11TH COMPLETE.pdf";
-import inceptionathenox from "../PracticePapers/12th COMPLETE.pdf";
-import pinnaclemetiox from "../PracticePapers/Metiox Paper-1.pdf";
-import pinnacleapollox from "../PracticePapers/Metiox Paper-1.pdf";
-import pinnacleathenox from "../PracticePapers/Metiox Paper-1.pdf";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 function Papers(){

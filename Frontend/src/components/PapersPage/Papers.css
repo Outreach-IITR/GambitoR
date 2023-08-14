@@ -1,5 +1,5 @@
 .containerP {
-  background-image: url("../images/Background.png");
+  background-image: url("../images/ContactBackground.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -124,7 +124,7 @@
 }
 
 .papercontent li a:hover {
-  color: navy;
+  color: white;
   background-color: none;
 }
 
