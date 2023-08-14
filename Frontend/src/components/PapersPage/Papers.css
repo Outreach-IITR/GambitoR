@@ -87,13 +87,14 @@
   line-height: 1vw;
   letter-spacing: 0.05em;
   border: 0.08em solid #FFB400;
-  border-radius: 0.23em;
+  border-radius: 0.63em;
   background-color: #1B256AD9;
 }
 
 .roundHeading {
   width: 25vw;
   margin-top: 4.5%;
+  
 }
 
 .listimg {
@@ -234,12 +235,43 @@
 
   /* Media Query for body of paper.js */
 
-  @media screen and (max-width:770px) and (min-width:320px) {
+  @media screen and (max-width:770px) {
     .papercontent li img{
       padding: 10px;
       
       
     }
+    .paperImg{
+      /* width: 40px; */
+      width: 55%;
+    }
+
+    .papercontent h6 {
+      /* color: #FFB400;
+      font-family: Goldman; */
+       font-size: 3.15vw; 
+      /* text-align: center; */
+      
+    }
+    .roundHeading{
+      width: 38vw;
+    }
+    .papercontent li a {
+      text-decoration: none;
+      font-family: Goldman;
+      font-size: 2.8vw;
+      font-weight: 600;
+      line-height: 2vw;
+      letter-spacing: 0.05em;
+      color: #FFB400;
+    }
+    
+   
+    
+    /* .papercontent li a {
+      /* width: 460px; 
+    } */
+  
 
   }
 

@@ -63,8 +63,8 @@ const AboutUs = () => {
         <img src={img6} alt="" className="syllabus" />
         <div className="prizes">
           <motion.img 
-            initial={{top: '40%'}}
-            whileInView={{top: '7%'}}
+            initial={{top: '45%'}}
+            whileInView={{top: '13%'}}
             transition={transition}
             src={poke3} className='poke3' alt=""
           />

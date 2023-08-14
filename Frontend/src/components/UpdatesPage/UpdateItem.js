@@ -1,7 +1,7 @@
 import React from "react";
 import "./UpdatesPage.css";
 import pokemon from "../images/pokeball (1) 1.png";
-function UpdateItem()
+function UpdateItem({pcard})
 {
     return(
     
@@ -9,8 +9,8 @@ function UpdateItem()
         <div className="poko"><img src ={pokemon} className="pokoimg" /></div>
         <div class="cardd">
          <div class="card-content">
-            <p className="pcard">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-            <p className="card-text">TIME | DATE</p>
+            <p className="pcard">{pcard}</p>
+            {/* <p className="card-text">TIME | DATE</p> */}
          </div>
         </div>
 

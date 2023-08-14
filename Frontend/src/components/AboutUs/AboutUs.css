@@ -13,14 +13,14 @@
     
 }
 .aboutus{
-    width: 25vw;
+    width: 33vw;
     margin: 20vh  0 10vh 0;
 }
 
 .description{
     margin: 10vh 0 0vw 10vh 0vw;
     margin-bottom: 40vh;
-    width: 60vw;
+    width: 70vw;
 }
 
 .rounds {
@@ -148,7 +148,6 @@
 
 
 
-
 .datevenue{
     width: 60vw;
     margin-top: 3vh;
@@ -215,7 +214,7 @@
     }
     .description{
         margin-top:10px;
-        margin-bottom: 90px;
+        margin-bottom: 60px;
     }
     .poke1 {
       top: 22%;
@@ -228,10 +227,10 @@
     }
      .poke3{
         top: 10%;
-        right: 60%;
+        right: 63%;
         
         width: 30%;
-        height:35%;
+        height:27%;
     } 
     
     .rounds{
@@ -239,11 +238,11 @@
     }
     .apollox , .metiox  ,.athenox{
         width: 30vw;
-        height: 27vh;
+        height: 20vh;
     }
     .categories{
 
-        margin-top: 20px;
+        margin-top: 2px;
         display: flex;
         flex-direction: column;
         /* justify-items: center; */
@@ -251,17 +250,23 @@
         gap: 40px;
     }
      .prizes {
-        margin-top: 5px;
+        margin-top: -55px;
         margin-bottom: -60px;
     }
     .datevenue{
-        margin-top:20px;
+        margin-top:-20px;
     }
 
     .awards{
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
     .rounds{
         margin-top:0px;
+        margin-left: 9px;
     }
+    .syllabus{
+        margin-top: 2px;
+        margin-right: 20px;
+    }
+    
   }
