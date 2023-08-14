@@ -1,6 +1,5 @@
 /*---------------------------- Footer-CSS Styling------------------------------ */
 body {
-  /* background-image: url('../images/papers\ background;.png');  */
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Jost', sans-serif;
@@ -18,37 +17,26 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* flex-wrap: wrap; */
-
-
 }
 
 .part1 {
   text-decoration: none;
   margin-right: 5vw;
-  /* flex: 25%; */
 }
 
 .logoF {
   width: 80%;
   height: 100%;
-  /* padding: 0; */
-  /* margin: auto; */
-  /* margin-top: -5vh; */
-
 }
 
 
 
 .part2 {
   margin-right: 5vw;
-  /* flex: 25%; */
-
 }
 
 .part2 ul {
   list-style-type: none;
-  /* margin-top: 3vh; */
 }
 
 .part2 li {
@@ -64,14 +52,12 @@ body {
 }
 
 .part3 {
-  /* flex: 25%; */
   margin-right: 8vw;
 }
 
 
 .part3 ul {
   list-style-type: none;
-  /* margin-top: 3vh; */
 }
 
 .part3 li {
@@ -90,16 +76,12 @@ body {
 
 .part4 {
   display: flex;
-  /* flex: 25%; */
   flex-direction: column;
 }
 
 .f-icons {
   font-size: 28px;
-
 }
-
-
 
 .part4 h5 {
   text-align: left;
@@ -108,16 +90,14 @@ body {
 }
 
 .part4 ul {
-  /* width: ; */
   list-style-type: none;
   padding: 0;
   margin-bottom: 3vh;
+  text-align: left;
 
 }
 
 .part4 li {
-
-  /* margin-left: 8px; */
   margin-right: 20px;
   display: inline-block;
 }
@@ -133,15 +113,6 @@ body {
   font-size: 1.2rem;
   font-family: 'Jost', sans-serif;
 }
-
-/* .iconsF {
-  display: flex;
-  flex-direction: row;
-}
-
-.icon {
-  margin: 20px 10px;
-} */
 
 @media screen and (max-width: 1405px) and (min-width:1205px) {
   .footer {
@@ -214,7 +185,6 @@ body {
 
   .logoF {
     width: 100%;
-    /* margin-left: 50px; */
     height: 100%;
   }
 
@@ -270,13 +240,13 @@ body {
     display: flex;
     height: 15%;
     justify-content: center;
-    /* flex-wrap: wrap; */
+
   }
 
   .logoF {
     height: 95%;
     width: 95%;
-    /* margin-right: 5vw; */
+
   }
 
   .part1 {
@@ -287,6 +257,7 @@ body {
   }
 
   .part2 {
+    text-align: left;
     display: inline;
     margin-right: 0;
     width: 30%;
@@ -294,14 +265,13 @@ body {
   }
 
   .part2 ul {
-    /* margin-top: 2vh; */
     margin-left: 3vw;
   }
 
   .part2 li {
     font-size: 2vw;
     line-height: 1.5vh;
-    margin-bottom: 1.9vh;
+    margin-bottom: 2.5vh;
     margin-left: 0;
   }
 
@@ -314,25 +284,22 @@ body {
   .mobile-img img{
     width: 100%;
     height: 25%;
-    /* margin-top: 2vh; */
     position: absolute;
     bottom: 0;
   }
 
   .part3{
     position: relative;
-    /* text-align: center; */
   }
 
   .part3 ul {
-    /* margin-top: 2vh; */
     margin-left: 10px;
   }
 
   .part3 li {
     font-size: 2vw;
     line-height: 1.5vh;
-    margin-bottom: 1.9vh;
+    margin-bottom: 2.5vh;
   }
 
   .part4 {
@@ -341,8 +308,6 @@ body {
 
   .mobile-follow{
     display: block;
-    /* flex-direction: column; */
-    /* align-items: center; */
     margin-left: 2vw;
     position: absolute;
     bottom: 0;
@@ -355,8 +320,6 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 2vw;
-    /* margin-right: 5vw; */
-    /* text-align: center; */
   }
 
   .mobile-follow ul li{
@@ -374,15 +337,11 @@ body {
 
   .f-icons {
     font-size: 2vw;
-    /* margin-bottom: 1.5vh; */
-    /* margin-right: 10px; */
-
   }
 
   .text-center {
     margin-top: 3vh;
     font-size: 0.8rem;
-    /* margin-bottom: ; */
     align-items: center;
   }
 }
@@ -392,13 +351,11 @@ body {
     display: flex;
     height: 15%;
     justify-content: center;
-    /* flex-wrap: wrap; */
   }
 
   .logoF {
     height: 86%;
     width: 86%;
-    /* margin-right: 5vw; */
   }
 
   .part1 {
@@ -408,6 +365,7 @@ body {
   }
 
   .part2 {
+    text-align: left;
     display: inline;
     margin-right: 0;
     width: 32%;
@@ -415,27 +373,23 @@ body {
   }
 
   .part2 ul {
-    /* margin-top: 2vh; */
     margin-left: 3vw;
   }
 
   .part2 li {
     font-size: 2vw;
     line-height: 1.5vh;
-    margin-bottom: 6px;
+    margin-bottom: 0.7vh;
     margin-left: 0;
   }
 
   .mobile-img{
     display: block;
-    
-    
   }
 
   .mobile-img img{
     width: 100%;
     height: 28%;
-    /* margin-top: 2vh; */
     position: absolute;
     bottom: 0;
   }
@@ -444,18 +398,16 @@ body {
     position: relative;
     text-align: center;
     margin-bottom: -1vh;
-    /* text-align: center; */
   }
 
   .part3 ul {
-    /* margin-top: 2vh; */
     margin-left: 5px;
   }
 
   .part3 li {
     font-size: 2vw;
     line-height: 1.5vh;
-    margin-bottom: 6px;
+    margin-bottom: 0.7vh;
   }
 
   .part4 {
@@ -464,11 +416,8 @@ body {
 
   .mobile-follow{
     display: block;
-    /* flex-direction: column; */
-    /* justify-content:flex-end; */
-    /* align-items: center; */
-    margin-left: 5vw;
-    height: 5vh;
+    margin-left: 4vw;
+    height: 45px;
     position: absolute;
     bottom: 0;
 
@@ -480,15 +429,13 @@ body {
     margin-left: 5vw;
     margin-top: 0;
     margin-bottom: 0;
-   
     padding-left: 0;
-    /* height: 0%; */
+
   }
 
   .mobile-follow ul li{
     display: inline;
     margin-right: 1.5vw;
-    
     margin-top: 0;
 
   }
@@ -503,10 +450,6 @@ body {
   .f-icons {
     font-size: 2.2vw;
     margin-bottom: 2.6vh;
-    /* margin-left: 2vw; */
-    /* height: 1vh; */
-    /* margin-right: 10px; */
-
   }
 
   .text-center {
@@ -523,13 +466,11 @@ body {
     display: flex;
     height: 15%;
     justify-content: center;
-    /* flex-wrap: wrap; */
   }
 
   .logoF {
     height: 96%;
     width: 96%;
-    /* margin-right: 5vw; */
   }
 
   .part1 {
@@ -541,19 +482,19 @@ body {
   .part2 {
     display: inline;
     margin-right: 0;
+    text-align: left;
     width: 32%;
     position: relative;
   }
 
   .part2 ul {
-    /* margin-top: 2vh; */
     margin-left: 3vw;
   }
 
   .part2 li {
     font-size: 2vw;
     line-height: 1.5vh;
-    margin-bottom: 5px;
+    margin-bottom: 0.5vh;
     margin-left: 0;
   }
 
@@ -566,7 +507,6 @@ body {
   .mobile-img img{
     width: 100%;
     height: 28%;
-    /* margin-top: 2vh; */
     position: absolute;
     bottom: 0;
   }
@@ -574,18 +514,16 @@ body {
   .part3{
     position: relative;
     margin-bottom: -1vh;
-    /* text-align: center; */
   }
 
   .part3 ul {
-    /* margin-top: 2vh; */
     margin-left: 5px;
   }
 
   .part3 li {
     font-size: 2vw;
     line-height: 1.5vh;
-    margin-bottom: 5px;
+    margin-bottom: 0.5vh;
   }
 
   .part4 {
@@ -594,9 +532,6 @@ body {
 
   .mobile-follow{
     display: block;
-    /* flex-direction: column; */
-    /* justify-content:flex-end; */
-    /* align-items: center; */
     margin-left: 2vw;
     height: 5.5vh;
     position: absolute;
@@ -617,9 +552,7 @@ body {
   .mobile-follow ul li{
     display: inline;
     margin-right: 1.5vw;
-    
     margin-top: 0;
-
   }
 
   .mobile-follow h5{
@@ -632,9 +565,6 @@ body {
   .f-icons {
     font-size: 2.2vw;
     margin-bottom: 0;
-    /* height: 1vh; */
-    /* margin-right: 10px; */
-
   }
 
   .text-center {
@@ -649,13 +579,11 @@ body {
     display: flex;
     height: 15%;
     justify-content: center;
-    /* flex-wrap: wrap; */
   }
 
   .logoF {
     height: 98%;
     width: 98%;
-    /* margin-right: 5vw; */
   }
 
   .part1 {
@@ -667,12 +595,12 @@ body {
   .part2 {
     display: inline;
     margin-right: 0;
+    text-align: left;
     width: 32%;
     position: relative;
   }
 
   .part2 ul {
-    /* margin-top: 2vh; */
     margin-left: 1vw;
   }
 
@@ -692,19 +620,15 @@ body {
   .mobile-img img{
     width: 100%;
     height: 30%;
-    /* margin-top: 2vh; */
     position: absolute;
     bottom: 0;
   }
 
   .part3{
     position: relative;
-    /* text-align: center; */
   }
 
   .part3 ul {
-    /* margin-top: 2vh; */
-    /* margin-left: 3px; */
     padding-left: 16px;
   }
 
@@ -720,11 +644,8 @@ body {
 
   .mobile-follow{
     display: block;
-    /* flex-direction: column; */
-    /* justify-content:flex-end; */
-    /* align-items: center; */
     margin-left: 2.5vw;
-    height: 4.8vh;
+    height: 5vh;
     position: absolute;
     bottom: 0;
 
@@ -743,9 +664,7 @@ body {
   .mobile-follow ul li{
     display: inline;
     margin-right: 1.5vw;
-    
     margin-top: 0;
-
   }
 
   .mobile-follow h5{
@@ -758,8 +677,6 @@ body {
   .f-icons {
     font-size: 2.3vw;
     margin-bottom: 3vh;
-    /* height: 1vh; */
-    /* margin-right: 10px; */
 
   }
 

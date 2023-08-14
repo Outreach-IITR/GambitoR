@@ -1,29 +1,26 @@
-/*---------------------------- Header-CSS------------------------------ */
-
 .navh {
+  text-align: left;
     height: 16%;
     width: 100%;
     padding-top: 3vh;
     position: fixed;
     top: 0;
     z-index: 1000;
-   
-   
   }
 
   .navh.scrolled {
     background-color: #150E4E;
     transition: background-color 0.3s ease-in-out;
   }
-  
-  .logoL {
+
+ .logoL {
   margin-left: 6vw;
+  
   }
   
   .navh ul {
     float: right;
     margin-right: 5rem;
-
   }
   
   .navh ul li {
@@ -86,95 +83,14 @@
     width: 220px;
   }
 
-  /*--------------------------- CSS of Side-bar--------------------------- */
-
-  /* @media screen and (max-width: 875px) {
-    .navh {
-      margin-top: 50px;
-    }
   
-    label.logoL {
-      font-size: 15px;
-      padding-left: 20px;
-      margin-left: 40px;
-      margin-top: 15px;
-    }
-  
-    .logoh {
-      width: 35px;
-    }
-  
-    .gambitorh {
-      width: 110px;
-    }
-  
-    .checkbtn {
-      display: block;
-      height: 100%;
-      margin-top: auto;
-      margin-bottom: auto;
-      margin-right: 60px;
-    }
-  
-    .headerlist {
-      width: 100%;
-      position: fixed;
-      top: -40px;
-      left: -100%;
-      text-align: center;
-      transition: all 0.1ms;
-    }
-  
-    .navh ul{
-      padding: 0%;
-    }
-
-    .navh ul li {
-      display: block;
-      margin: 0;
-      margin: 50px 0;
-      line-height: 30px;
-      color: #fff;
-    }
-  
-    .navh ul li a {
-      font-size: 3vw;
-      color: #fff;
-      line-height: 2vh;
-    }
-  
-    .navh a:hover,
-    .navh a.active {
-      background: none;
-      color: #FFB400;
-    }
-  
-    #check:checked~ul {
-      left: 0;
-      position: relative;
-    }
-
-    .headerlist.active {
-      transform: translateY(100%);
-      margin-right: -10vw;
-      width: 40%;
-      margin-top: -40vh;
-    }
-  }
-   */
-  
-   .sidebar {
+  .sidebar {
     display: none; /* Hide the sidebar by default */
     font-size: 2vh;
   }
 
-  
-  
-  
-  
   /* Sidebar Styles */
-  /* Sidebar Styles */
-.headerlist.active {
+  .headerlist.active {
   margin-right:-10vw; /* Position it on the right side of the screen */
   position: fixed;
   text-align: right;
@@ -189,12 +105,11 @@
   
   @media screen and (max-width: 1405px) and (min-width:1205px) {
     .navh {
-      /* margin-left: -10px; */
       width: 100%;
     }
 
     label .logoL{
-      /* margin-left: 40px; */
+      text-align: left;
       margin-top: 20px;
     }
   
@@ -222,12 +137,8 @@
   
     label.logoL {
       font-size: 20px;
-      /* margin-left: 110px; */
-      /* padding-left: 10px; */
     }
 
-    
-  
     .navh ul li a {
       font-size: 13px;
     }
@@ -257,14 +168,7 @@
       display: block; /* Show the sidebar only when screen width is 800px or less */
     }
 
-    .navh {
-      /* margin-top: 50px; */
-    }
-  
     label.logoL {
-      /* font-size: 15px;
-      padding-left: 20px;
-      margin-left: 40px; */
       margin-top: 15px;
     }
   
@@ -278,7 +182,6 @@
   
     .checkbtn {
       display: block;
-      /* height: 100%; */
       margin-top: auto;
       margin-bottom: auto;
       margin-right: 60px;
@@ -300,8 +203,6 @@
     .navh ul li {
       display: block;
       margin: 0;
-      /* margin: 50px 0; */
-      /* line-height: 30px; */
       color: #fff;
     }
   
@@ -338,8 +239,6 @@
 
   }
   
-
-  
   @media screen and (max-width:397px) {
 
     .sidebar {
@@ -348,7 +247,6 @@
    
     .fas{
       font-size: 2.7vh;
-      /* margin-bottom: -5vh; */
     }
     .checkbtn{
       height: 70%;
@@ -358,12 +256,9 @@
     .logoh {
       width: 22px;
       margin-top: 5px;
-      /* height: 15px; */
     }
   
     .gambitorh {
       width: 80px;
     }
   }
-
-  

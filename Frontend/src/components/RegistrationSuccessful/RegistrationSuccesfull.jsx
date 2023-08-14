@@ -1,16 +1,23 @@
 import React from 'react'
-import './RegistrationSuccessful.css'
-const RegistrationSuccesfull = (props) => {
+import alien from './Group 28.png';
+import message from './Group 1346.png';
+import "./RegistrationSuccessful.css";
+
+
+const RegistrationSuccesfull = () => {
   return (
-    
-      <div className="container">
-        <img src={props.img} alt="" />
-        <div className="success">
-          <div id="successful">Registration Succesful</div>
-          <div id="best-luck">Best of luck for Gambitor! Check your mail for credentials and stay tuned for further updates</div>
-        </div>
-        <a href='/'><button id='btn' >CONTINUE</button></a>
-      </div>
+
+    <div className="container-success">
+      <center>
+      <img className='alien' src={alien} alt="" />
+      <br></br>
+      <img className="success-msg" src={message} alt='' />
+      <br></br>
+      <a href='/'><button id='btn' >CONTINUE</button></a>
+      <br></br>
+      </center>
+    </div>
+
   )
 }
 
