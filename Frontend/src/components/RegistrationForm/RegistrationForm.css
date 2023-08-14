@@ -988,6 +988,7 @@ option {
     border: none;
     border-radius: 5px;
     /* margin-left: 10vh; */
+    margin: 25px auto;
   }
   
 
@@ -1088,6 +1089,7 @@ option {
     border: none;
     border-radius: 5px;
     /* margin-left:9vh; */
+    margin: 20px auto;
   }
   
 

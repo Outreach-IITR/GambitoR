@@ -138,7 +138,7 @@ const RegistrationForm = () => {
             </button>
 
             {submissionMessage && <div>{submissionMessage}</div>}
-            {errorMessage && <div style={{color:'#FFB400'}}>{errorMessage}</div>}
+            {errorMessage && <div style={{color:'#FFB400' , fontSize: '2.3vw'}}>{errorMessage}</div>}
           </div>
         </div>
       </div>
