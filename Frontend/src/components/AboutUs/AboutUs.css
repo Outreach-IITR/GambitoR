@@ -278,6 +278,11 @@
     margin-bottom: 15vh;
 }
 
+.trophy{
+    width: 50vw;
+    height: 80vh;
+}
+
 /*------------------- Media-Queries from 1200 px to 300px-------------------------- */
 
 @media (min-width: 800px) and (max-width: 1200px) {
@@ -463,6 +468,11 @@
     .rounds {
         margin-top: 0px;
     }
+
+    .trophy {
+        margin-top: -15vh;
+        margin-bottom: -15vh;
+    }
 }
 
 /*<------------ Media Queries for mobile view------> */
@@ -588,5 +598,10 @@
 
     .rounds {
         margin-top: 0px;
+    }
+
+    .trophy {
+        margin-top: -30vh;
+        margin-bottom: -35vh;
     }
 }

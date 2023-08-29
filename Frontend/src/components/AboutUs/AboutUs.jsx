@@ -20,6 +20,7 @@ import "./AboutUs.css";
 import { motion, spring } from "framer-motion";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import trophy from "../GAMBITOR SVG/GAMBITOR SVG/Trophy.svg";
 
 const AboutUs = () => {
   const transition = { duration: 2, type: spring };
@@ -165,6 +166,9 @@ const AboutUs = () => {
           </ul>
 
         </div>
+
+        <img className="trophy" src={trophy} alt="" />
+
         <Footer />
       </div>
     </>
