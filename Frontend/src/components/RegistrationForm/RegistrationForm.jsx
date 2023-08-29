@@ -3,7 +3,7 @@ import './RegistrationForm.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import img3 from '../RegistrationSuccessful/image (3).png';
-import heading from '../RegistrationForm/Student regis.png';
+import heading from "../GAMBITOR SVG/GAMBITOR SVG/H-STUDENT_REG.svg";
 import axios from 'axios';
 import { redirect } from 'react-router-dom';
 

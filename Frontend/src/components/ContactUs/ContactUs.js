@@ -24,8 +24,8 @@ import Deshmukh from "../images/Aditya Deshmukh.jpg";
 import arin from "../images/Arin.jpg";
 import sagar from "../images/SAGAR KHARAT.jpg";
 import arpan from "../images/ARPAN KUMAR.jpg";
-import ContactImg from "../images/Group 1214 (2).png";
-import InitiatorImg from "../images/Group 1206.png";
+import ContactImg from "../GAMBITOR SVG/GAMBITOR SVG/H-CONTACT US.svg";
+import InitiatorImg from "../GAMBITOR SVG/GAMBITOR SVG/H-INITIATORS.svg";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 function ContactUs() {

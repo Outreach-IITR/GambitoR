@@ -1,6 +1,6 @@
 import React from "react";
 import "./Papers.css";
-import img from "../images/PaperImg.png"
+import Hpapers from "../GAMBITOR SVG/GAMBITOR SVG/H-PAPERS.svg"
 import listimg from "../images/pokeball (1) 1.png"
 import { BrowserRouter , Link } from 'react-router-dom';
 import Header from "../Header/Header";
@@ -11,7 +11,7 @@ function Papers(){
         <div className="containerP" >
         <Header />
             <div className="mainContainer">
-            <img src={img} className="paperImg" />
+            <img src={Hpapers} className="paperImg" />
             {/* <div className="paperHeading"><h2 >PAPERS</h2></div> */}
             </div>
             <div className="papercontent">

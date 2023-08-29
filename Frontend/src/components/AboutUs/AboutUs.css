@@ -1,272 +1,592 @@
-.main{
-    background-image: url("./images/Background.png");
-    /* background-repeat: no-repeat; */
+.main {
+    background-image: url("../images/About\ Background.svg");
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    overflow-x: hidden ;
-    /* display: flex;
-    flex-direction: column; */
-    /* background-image: url(components\RegistrationSuccessful\reg_page_bg.png); */
+    overflow-x: hidden;
     text-align: center;
-    /* margin-top: 4rem; */
-    
-}
-.aboutus{
-    width: 33vw;
-    margin: 20vh  0 10vh 0;
 }
 
-.description{
-    margin: 10vh 0 0vw 10vh 0vw;
-    margin-bottom: 40vh;
-    width: 70vw;
+.aboutus {
+    width: 25vw;
+    margin: 30vh 0 0 0;
 }
 
-.rounds {
+.description {
+    margin: 10vh 0vw 10vh 0vw;
+    margin-bottom: 25vh;
+    width: 80vw;
+    height: auto;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: justify;
+    font-family: Goldman;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    font-size: 2vw;
+    padding: 2vh 5vw;
+}
+
+.round-img{
+    margin-bottom: 10vh;
+}
+
+.highlight {
+    color: #FFB900;
+    font-family: Goldman;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#twoRounds {
+    color: #FFF;
+    text-align: center;
+    font-family: Goldman;
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 149%;
+    letter-spacing: 0.1rem;
+    padding-bottom: 4vh;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.roundDetails {
+    text-align: center;
     position: relative;
-    width: 100%;
-    height: auto;
-    max-width: 90rem;
-    /* margin-top: 10rem; */
-    /* left: 5%; */
-    margin: 0 auto;
-  }
-  
-  .round {
-    width: 100%;
-    max-width: 90rem;
-    height: auto;
-  }
-  
-  .poke1{
+    height: 70vw;
+    width: 80vw;
+    margin-bottom: 4vh;
+}
+
+.round1 {
+    width: 54%;
+    color: #FFF;
+    text-align: center;
+    font-family: Goldman;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2vw;
+    letter-spacing: 2.2px;
+    padding-bottom: 2vh;
+}
+
+.round1 h1 {
+    text-align: center;
+}
+
+.round1 p {
+    letter-spacing: 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+.round2 {
+    position: absolute;
+    bottom: 5%;
+    right: 0%;
+    width: 54%;
+    color: #FFF;
+    text-align: justify;
+    font-family: Goldman;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2vw;
+    margin-top: 10vh;
+    letter-spacing: 2.2px;
+}
+
+.round2 p {
+    letter-spacing: 0;
+    width: 80%;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.poke1 {
     width: 35%;
     height: auto;
     position: absolute;
-    top: 21%;
-    right: 16%;
-  }
-  .poke2 {
+    top: 0%;
+    right: -8%;
+
+}
+
+.poke2 {
     width: 33%;
     height: auto;
     position: absolute;
-    bottom: 17%;
-    left: 10%;
+    bottom: 0%;
+    left: -10%;
 
-  }
- 
-  
- 
-  
-
-/* Categories css ends */
-
-
-
-
-
-
-
-
+}
 
 
 /* Prizes  */
-.prizes{
+
+.prizes {
     position: relative;
     width: 100%;
     height: auto;
     max-width: 90rem;
-    /* margin-top: 10rem; */
-    /* left: 5%; */
     margin: 0 auto;
-    padding: 10rem 0rem 10rem 0rem;
-
-   
+    padding: 8vh 0rem 8vh 0rem;
 }
-.prize{
+
+.prize {
     width: 80%;
     height: auto;
     position: relative;
-    /* right: 9rem; */
+}
+
+.prizedetails {
+    width: 60vw;
+    color: #FFF;
+    font-family: Goldman;
+    text-align: justify;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.16px;
+    margin: auto;
+    font-size: 2vw;
+    padding: 5vh 5vw;
+    text-align: justify;
+    margin-top: 5vh;
+}
+
+.prizedetails ul{
+    list-style-type: none;
+    padding-left: 0;
     
+}
+
+.prizedetails li{
+    margin-bottom: 2vh;
 
 }
-.poke3{
-    width: 26%;
+
+.poke3 {
+    width: 20%;
     height: auto;
-    top: 1%;
+    top: 0;
     right: 60%;
     position: absolute;
 }
 
-
-
-/* Prizes css ends */
-
-
 /* Categories css */
-.main-Category{
+
+.main-Category {
     width: 65vw;
     padding: 2vh 0vh 6vh 0vh;
-    
+
 }
-.categories{
+
+.categories {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-bottom: 7rem;
-    position: relative;
-    left: 2.5%;
+    /* position: relative;
+    left: 2.5%; */
 }
-.apollox{
+
+.apollox {
     width: 24vw;
     height: 56vh;
-    
+
 }
-.apollox:hover{
-    transform: scale(1.3);
-    transition: ease;
-}
-.metiox{
-    width: 24vw;
-    height: 56vh;
-   
-}
-.metiox:hover{
-    transform: scale(1.3);
-    transition: ease;
-}
-.athenox{
-    width: 24vw;
-    height: 56vh;
-    
-}
-.athenox:hover{
+
+.apollox:hover {
     transform: scale(1.3);
     transition: ease;
 }
 
+.metiox {
+    width: 24vw;
+    height: 56vh;
 
+}
 
-.datevenue{
+.metiox:hover {
+    transform: scale(1.3);
+    transition: ease;
+}
+
+.athenox {
+    width: 24vw;
+    height: 56vh;
+
+}
+
+.athenox:hover {
+    transform: scale(1.3);
+    transition: ease;
+}
+
+.datevenue {
     width: 60vw;
     margin-top: 3vh;
     margin-bottom: 6vh;
+    height: 15vh;
 }
-.syllabus{
+
+.datevenuedetails {
+    width: 80vw;
+    color: #FFF;
+    text-align: justify;
+    font-family: Goldman;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.16px;
+    margin: auto;
+    font-size: 2vw;
+    padding: 5vh 5vw;
+    text-align: justify;
+}
+
+.datevenuedetails ul {
+    list-style-type: none;
+}
+
+.datevenuedetails li {
+    list-style-image: url("../images/HAT.svg");
+    list-style-position: outside;
+    padding-left: 20px;
+
+}
+
+.syllabus {
     width: 60vw;
     margin-top: 9vh;
 }
 
-.awards{
+.awards {
     width: 50vw;
     margin-bottom: 15vh;
-
 }
 
-@media (min-width: 508px) and (max-width: 1200px) {
-    .poke1 {
-      top: 24%;
-      left: 48%;
+/*------------------- Media-Queries from 1200 px to 300px-------------------------- */
+
+@media (min-width: 800px) and (max-width: 1200px) {
+
+    .aboutus {
+        margin-top: 25vh;
+        margin-bottom: 8vh;
     }
-    .rounds{
+
+    .description {
+        line-height: 2.5vw;
+        margin-bottom: 8vh;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .poke1 {
+        top: 9%;
+        left: -10%;
+    }
+
+    .round1 {
+        padding-bottom: -10vh;
+    }
+
+    .roundDetails {
         width: 85%;
     }
-  
+
     .poke2 {
-      top: 53%;
-      right: 9%;
+        bottom: 0%;
+        right: -8%;
     }
-    .poke3{
-        
+
+    .poke3 {
         top: 13%;
         right: 60%;
-        
     }
-    .description {
-        margin-top: 2px;
-        margin-bottom: 140px;
+
+    .categories {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding-bottom: 4vh;
     }
-    .datevenue{
-        margin-top: 60px;
-        margin-bottom: 90px;
+
+    .datevenue {
+        margin-top: 4vh;
+        margin-bottom: 8vh;
     }
-    .aboutus{
-        margin-bottom: 20px;
-    }
-    .apollox , .metiox  ,.athenox{
+
+    .apollox,
+    .metiox,
+    .athenox {
         width: 30vw;
         height: 35vh;
     }
-    .categories{
+
+    .datevenuedetails{
+        font-size: 2vw;
+    }
+
+    .datevenuedetails li {
+        letter-spacing: normal;
+        list-style-image: url("../images/HAT.svg");
+        list-style-position: outside;
+        padding-left: 10px;
+        margin-top: 10px;
+        
+    }
+
+    
+}
+
+
+@media (max-width: 800px) and (min-width: 400px) {
+
+    .aboutus {
+        margin-top: 25vh;
+        margin-bottom: 5vh;
+    }
+
+    .description {
+        line-height: 2.5vw;
+        margin-bottom: 8vh;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .round-img{
+        margin-bottom: 5vh;
+    }
+
+    .round1 {
+        padding-bottom: 0vh;
+    }
+
+    .roundDetails {
+        width: 85%;
+        height: 75vw;
+    }
+
+    .poke2 {
+        bottom: 5%;
+        right: -8%;
+    }
+    
+    .poke1 {
+        top: 0%;
+        left: -8%;
+    }
+
+    .highlight{
+        letter-spacing: normal;
+    }
+
+    .roundDetails p{
+        line-height: auto;
+        font-size: 1.6vw;
+    }
+
+    .categories {
         display: flex;
         flex-direction: column;
-        /* justify-items: center; */
         align-items: center;
         gap: 30px;
+        padding-bottom: 0vh;
     }
-  }
 
-
-@media (max-width: 508px) {
-    .aboutus{
-        margin-bottom: 10px;
-    }
-    .description{
-        margin-top:10px;
-        margin-bottom: 60px;
-    }
-    .poke1 {
-      top: 22%;
-      left: 48%;
-    }
-  
-    .poke2 {
-      top: 55%;
-      right:5%;
-    }
-     .poke3{
-        top: 10%;
-        right: 63%;
+    .datevenue {
+        margin-top: 4vh;
+        margin-bottom: 5vh;
+        height: 5vh;
         
-        width: 30%;
-        height:27%;
-    } 
-    
-    .rounds{
-        left:1%;
     }
-    .apollox , .metiox  ,.athenox{
-        width: 30vw;
-        height: 20vh;
-    }
-    .categories{
 
-        margin-top: 2px;
+    .apollox,
+    .metiox,
+    .athenox {
+        width: 30vw;
+        height: 27vh;
+    }
+
+    .datevenuedetails{
+        font-size: 2vw;
+    }
+
+    .datevenuedetails img{
+        width: 50%;
+        height: 20%;
+    }
+
+    .datevenuedetails li {
+        letter-spacing: normal;
+        list-style-image: url("../images/HAT.svg");
+        list-style-position: outside;
+        padding-left: 10px;
+        padding-top: 2px;
+        font-size: 2.5vw;
+        letter-spacing: normal;
+    }
+
+    .poke3 {
+        position: absolute;
+        top: 8%;
+        right: 63%;
+    }
+
+    .prizes {
+        margin-top: 5px;
+        padding-bottom: 10vh;
+    }
+
+    .prizedetails{
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .awards {
+        margin-bottom: 30px;
+    }
+
+    .rounds {
+        margin-top: 0px;
+    }
+}
+
+/*<------------ Media Queries for mobile view------> */
+
+@media screen and (max-width: 400px) {
+    .aboutus {
+        margin-top: 20vh;
+        margin-bottom: 3vh;
+    }
+
+    .description {
+        line-height: 2.5vw;
+        margin-bottom: 5vh;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .round-img{
+        margin-bottom: 3vh;
+    }
+
+    #twoRounds{
+        font-size: 3vw;
+        letter-spacing: normal;
+    }
+
+    
+    .round1 {
+        padding-bottom: 0vh;
+    }
+
+    .roundDetails {
+        width: 85%;
+        height: 75vw;
+    }
+
+    .poke2 {
+        bottom: 5%;
+        right: -8%;
+    }
+    
+    .poke1 {
+        top: 0%;
+        left: -8%;
+    }
+
+    .highlight{
+        letter-spacing: normal;
+    }
+
+    .roundDetails p{
+        line-height: auto;
+        font-size: 1.6vw;
+    }
+
+    .main-Category{
+        padding-bottom: 3vh;
+    }
+
+    .categories {
         display: flex;
         flex-direction: column;
-        /* justify-items: center; */
         align-items: center;
-        gap: 40px;
-    }
-     .prizes {
-        margin-top: -55px;
-        margin-bottom: -60px;
-    }
-    .datevenue{
-        margin-top:-20px;
+        gap: 30px;
+        padding-bottom: 0vh;
     }
 
-    .awards{
-        margin-bottom: 40px;
+    .datevenue {
+        margin-top: 4vh;
+        margin-bottom: 3vh;
+        height: 5vh;
+        
     }
-    .rounds{
-        margin-top:0px;
-        margin-left: 9px;
+
+    .apollox,
+    .metiox,
+    .athenox {
+        width: 30vw;
+        height: 27vh;
     }
-    .syllabus{
-        margin-top: 2px;
-        margin-right: 20px;
+
+    .datevenuedetails{
+        font-size: 2vw;
     }
-    
-  }
+
+    .datevenuedetails img{
+        width: 50%;
+        height: 20%;
+    }
+
+    .datevenuedetails li {
+        letter-spacing: normal;
+        list-style-image: url("../images/HAT.svg");
+        list-style-position: outside;
+        padding-left: 10px;
+        margin-top: 10px;
+        font-size: 2.7vw;
+        letter-spacing: normal;
+        line-height: none;
+        
+    }
+
+    .poke3 {
+        position: absolute;
+        top: 100%;
+        right: 63%;
+        bottom: 0;
+    }
+
+    .prizes {
+        margin-top: 5px;
+        padding-bottom: 5vh;
+    }
+
+    .prizedetails{
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .awards {
+        margin-bottom: 30px;
+    }
+
+    .rounds {
+        margin-top: 0px;
+    }
+}

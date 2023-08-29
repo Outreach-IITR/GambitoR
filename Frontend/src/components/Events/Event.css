@@ -1,15 +1,55 @@
 .event{
-    background-image: url("../images/ContactBackground.png");
+    background-image: url("../GAMBITOR\ SVG/GAMBITOR\ SVG/Other Background.svg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
     margin: 0;
     width: 100vw;
     overflow-x: hidden;
+    
 }
+
+.events-title{
+   align-items: center;
+   justify-content: center;
+   justify-items: center;
+   padding-left: 36.5vw;
+   padding-top: 12vw;
+   
+}
+
+.event-main{
+    /* position: relative; */
+    /* display: flex; */
+    flex: column;
+    padding-top: 6vw;
+    padding-right: 2vw;
+}
+.event-main h1{
+    color: #FFB400;
+}
+.event-heading{
+    /* position: absolute; */
+    top: 10%;
+}
+
 
 @media screen and (max-width:580px) {
     .event-heading{
         padding: -30px auto -30px auto;
+        
     }
+    .events-title{
+        width: 75%;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        padding-right: 5vw;
+        margin-top: 17vw;
+        margin-left: -3vw;
+    }
+    .event-main{
+        padding-left: 2vw;
+    }
+    
 }

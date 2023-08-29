@@ -2,7 +2,7 @@
 
 
 .form {
-  background-image: url("reg_page_bg.png");
+  background-image: url("../GAMBITOR SVG/GAMBITOR SVG/Other\ Background.svg");
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Goldman", cursive;
@@ -103,8 +103,6 @@ option {
   border-radius: 10px;
   font-size: 26px;
   font-weight: 200;
-  /* margin-left: 31vh; */
-
 }
 
 .submit-button:hover{
@@ -133,35 +131,18 @@ option {
     width: 90%;
     margin: 1vh auto 0;
   }
-
-
-
   .title {
     height: 90px;
     margin: 0 0 40px 0;
-    color: #FFB400;
-    text-align: left;
     width: 100%;
-    /* font-size: 0px; */
-
-    font-family: Josefin Sans;
     font-size: 3.7vw;
-    font-weight: 700;
-    line-height: 8vw;
-    letter-spacing: -0.05em;
-    /* text-align: left; */
     margin-bottom: 0;
-    padding: 0;
-    /* color: #FFB400; */
   }
 
   .input-verify {
     width: 100%;
     height: 40px;
-    border: 2px solid #FFB400;
-    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
-    color: #FFB400;
   }
 }
 
@@ -174,20 +155,10 @@ option {
   .title {
     height: 90px;
     margin: 0 0 40px 0;
-    color: #FFB400;
-    text-align: left;
     width: 100%;
-    /* font-size: 0px; */
-
-    font-family: Josefin Sans;
     font-size: 2vw;
-    font-weight: 700;
-    line-height: 8vw;
     letter-spacing: -0.05em;
-    /* text-align: left; */
     margin-bottom: 0;
-    padding: 0;
-    /* color: #FFB400; */
   }
  
 }
@@ -197,10 +168,7 @@ option {
     border: 2px solid #FFB400;
     text-align: center;
     margin: 20vh 200px 0 200px;
-    /* margin-bottom: 60px; */
     padding: 30px;
-    /* border-bottom-left-radius: 20px; */
-    /* border-top-right-radius: 20px; */
     box-sizing: border-box;
     font-family: "Roboto Slab", serif;
     font-family: "Ysabeau SC", sans-serif;
@@ -215,12 +183,10 @@ option {
     margin: 0 auto;
     background-size: contain;
     background-repeat: no-repeat;
-    /* background-image: url("st\ bg.png"); */
     padding: 0 40px 0;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
     font-family: "Goldman", cursive;
-    /* background-image: radial-gradient(circle, #1B2469, #1B256A, #246CA4); */
     opacity: 0.9;
     display: flex;
     flex-direction: column;
@@ -228,31 +194,23 @@ option {
     justify-content: center;
     width: 60%;
     height: 74vw;
-    /* border: none; */
   }
 
   .elements {
     width: 85%;
-    /* height: 10%; */
     margin: 0 auto;
     padding-top: 1vh;
-    /* height: 20%; */
   }
 
   .title {
     margin: 10px 0;
-    /* color: #FFB400; */
     text-align: left;
     width: 100%;
     height: 8%;
     font-size: 2.5vw;
-    font-weight: 700;
     line-height: 6vw;
-    letter-spacing: -0.05em;
     text-align: left;
     margin-bottom: 0;
-    padding: 0;
-    color: #FFB400;
   }
 }
 
@@ -261,10 +219,7 @@ option {
     border: 2px solid #FFB400;
     text-align: center;
     margin: 20vh 200px 0 200px;
-    /* margin-bottom: 60px; */
     padding: 30px;
-    /* border-bottom-left-radius: 20px; */
-    /* border-top-right-radius: 20px; */
     box-sizing: border-box;
     font-family: "Roboto Slab", serif;
     font-family: "Ysabeau SC", sans-serif;
@@ -276,16 +231,13 @@ option {
   }
 
   .container-reg {
-    /* border: none; */
     margin: 0 auto;
     background-size: contain;
     background-repeat: no-repeat;
-    /* background-image: url("st\ bg.png"); */
     padding: 0 40px 0;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
     font-family: "Goldman", cursive;
-    /* background-image: radial-gradient(circle, #1B2469, #1B256A, #246CA4); */
     opacity: 0.9;
     display: flex;
     flex-direction: column;
@@ -297,15 +249,12 @@ option {
 
   .elements {
     width: 85%;
-    /* height: 10%; */
     margin: 0 auto;
     padding-top: 13vh;
-    /* height: 20%; */
   }
 
   .title {
     margin: 10px 0;
-    /* color: #FFB400; */
     text-align: left;
     width: 100%;
     height: 8%;
@@ -318,11 +267,6 @@ option {
     padding: 0;
     color: #FFB400;
   }
-  /* .submit-button{
-    margin:20px 0;
-    margin-left: 24vh;
-
-  } */
 }
 
 @media screen and (max-width: 1158px) and (min-width: 1000px) {
@@ -330,10 +274,7 @@ option {
     border: 2px solid #FFB400;
     text-align: center;
     margin: 20vh 200px 0 200px;
-    /* margin-bottom: 60px; */
     padding: 30px;
-    /* border-bottom-left-radius: 20px; */
-    /* border-top-right-radius: 20px; */
     box-sizing: border-box;
     font-family: "Roboto Slab", serif;
     font-family: "Ysabeau SC", sans-serif;
@@ -348,12 +289,10 @@ option {
     margin: 0 auto;
     background-size: contain;
     background-repeat: no-repeat;
-    /* background-image: url("st\ bg.png"); */
     padding: 0 40px 0;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
     font-family: "Goldman", cursive;
-    /* background-image: radial-gradient(circle, #1B2469, #1B256A, #246CA4); */
     opacity: 0.9;
     display: flex;
     flex-direction: column;
@@ -365,38 +304,30 @@ option {
 
   .elements {
     width: 85%;
-    /* height: 10%; */
     margin: 0 auto;
     padding-top: 11vh;
-    /* height: 20%; */
   }
 
   .title {
     margin: 10px 0;
-    /* color: #FFB400; */
     text-align: left;
     width: 100%;
     height: 8%;
     font-size: 2.5vw;
-    font-weight: 700;
     line-height: 6vw;
     letter-spacing: -0.05em;
     text-align: left;
     margin-bottom: 0;
-    padding: 0;
-    color: #FFB400;
   }
 
   .submit-button {
     height: 30px;
-    /* margin: 12px auto ; */
     background-color: #FFB400;
     width: 34%;
     height: 38px;
     color: white;
     border: none;
     border-radius: 10px;
-    /* margin-left: 23.5vh; */
 
   }
 }
@@ -408,10 +339,7 @@ option {
     border: 2px solid #FFB400;
     text-align: center;
     margin: 20vh 200px 0 200px;
-    /* margin-bottom: 60px; */
     padding: 30px;
-    /* border-bottom-left-radius: 20px; */
-    /* border-top-right-radius: 20px; */
     box-sizing: border-box;
     font-family: "Roboto Slab", serif;
     font-family: "Ysabeau SC", sans-serif;
@@ -426,12 +354,10 @@ option {
     margin: 0 auto;
     background-size: contain;
     background-repeat: no-repeat;
-    /* background-image: url("st\ bg.png"); */
     padding: 0 40px 0;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
     font-family: "Goldman", cursive;
-    /* background-image: radial-gradient(circle, #1B2469, #1B256A, #246CA4); */
     opacity: 0.9;
     display: flex;
     flex-direction: column;
@@ -443,15 +369,12 @@ option {
 
   .elements {
     width: 88%;
-    /* height: 10%; */
     margin: 0 auto;
     padding-top: 11vh;
-    /* height: 20%; */
   }
 
   .title {
     margin: 10px 0;
-    /* color: #FFB400; */
     text-align: left;
     width: 100%;
     height: 8%;
@@ -507,10 +430,7 @@ option {
     border: 2px solid #FFB400;
     text-align: center;
     margin: 20vh 200px 0 200px;
-    /* margin-bottom: 60px; */
     padding: 30px;
-    /* border-bottom-left-radius: 20px; */
-    /* border-top-right-radius: 20px; */
     box-sizing: border-box;
     font-family: "Roboto Slab", serif;
     font-family: "Ysabeau SC", sans-serif;
@@ -525,12 +445,10 @@ option {
     margin: 0 auto;
     background-size: contain;
     background-repeat: no-repeat;
-    /* background-image: url("st\ bg.png"); */
     padding: 0 40px 0;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
     font-family: "Goldman", cursive;
-    /* background-image: radial-gradient(circle, #1B2469, #1B256A, #246CA4); */
     opacity: 0.9;
     display: flex;
     flex-direction: column;
@@ -542,15 +460,12 @@ option {
 
   .elements {
     width: 88%;
-    /* height: 10%; */
     margin: 0 auto;
     padding-top: 8vh;
-    /* height: 20%; */
   }
 
   .title {
     margin: 10px 0;
-    /* color: #FFB400; */
     text-align: left;
     width: 100%;
     height: 8%;
@@ -566,14 +481,12 @@ option {
 
   .submit-button {
     height: 38px;
-    /* margin: 13px auto 0; */
     background-color: #FFB400;
     width: 44%;
-    /* height: 38px; */
     color: white;
     border: none;
     border-radius: 10px;
-    /* margin-left: 12vh; */
+
 
   }
 
@@ -623,12 +536,7 @@ option {
 
   .container-reg {
     margin: 0 auto;
-    /* background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("st\ bg.png"); */
     padding: 0 40px 0;
-    /* border-bottom-left-radius: 20px; */
-    /* border-top-right-radius: 20px; */
     border: 3.5px solid #FFB400;
     border-radius: 20px;
     font-family: "Goldman", cursive;
@@ -647,12 +555,10 @@ option {
     height: 100%;
     margin: 0 auto;
     padding-top: 2vh;
-    /* height: 20%; */
   }
 
   .title {
     margin: 20px 0;
-    /* color: #FFB400; */
     text-align: left;
     width: 100%;
     height: 5%;
@@ -668,14 +574,12 @@ option {
 
   .submit-button {
     height: 38px;
-    /* margin: 18px auto 0; */
     background-color: #FFB400;
     width: 44%;
-    /* height: 38px; */
     color: white;
     border: none;
     border-radius: 10px;
-    /* margin-left: 12vh; */
+
 
   }
 
@@ -726,12 +630,7 @@ option {
 
   .container-reg {
     margin: 0 auto;
-    /* background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("st\ bg.png"); */
     padding: 0 40px 0;
-    /* border-bottom-left-radius: 20px; */
-    /* border-top-right-radius: 20px; */
     border: 3.5px solid #FFB400;
     border-radius: 20px;
     font-family: "Goldman", cursive;
@@ -750,12 +649,10 @@ option {
     height: 100%;
     margin: 0 auto;
     padding-top: 1.5vh;
-    /* height: 20%; */
   }
 
   .title {
     margin: 10px 0;
-    /* color: #FFB400; */
     text-align: left;
     width: 100%;
     height: 6%;
@@ -771,15 +668,12 @@ option {
 
   .submit-button {
     height: 3.5vh;
-    /* margin: 1.4vh auto 0; */
     font-size: 1.6vh;
     background-color: #FFB400;
     width: 34%;
-    /* height: 38px; */
     color: white;
     border: none;
     border-radius: 5px;
-    /* margin-left: 16vh; */
 
   }
 
@@ -830,12 +724,7 @@ option {
 
   .container-reg {
     margin: 0 auto;
-    /* background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("st\ bg.png"); */
     padding: 0 40px 0;
-    /* border-bottom-left-radius: 20px; */
-    /* border-top-right-radius: 20px; */
     border: 3.5px solid #FFB400;
     border-radius: 20px;
     font-family: "Goldman", cursive;
@@ -854,12 +743,11 @@ option {
     height: 100%;
     margin: 0 auto;
     padding-top: 2.5vh;
-    /* height: 20%; */
+
   }
 
   .title {
     margin: 10px 0;
-    /* color: #FFB400; */
     text-align: left;
     width: 100%;
     height: 5%;
@@ -875,15 +763,12 @@ option {
 
   .submit-button {
     height: 3.5vh;
-    /* margin: 1vh auto 0; */
     font-size: 1.6vh;
     background-color: #FFB400;
     width: 38%;
-    /* height: 38px; */
     color: white;
     border: none;
     border-radius: 5px;
-    /* margin-left: 13.2vh; */
 
   }
 
@@ -934,12 +819,7 @@ option {
 
   .container-reg {
     margin: 0 auto;
-    /* background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("st\ bg.png"); */
     padding: 0 40px 0;
-    /* border-bottom-left-radius: 20px; */
-    /* border-top-right-radius: 20px; */
     border: 3.5px solid #FFB400;
     border-radius: 20px;
     font-family: "Goldman", cursive;
@@ -958,12 +838,10 @@ option {
     height: 100%;
     margin: 0 auto;
     padding-top: 1.8vh;
-    /* height: 20%; */
   }
 
   .title {
     margin: 10px 0;
-    /* color: #FFB400; */
     text-align: left;
     width: 100%;
     height: 5%;
@@ -979,15 +857,12 @@ option {
 
   .submit-button {
     height: 3.5vh;
-    /* margin: 2vh auto 0; */
     font-size: 1.4vh;
     background-color: #FFB400;
     width: 34%;
-    /* height: 38px; */
     color: white;
     border: none;
     border-radius: 5px;
-    /* margin-left: 10vh; */
     margin: 25px auto;
   }
   
@@ -1059,12 +934,10 @@ option {
     height: 100%;
     margin: 0 auto;
     padding-top: 1.8vh;
-    /* height: 20%; */
   }
 
   .title {
     margin: 10px 0;
-    /* color: #FFB400; */
     text-align: left;
     width: 100%;
     height: 3%;
@@ -1080,15 +953,12 @@ option {
 
   .submit-button {
     height: 3vh;
-    /* margin: 1.5vh auto 0; */
     font-size: 1.2vh;
     background-color: #FFB400;
     width: 34%;
-    /* height: 38px; */
     color: white;
     border: none;
     border-radius: 5px;
-    /* margin-left:9vh; */
     margin: 20px auto;
   }
   
