@@ -122,18 +122,11 @@ const AboutUs = () => {
             <li>
               The top performers in the Inception round will be invited to the
               campus of IIT Roorkee in the{" "}
-              <span className="highlight">2nd week of October</span> for the
+              <span className="highlight">1st week of December</span> for the
               Pinnacle round.
             </li>
             <br />
             <br />
-            <li>
-
-              They will get to participate in various competitions as well as to
-              experience one of the most magical nights in IITR during the cultural
-              extravaganza, popularly known as{" "}
-              <span className="highlight">Thomso</span>.
-            </li>
           </ul>
         </div>
         {/* <img src={img6} alt="" className="syllabus" /> */}
