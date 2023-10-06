@@ -48,7 +48,7 @@ const Footer = () => {
                             <Link to="/practicepaper" className="text-white" style={{ textDecoration: "none" }}><i className="fas pe-3"></i>PRACTICE PAPERS</Link>
                         </li>
                         <li className="">
-                            <Link to= 'https://drive.google.com/uc?export=download&id=1rBVgIcuDTD9uO0AiIy3-sfGPD40CSJ99' className="text-white" style={{ textDecoration: "none" }}><i className="fas pe-3"></i>BROCHURE</Link>
+                            <Link to= 'https://drive.google.com/uc?export=download&id=1sl2RQLRUzK4cqxpXqK6veCmgSF3muYew' className="text-white" style={{ textDecoration: "none" }}><i className="fas pe-3"></i>BROCHURE</Link>
                         </li>
                     </ul>
                     <div className='mobile-follow'>

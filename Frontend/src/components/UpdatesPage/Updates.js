@@ -10,10 +10,13 @@ function Updates()
             <img src={updateImg} className="updateImg"/>
             <div className="scrollable-content" >
             <div className="cspace"><Updateitem 
-            pcard={'The pre-registration of GambitoR 2.0 has ended. The registrations have officially started.'}
+            pcard={'The GambitoR examination Round 1, INCEPTION, will be conducted on the Thinkexam website on 29th October.'}
             /></div>
             <div className="cspace"><Updateitem 
-            pcard={'Individuals who have already pre-registered need not complete the registration process on the website again.'}
+            pcard={'All the details regarding timings and credentials for exam platform will be shared after 25th October via mail.'}
+            /></div>
+            <div className="cspace"><Updateitem 
+            pcard={'Video solution for the sample papers will be available soon on our YouTube channel.'}
             /></div>
             <div className="cspace"><Updateitem 
             pcard={'Practice papers with detailed syllabus for your ease in preparation are live now on the website.'}

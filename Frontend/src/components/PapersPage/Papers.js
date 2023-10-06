@@ -27,7 +27,7 @@ function Papers(){
             <div className="shiftbox"><div className="roundHeading"><h6>Pinnacle Round</h6></div></div>
                 <ul>
                     <li><Link to='https://drive.google.com/uc?export=download&id=1yy7bQJ7RR6NUThxs81kQ0Z6TwzWwmeTt' ><span><img src={listimg}  className="listimg" /></span>Metiox</Link></li>
-                    <li><Link to='https://drive.google.com/uc?export=download&id=1yy7bQJ7RR6NUThxs81kQ0Z6TwzWwmeTt' ><span><img src={listimg} className="listimg" /></span>Apollox</Link></li>
+                    <li><Link to='https://drive.google.com/uc?export=download&id=1fNUe7rpmgX521cXXM7hxkgkRlmvfKcb_' ><span><img src={listimg} className="listimg" /></span>Apollox</Link></li>
                     <li><Link to='https://drive.google.com/uc?export=download&id=1wreyhTYQIE49v48_BjgG4ubxJCzFE-rD' ><span><img src={listimg} className="listimg" /></span>Athenox</Link></li>
                 </ul>
             </div>
