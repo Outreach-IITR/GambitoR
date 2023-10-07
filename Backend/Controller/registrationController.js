@@ -49,14 +49,13 @@ exports.  createRegistration = catchAsync(async (req, res, next) => {
     to: req.body.email,
     subject: "Registration Completed successfully.",
     text: `Hello ${req.body.name}, \n
-    Team GambitoR is delighted to inform you that you have successfully registered for the first edition of GambitoR! \n  
+    Team GambitoR is delighted to inform you that you have successfully registered for the second edition of GambitoR! \n  
     These are the credentials you have entered. \n
     Email: ${req.body.email} \n
     Mobile Number: ${req.body.contactNumber} \n
-    \n
-    The first round of GambitoR will be on 29th October 2023. \n
-    \n
-    Follow us on our social media handles to stay connected! \n
+    The first round of GambitoR will be on 29th October 2023 on THINKEXAM Platform. \n
+    The credentials to your account access for the platform will be mailed 3 days prior to the examination.\n
+    Follow us on our social media handles and Youtube channel to stay connected! \n
     Further updates will be sent to your registered email address. \n
     \n
     With regards, \n
