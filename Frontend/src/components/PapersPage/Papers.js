@@ -18,7 +18,7 @@ function Papers(){
                 <div className="shiftbox"><div className="roundHeading"><h6>Inception Round</h6></div></div>
                 <ul>
                 
-                    <li><Link to='https://drive.google.com/uc?export=download&id=1MgA2U7MF6MznOZmUHtgq_aDBKquxfsqY' ><span><img src={listimg}  className="listimg" /></span>Metiox</Link></li>
+                    <li><Link to='https://drive.google.com/uc?export=download&id=1cCTgIncKmHh2w5c3BdCA5hgxRgG6vQhQ' ><span><img src={listimg}  className="listimg" /></span>Metiox</Link></li>
                     <li><Link to='https://drive.google.com/uc?export=download&id=1FVol6SLp79wtHblDkYdemAzjr2Yr48VA' ><span><img src={listimg}  className="listimg" /></span>Apollox</Link></li>
                     <li><Link to='https://drive.google.com/uc?export=download&id=1L6OeXjro85X1W5smv-R7dA52H9eTSO8L' ><span><img src={listimg}  className="listimg" /></span>Athenox</Link></li>
                 </ul>
