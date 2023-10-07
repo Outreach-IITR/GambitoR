@@ -18,9 +18,9 @@ function Papers(){
                 <div className="shiftbox"><div className="roundHeading"><h6>Inception Round</h6></div></div>
                 <ul>
                 
-                    <li><Link to='https://drive.google.com/uc?export=download&id=1wwWvZsQ3yR5ycDGEiR6kuEUIbHdH9P_J' ><span><img src={listimg}  className="listimg" /></span>Metiox</Link></li>
-                    <li><Link to='https://drive.google.com/uc?export=download&id=1wzZp4Dv5571EnB-6Nn3VOX5p1-bBrXAW' ><span><img src={listimg}  className="listimg" /></span>Apollox</Link></li>
-                    <li><Link to='https://drive.google.com/uc?export=download&id=1xJy7kS63ERIjrnCWhzLQPwtcnp881oVL' ><span><img src={listimg}  className="listimg" /></span>Athenox</Link></li>
+                    <li><Link to='https://drive.google.com/uc?export=download&id=1MgA2U7MF6MznOZmUHtgq_aDBKquxfsqY' ><span><img src={listimg}  className="listimg" /></span>Metiox</Link></li>
+                    <li><Link to='https://drive.google.com/uc?export=download&id=1FVol6SLp79wtHblDkYdemAzjr2Yr48VA' ><span><img src={listimg}  className="listimg" /></span>Apollox</Link></li>
+                    <li><Link to='https://drive.google.com/uc?export=download&id=1L6OeXjro85X1W5smv-R7dA52H9eTSO8L' ><span><img src={listimg}  className="listimg" /></span>Athenox</Link></li>
                 </ul>
             </div>
             <div className="papercontent">
