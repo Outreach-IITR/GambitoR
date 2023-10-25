@@ -5,7 +5,7 @@ import './App.css';
 // RegistrationForm,RegistrationSuccessful and AboutUs page
 
 // import RegistrationSuccessful from "./components/RegistrationSuccessful/RegistrationSuccesfull.jsx";
-import RegistrationForm from "./components/RegistrationForm/RegistrationForm.jsx";
+import RegistrationClosed from "./components/RegistrationSuccessful/RegistrationClosed";
 import RegistrationSuccesfull from "./components/RegistrationSuccessful/RegistrationSuccesfull";
 import AboutUs from "./components/AboutUs/AboutUs.jsx";
 // import './App.css';
@@ -44,7 +44,7 @@ function App() {
           <Route path="/event"className='section' id="section3" element={<Events />} />
           <Route path="/contact" className='section' id="section4" element={<ContactUs />} />
           <Route path="/practicepaper" className='section' id="section5" element={<Papers />} />
-          <Route path="/register" className='section' id="section6" element={<RegistrationForm />} />
+          <Route path="/register" className='section' id="section6" element={<RegistrationClosed />} />
           <Route path="/registerSucessful" className='section' id="section6" element={<RegistrationSuccesfull />} />
         </Routes>
         
