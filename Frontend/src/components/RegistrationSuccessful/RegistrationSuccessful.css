@@ -21,6 +21,10 @@
   align-items: center;
 }
 
+.changed{
+  color: cornsilk;
+}
+
 .success-msg {
 
   width: 50%;
