@@ -37,32 +37,32 @@ function ContactUs() {
                 <ContactItem img={profileImg1} name="Nitin Sharma" post="Convener" phone="+91 8955257367" mail="n_sharma@me.iitr.ac.in" whatsapp="https://wa.me/+918955257367" />
             </div>
             <div className="contactcards">
-                <ContactItem img={profileImg2} name="Sapna Burdak" post="Co-convener" mail="s_burdak@bt.iitr.ac.in" phone="+91 7673063605" whatsapp="https://wa.me/+917673063605" />
-                <ContactItem img={profileImg3} name="Sachin Merothiya" post="Co-convener" mail="s_merothiya@ee.iitr.ac.in" phone="+91 6388441617" whatsapp="https://wa.me/+916388441617" />
-                <ContactItem img={profileImg4} name="Karan Gangwar" post="Co-convener" mail="k_gangwar@me.iitr.ac.in" phone="+91 9264225089" whatsapp="https://wa.me/+919264225089" />
+                <ContactItem img={profileImg2} name="Sapna Burdak" post="Co-convener" mail="s_burdak@bt.iitr.ac.in" phone="+91 7217641619" whatsapp="https://wa.me/+917217641619" />
+                <ContactItem img={profileImg3} name="Sachin Merothiya" post="Co-convener" mail="s_merothiya@ee.iitr.ac.in" phone="+91 6397599591" whatsapp="https://wa.me/+916397599591" />
+                <ContactItem img={profileImg4} name="Karan Gangwar" post="Co-convener" mail="k_gangwar@me.iitr.ac.in" phone="+91 9005166180" whatsapp="https://wa.me/+919005166180" />
             </div>
             <div className="contactcards">
                 <ContactItem img={pratham} name="Pratham Goel" post="Executive" mail="p_goel@me.iitr.ac.in" phone="+91 6396338939" whatsapp="https://wa.me/+916396338939" />
                 <ContactItem img={akriti} name="Akriti Raj" post="Executive" mail="a_raj1@me.iitr.ac.in" phone="+91 6396338939" whatsapp="https://wa.me/+916396338939" />
-                <ContactItem img={Anirudh} name="Anirudh Deol" post="Executive" mail="a_deol@ch.iitr.ac.in" phone="+91 7498681725" whatsapp="https://wa.me/+917498681725" />
-                <ContactItem img={Kamal} name="Kamal Goklani" post="Executive" mail="g_kkishorbhai@me.iitr.ac.in" phone="+91 7498681725" whatsapp="https://wa.me/+917498681725" />
+                <ContactItem img={Anirudh} name="Anirudh Deol" post="Executive" mail="a_deol@ch.iitr.ac.in" phone="+91 9131654619" whatsapp="https://wa.me/+919131654619" />
+                <ContactItem img={Kamal} name="Kamal Goklani" post="Executive" mail="g_kkishorbhai@me.iitr.ac.in" phone="+91 9131654619" whatsapp="https://wa.me/+919131654619" />
             </div>
             <div className="contactcards">
             <ContactItem img={aryanP} name="Aryan Porwal" post="Executive" mail="a_porwal@me.iitr.ac.in" phone="+91 6396338939" whatsapp="https://wa.me/+916396338939" />
                 <ContactItem img={adityar} name="Aditya Raj" post="Executive" mail="a_raj1@ece.iitr.ac.in" phone="+91 6396338939" whatsapp="https://wa.me/+916396338939" />
                
-                <ContactItem img={Ankit} name="Ankit Arya" post="Executive" mail="a_karya@mt.iitr.ac.in" phone="+91 7498681725" whatsapp="https://wa.me/+917498681725" />
-                <ContactItem img={arin} name="Arin tiwari" post="Executive" mail="a_tiwari@me.iitr.ac.in" phone="+91 7217641619" whatsapp="https://wa.me/+917217641619" />
+                <ContactItem img={Ankit} name="Ankit Arya" post="Executive" mail="a_karya@mt.iitr.ac.in" phone="+91 9131654619" whatsapp="https://wa.me/+919131654619" />
+                <ContactItem img={arin} name="Arin tiwari" post="Executive" mail="a_tiwari@me.iitr.ac.in" phone="+91 8130109526" whatsapp="https://wa.me/+918130109526" />
             </div>
             <div className="contactcards">
-                <ContactItem img={Payal} name="Payal Odera" post="Executive" mail="p_odedara@mt.iitr.ac.in" phone="+91 7217641619" whatsapp="https://wa.me/+917217641619" />
-                <ContactItem img={Devanshu} name="Devanshu Borkar" post="Executive" mail="d_hborkar@ph.iitr.ac.in" phone="+91 7217641619" whatsapp="https://wa.me/+917217641619" />
-                <ContactItem img={Deshmukh} name="Aditya Deshmukh" post="Executive" mail="a_mdeshmukh@ch.iitr.ac.in" phone="+91 7217641619" whatsapp="https://wa.me/+917217641619" />
+                <ContactItem img={Payal} name="Payal Odera" post="Executive" mail="p_odedara@mt.iitr.ac.in" phone="+91 8130109526" whatsapp="https://wa.me/+918130109526" />
+                <ContactItem img={Devanshu} name="Devanshu Borkar" post="Executive" mail="d_hborkar@ph.iitr.ac.in" phone="+91 8130109526" whatsapp="https://wa.me/+918130109526" />
+                <ContactItem img={Deshmukh} name="Aditya Deshmukh" post="Executive" mail="a_mdeshmukh@ch.iitr.ac.in" phone="+91 8130109526" whatsapp="https://wa.me/+918130109526" />
             </div>
             <div className="contactcards">
-                <ContactItem img={sagar} name="Sagar Kharat" post="Executive" mail="s_kharat@cy.iitr.ac.in" phone="+91 7217641619" whatsapp="https://wa.me/+917217641619" />
-                <ContactItem img={arpan} name="Arpan Kumar" post="Executive" mail="arpan@me.iitr.ac.in" phone="+91 7217641619" whatsapp="https://wa.me/+917217641619" />
-                <ContactItem img={Shoilayee} name="Shoilayee Chaudhuri" post="Executive" mail="s_chaudhuri@ch.iitr.ac.in" phone="+91 7498681725" whatsapp="https://wa.me/+917498681725" />
+                <ContactItem img={sagar} name="Sagar Kharat" post="Executive" mail="s_kharat@cy.iitr.ac.in" phone="+91 8130109526" whatsapp="https://wa.me/+918130109526" />
+                <ContactItem img={arpan} name="Arpan Kumar" post="Executive" mail="arpan@me.iitr.ac.in" phone="+91 8130109526" whatsapp="https://wa.me/+918130109526" />
+                <ContactItem img={Shoilayee} name="Shoilayee Chaudhuri" post="Executive" mail="s_chaudhuri@ch.iitr.ac.in" phone="+91 9131654619" whatsapp="https://wa.me/+919131654619" />
             </div>
             <div className="imagebox"><img src={InitiatorImg} className="styleimg" /></div>
             <div className="contactcards">
