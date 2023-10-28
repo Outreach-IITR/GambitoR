@@ -37,7 +37,7 @@ function ContactUs() {
                 <ContactItem img={profileImg1} name="Nitin Sharma" post="Convener" phone="+91 8955257367" mail="n_sharma@me.iitr.ac.in" whatsapp="https://wa.me/+918955257367" />
             </div>
             <div className="contactcards">
-                <ContactItem img={profileImg2} name="Sapna Burdak" post="Co-convener" mail="s_burdak@bt.iitr.ac.in" phone="+91 7217641619" whatsapp="https://wa.me/+917217641619" />
+                <ContactItem img={profileImg2} name="Sapna Burdak" post="Co-convener" mail="s_burdak@bt.iitr.ac.in" phone="+91 8130109526" whatsapp="https://wa.me/+918130109526" />
                 <ContactItem img={profileImg3} name="Sachin Merothiya" post="Co-convener" mail="s_merothiya@ee.iitr.ac.in" phone="+91 6397599591" whatsapp="https://wa.me/+916397599591" />
                 <ContactItem img={profileImg4} name="Karan Gangwar" post="Co-convener" mail="k_gangwar@me.iitr.ac.in" phone="+91 9005166180" whatsapp="https://wa.me/+919005166180" />
             </div>
