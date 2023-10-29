@@ -34,7 +34,7 @@ function ContactUs() {
             <Header />
             <div className="imagebox"><img src={ContactImg} className="styleimg" /></div>
             <div className="contactcards">
-                <ContactItem img={profileImg1} name="Nitin Sharma" post="Convener" phone="+91 8955257367" mail="n_sharma@me.iitr.ac.in" whatsapp="https://wa.me/+918955257367" />
+                <ContactItem img={profileImg1} name="Nitin Sharma" post="Convener" phone="+91 6396338939" mail="n_sharma@me.iitr.ac.in" whatsapp="https://wa.me/+916396338939" />
             </div>
             <div className="contactcards">
                 <ContactItem img={profileImg2} name="Sapna Burdak" post="Co-convener" mail="s_burdak@bt.iitr.ac.in" phone="+91 8130109526" whatsapp="https://wa.me/+918130109526" />
