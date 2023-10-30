@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
 
@@ -6,7 +6,8 @@ import './App.css';
 
 // import RegistrationSuccessful from "./components/RegistrationSuccessful/RegistrationSuccesfull.jsx";
 import RegistrationClosed from "./components/RegistrationSuccessful/RegistrationClosed";
-import RegistrationSuccesfull from "./components/RegistrationSuccessful/RegistrationSuccesfull";
+import ResultForm from "./components/Results/ResultForm";
+
 import AboutUs from "./components/AboutUs/AboutUs.jsx";
 // import './App.css';
 // import img1 from "./components/RegistrationSuccessful/image (1).png";
@@ -31,12 +32,16 @@ import Events from "./components/Events/Events";
 
 //MainPage
 import Home from "./components/Home/Home.jsx";
+import Results from "./components/Results/Results";
 
+const MyContext = createContext(null);
 
 function App() {
+  const [contextValue, setContextValue] = useState(null);
   return (
       
       <div className="App">
+        <MyContext.Provider value={contextValue}>
         {/* <Header /> */}
         <Routes>
           <Route path="/" className='section' id="section1" element={<Home />} />
@@ -45,10 +50,11 @@ function App() {
           <Route path="/contact" className='section' id="section4" element={<ContactUs />} />
           <Route path="/practicepaper" className='section' id="section5" element={<Papers />} />
           <Route path="/register" className='section' id="section6" element={<RegistrationClosed />} />
-          <Route path="/registerSucessful" className='section' id="section6" element={<RegistrationSuccesfull />} />
+          <Route path="/resultForm" className='section' id="section6" element={<ResultForm />} />
+          <Route path="/results" className='section' id="section6" element={<Results/>} />
         </Routes>
         
-        
+        </MyContext.Provider>
         {/* <Footer /> */}
       </div>
       

@@ -45,7 +45,7 @@ function Header() {
         <li><Link to="/event" className={location.pathname === "/event" ? "activate" : ""}>Events</Link></li>
         <li><Link to="/contact" className={location.pathname === "/contact" ? "activate" : ""}>Contact</Link></li>
         <li><Link to="/practicepaper" className={location.pathname === "/practicepaper" ? "activate" : ""}>Practice Paper</Link></li>
-        <li><Link to="/register" className="active">Register</Link></li>
+        <li><Link to="/resultForm" className="active">Results</Link></li>
       </ul>
       <div className="sidebar">
         <Sidebar />

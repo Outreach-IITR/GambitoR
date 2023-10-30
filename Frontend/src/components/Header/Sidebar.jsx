@@ -55,8 +55,8 @@ const Sidebar = () => {
                         <NavLink to="/practicepaper" activeClassName="activeClicked" onClick={closeSidebarAndRefresh}>
                             <CDBSidebarMenuItem className='header-text'><i className="fas fa-file"  style={{color:"#FFB400" , fontSize:"2vh"}} ></i> PAPERS</CDBSidebarMenuItem>
                         </NavLink>
-                        <NavLink to="/register" target="_blank" activeClassName="activeClicked" onClick={closeSidebarAndRefresh}>
-                            <CDBSidebarMenuItem className='header-text'><i class="fa-solid fa-right-to-bracket" style={{color:"#FFB400" , fontSize:"2vh"}} ></i> REGISTER</CDBSidebarMenuItem>
+                        <NavLink to="/resultForm" target="_blank" activeClassName="activeClicked" onClick={closeSidebarAndRefresh}>
+                            <CDBSidebarMenuItem className='header-text'><i class="fa-solid fa-right-to-bracket" style={{color:"#FFB400" , fontSize:"2vh"}} ></i> RESULTS</CDBSidebarMenuItem>
                         </NavLink>
                     </CDBSidebarMenu>
                 </CDBSidebarContent>

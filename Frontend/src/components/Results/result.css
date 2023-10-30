@@ -1,0 +1,215 @@
+.containerR {
+    background-image: url("../images/ContactBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    overflow-x: hidden;
+    text-align: center;
+  }
+
+
+
+ /* Display Results page css */
+
+  .styled-table {
+    width: 50%;
+    max-width: 600px;
+    margin:15vw auto 0;
+    background-color:#1B2469;
+}
+.styled-table th,
+.styled-table td {
+    border: 0.001rem solid #FFB400;
+    padding: 1.2vw;
+    text-align: center;
+    color:#FFB400;
+    font-family: Josefin Sans;
+    font-size: 1.8vw;
+    font-weight: 700;
+    line-height: 2vw;
+    letter-spacing: -0.05em;
+}
+.textStyle{ 
+    width:50%;
+}
+.download-button {
+    margin: 3vw auto;
+    background-color: #FFB400;
+    width: 30%;
+    height: 8vh;
+    color: white;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 1.5vw;
+    font-weight: 400;
+    font-family: "Goldman", cursive;
+    text-align: center;
+  } 
+
+
+  /* Results page css */
+
+  .submit-button {
+    margin: 1.5vw auto;
+    background-color: #FFB400;
+    width: 15vw;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1.3vw;
+    font-weight: 400;
+    font-family: "Goldman", cursive;
+    text-align: center;
+  }
+  .buttonCenter{
+    display: flex;
+    align-content: center;
+  }
+  .resImage
+  {
+    width: 30vw;
+    margin-top: 25vh;
+    margin-bottom: 12vh;
+  }
+  .bckImage{
+    margin-top: 2vw;
+    width:51vw;
+  }
+  .background{
+    z-index: -1;
+    position: absolute;
+    top:32vw;
+
+  }
+  .element{
+    z-index:1;
+    position:absolute;
+    top:37vw;
+    width:37vw;
+  }
+  .container-res {
+    margin: 0 auto;
+    background-position: center center;
+    padding: 7vw 8vw 7vw;
+    font-family: "Goldman", cursive;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    height:68vh;
+  }
+  .input {
+    width: 100%;
+    color: #FFB400;
+    height: 6vh;
+    font-size: 1.5vw;
+    border: 0.1rem solid #FFB400;
+    border-radius: 0.2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    
+  }
+  .title {
+    margin: 1vw 0 0 0;
+    color: #FFB400;
+    text-align: left;
+    width: 100%;
+    height:6vh;
+    font-family: "Goldman",cursive;
+    font-size: 2vw;
+    font-weight: 500;
+    line-height: 4vw;
+    letter-spacing: -0.05em;
+    padding: 0;
+  
+  }
+  @media screen and (max-width:815px)and (min-width:550px){
+
+    .styled-table {
+        margin:20vw auto 0;
+    }
+    .download-button{
+        font-size: 1.8vw;
+    }
+    .styled-table th,
+    .styled-table td {
+    font-size: 2vw;
+    line-height: 2.2vw;}
+
+      .background{
+        top:40vw;
+      }
+      .element{
+        top:48vw;
+        width:35vw;
+      }
+      .bckImage{
+        width:65vw;
+      }
+      .submit-button{
+        font-size: 1.8vw;
+        width:20vw;
+    }
+    .title {
+        height: 3.5vh;
+        margin: 1vw 0 1vw 0;
+        font-size: 2vw;
+        line-height: 4vw;    
+      }
+      .input{
+        font-size: 2.8vw;
+        height: 4vh;
+      }
+  }
+  @media screen and (max-width:550px){
+
+    .styled-table {
+        margin:30vw auto 0;
+    }
+    .download-button{
+        font-size: 2.5vw;
+        height:6vh;
+        margin-top: 7vw;
+        width:40%;
+    }
+    .styled-table th,
+    .styled-table td {
+    font-size: 2.5vw;
+    line-height: 2.7vw;
+}
+.container-res {
+    width: 50vw;
+    height:40vh;
+  }
+  .submit-button{
+    font-size: 2.6vw;
+    width:25vw;
+    margin-top: 3.5vw;
+}
+.title {
+    height: 2vh;
+    margin: 1vw 0 1vw 0;
+    font-size: 3.5vw;
+    line-height: 5vw;    
+  }
+  .input{
+    height: 3vh;
+    font-size: 3vw;
+    border: 0.04rem solid #FFB400;
+  }
+  .bckImage{
+    width:80vw;
+  }
+  .background{
+    top:54vw;
+  }
+  .element{
+    top:60vw;
+    width:50vw;
+  }
+  .resImage
+  {
+    margin-top: 18vh;
+  }
+}

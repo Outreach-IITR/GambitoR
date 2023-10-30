@@ -11,7 +11,7 @@ function Content() {
                     with this enthralling exam formulated by the student community of IIT Roorkee. So, buckle up and get
                     ready for the celestial showdown of the year between the greatest masters!
                 </p>
-                 <Link to='/register'><button className="btns">REGISTER</button></Link>
+                 <Link to='/resultForm'><button className="btns">RESULTS</button></Link>
             </div>
         </div>
     );
