@@ -6,7 +6,9 @@ const resultSchema = new mongoose.Schema({
     type: Number
   },
   email: {
-    type: String
+    type: String,
+    unique: true,
+    index: true
   },
   name: {
     type: String
@@ -25,6 +27,6 @@ const resultSchema = new mongoose.Schema({
   }
 });
 
-const ResultModel = mongoose.model("Registration", resultSchema);
+const ResultModel = mongoose.model("Result", resultSchema);
 
 module.exports = ResultModel;
