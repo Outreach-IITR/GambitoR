@@ -30,7 +30,7 @@ router.post('/',async function(req,res){
 
 router.get('/', async function(req,res){
     try {
-        const results = await ResultModel.find({ email : req.user.email });
+        const results = await ResultModel.find({ email : req.body.email });
         res.status(200).json({
             status: "success",
             data: results,
