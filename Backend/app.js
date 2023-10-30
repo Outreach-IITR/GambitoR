@@ -4,6 +4,7 @@ const morgan = require("morgan");
 const cors = require("cors");
 const globalErrorHandler = require("./Controller/errorController");
 const registrationRoutes = require("./Routes/registrationRoutes");
+const resultRoutes = require("./Routes/resultRoutes");
 const AppError = require("./utils/appError");
 const path = require("path");
 const { protect } = require("./Controller/authController");
@@ -52,6 +53,7 @@ app.use(express.json({ limit: "8mb" }));
 //All the routes comes here
 app.use("/api/v1/registration", registrationRoutes);
 app.use("/api/v1/user", userRoutes);
+app.use("/api/v1/result", resultRoutes);
 
 app.use("*", (req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
